@@ -1,5 +1,5 @@
 {
-  "pregunta": "¿Se trata de una SENSACIÓN CORPORAL INTERNA (INTEROCEPCIÓN/PROPIOCEPCIÓN)? (se percibe 'desde adentro': dolor, hambre, sed, sueño, fatiga, náusea, picazón/comezón, mareo, tensión corporal, escalofríos, etc.)",
+  "pregunta": "¿Se trata de una SENSACIÓN CORPORAL INTERNA? (se percibe 'desde adentro': dolor, hambre, sed, sueño, fatiga, náusea, picazón/comezón, mareo, tensión corporal, escalofríos, etc.)",
   "si": {
     "pregunta": "¿Es DOLOR?",
     "si": {
@@ -159,7 +159,7 @@
                 "pregunta": "¿Se relaciona con CREENCIAS ESPIRITUALES, nociones EXISTENCIALES o conceptos METAFÍSICOS?",
                 "si": {
                   "pregunta": "¿Es una PRÁCTICA ESPIRITUAL?",
-                  "si": { "resultado": "PRÁCTICA ESPIRITUAL (meditación, oración, ritual, etc.)" },
+                  "si": { "resultado": "PRÁCTICA ESPIRITUAL (meditación, oración, ritual, vacio, etc.)" },
                   "no": {
                     "pregunta": "¿Es un CONCEPTO ONTOLÓGICO/METAFÍSICO?",
                     "si": { "resultado": "CONCEPTO METAFÍSICO/ONTOLÓGICO (ser, nada, alma, destino, etc.)" },
