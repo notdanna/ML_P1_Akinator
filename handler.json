@@ -1,0 +1,41 @@
+{
+  "pregunta": "¿Es tangible (se puede tocar físicamente) si se puede percibir sin tocarlo (con la vista, el oído, el olfato, el gusto o por temperatura) responda 'n'?",
+  "si": {
+    "pregunta": "¿Está en la Tierra? (si no, podría ser astronómico/espacial o simplemente fuera de nuestro planeta)",
+    "si": {
+      "pregunta": "¿Es un ser vivo?",
+      "si": {
+        "pregunta": "¿Es un animal?",
+        "si": { "redirigir": "categorias/animales.json" },
+        "no": {
+          "pregunta": "¿Es una planta?",
+          "si": { "redirigir": "categorias/plantas.json" },
+          "no": {
+            "pregunta": "¿Es un hongo?",
+            "si": { "redirigir": "categorias/hongos.json" },
+            "no": {
+              "pregunta": "¿Es un microorganismo celular? (bacteria, arquea, protozoo, alga unicelular)",
+              "si": { "redirigir": "categorias/microo.json" },
+              "no": { "resultado": "SER VIVO NO CLASIFICADO (revisa categorías o añade una nueva rama)" }
+            }
+          }
+        }
+      },
+      "no": {
+        "pregunta": "¿Es un objeto inanimado (natural o hecho por el ser humano)?",
+        "si": { "redirigir": "categorias/objetos.json" },
+        "no": {
+          "pregunta": "¿Es un lugar?",
+          "si": { "redirigir": "categorias/lugares.json" },
+          "no": {
+            "pregunta": "¿Es un agente biológico muy pequeño biológica acelular (virus)?",
+            "si": { "redirigir": "categorias/virus.json" },
+            "no": { "resultado": "TANGIBLE NO CLASIFICADO (no es objeto, lugar ni virus; revisa la ruta o crea una categoría)" }
+          }
+        }
+      }
+    },
+    "no": { "redirigir": "categorias/universo.json" }
+  },
+  "no": { "redirigir": "categorias/intangiblesperce.json" }
+}

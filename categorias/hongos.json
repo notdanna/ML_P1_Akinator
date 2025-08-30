@@ -1,0 +1,77 @@
+{
+  "pregunta": "¿Forma una 'seta' o cuerpo visible (más de ~1 cm)?",
+  "si": {
+    "pregunta": "¿Crece bajo tierra sin sombrero visible en la superficie?",
+    "si": { "resultado": "TRUFAS Y PARECIDOS (hongos subterráneos/aromáticos)" },
+    "no": {
+      "pregunta": "¿Tiene sombrero con láminas finas por debajo?",
+      "si": { "resultado": "SETAS CON LÁMINAS (champiñones, amanitas y similares)" },
+      "no": {
+        "pregunta": "¿Tiene poros como de esponja por debajo del sombrero o tubos visibles?",
+        "si": {
+          "pregunta": "¿Tiene sombrero y pie carnosos (no es duro pegado a madera)?",
+          "si": { "resultado": "HONGOS DE POROS CON PIE (tipo 'boletes' como porcini)" },
+          "no": {
+            "pregunta": "¿Crece como repisas/‘orejas’ duras pegadas a troncos?",
+            "si": { "resultado": "HONGOS DE REPISA EN MADERA (yesqueros)" },
+            "no": { "resultado": "HONGO CON POROS NO CLASIFICADO (revisar más rasgos)" }
+          }
+        },
+        "no": {
+          "pregunta": "¿La parte fértil son 'dientitos' o espinitas colgantes?",
+          "si": { "resultado": "HONGOS DE DIENTES (p. ej., 'barba de león')" },
+          "no": {
+            "pregunta": "¿Es gelatinoso al tacto (blando y vibrante)?",
+            "si": { "resultado": "HONGOS GELATINOSOS (gelatinas/orejas gelatinosas)" },
+            "no": {
+              "pregunta": "¿Tiene forma de copa/platillo o panal (como colmenilla)?",
+              "si": { "resultado": "COPAS Y COLMENILLAS (cazoletas, colmenillas)" },
+              "no": {
+                "pregunta": "¿Es una bola cerrada que al romperse suelta polvo de esporas?",
+                "si": { "resultado": "BOLAS DE HUMO Y ESTRELLAS DE TIERRA (pedos de lobo)" },
+                "no": {
+                  "pregunta": "¿Huele muy fuerte/feo y parece una columna o red pegajosa?",
+                  "si": { "resultado": "HONGOS APESTOSOS EN COLUMNA (tipo 'falo hediondo')" },
+                  "no": {
+                    "pregunta": "¿Parece un coral o ramo de ramitas?",
+                    "si": { "resultado": "HONGOS CORAL" },
+                    "no": {
+                      "pregunta": "¿Forma una capa como pintura/costra sobre la madera (sin sombrero)?",
+                      "si": { "resultado": "HONGOS COSTRA EN MADERA" },
+                      "no": { "resultado": "HONGO CON SETA NO CLASIFICADO (otros tipos menos comunes)" }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "no": {
+    "pregunta": "¿Vive junto con algas formando manchas/costras/hojitas sobre rocas o troncos?",
+    "si": { "resultado": "LÍQUENES (hongo + alga como socios)" },
+    "no": {
+      "pregunta": "¿Son células sueltas que fermentan azúcares (pan, cerveza, vino)?",
+      "si": { "resultado": "LEVADURAS" },
+      "no": {
+        "pregunta": "¿Hace mohos algodonosos o polvosos en comida o paredes?",
+        "si": { "resultado": "MOHOS (verdes, azules, negros…)" },
+        "no": {
+          "pregunta": "¿Enferma plantas con manchas anaranjadas ('roya') o tizones negros?",
+          "si": { "resultado": "HONGOS DE PLAGAS EN PLANTAS (royas y tizones/carbones)" },
+          "no": {
+            "pregunta": "¿Vive en el agua y es microscópico (lagunas/charcas)?",
+            "si": { "resultado": "HONGOS ACUÁTICOS MICROSCÓPICOS" },
+            "no": {
+              "pregunta": "¿Vive pegado a raíces de plantas como 'socios' que ayudan a absorber nutrientes?",
+              "si": { "resultado": "HONGOS DE RAÍZ (micorrizas)" },
+              "no": { "resultado": "HONGO PEQUEÑO/MICROSCÓPICO NO CLASIFICADO" }
+            }
+          }
+        }
+      }
+    }
+  }
+}

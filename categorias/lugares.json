@@ -1,0 +1,113 @@
+{
+  "pregunta": "¿Es un espacio natural? DEFINICION: superficie terrestre o acuática que conserva elementos de la naturaleza (como vegetación, fauna, geología, y fenómenos naturales) y que no ha sido significativamente alterada por la acción humana",
+  "si": {
+    "pregunta": "¿Es mayoritariamente acuático?",
+    "si": {
+      "pregunta": "¿Es salado?",
+      "si": {
+        "pregunta": "¿Tiene escala oceánica?",
+        "si": { "resultado": "OCÉANO" },
+        "no": {
+          "pregunta": "¿Está parcialmente encerrado por tierra?",
+          "si": {
+            "pregunta": "¿Hay mezcla dulce/salada en desembocadura?",
+            "si": { "resultado": "ESTUARIO" },
+            "no": { "resultado": "MAR/BAHÍA/GOLFO" }
+          },
+          "no": {
+            "pregunta": "¿Es un paso angosto entre dos masas de tierra?",
+            "si": { "resultado": "ESTRECHO" },
+            "no": { "resultado": "MAR ABIERTO" }
+          }
+        }
+      },
+      "no": {
+        "pregunta": "¿El agua está en reposo (cuenca cerrada)?",
+        "si": {
+          "pregunta": "¿Alta salinidad natural?",
+          "si": { "resultado": "LAGO SALADO/SALAR INUNDABLE" },
+          "no": { "resultado": "LAGO/LAGUNA" }
+        },
+        "no": {
+          "pregunta": "¿Fluye por un cauce?",
+          "si": {
+            "pregunta": "¿Presenta caídas notables?",
+            "si": { "resultado": "CASCADA" },
+            "no": {
+              "pregunta": "¿Forma un abanico sedimentario en la costa?",
+              "si": { "resultado": "DELTA" },
+              "no": { "resultado": "RÍO/ARROYO" }
+            }
+          },
+          "no": {
+            "pregunta": "¿Zona saturada de agua con vegetación hidrófila?",
+            "si": { "resultado": "HUMEDAL (pantano/ciénaga/manglar)" },
+            "no": {
+              "pregunta": "¿Es costero?",
+              "si": { "resultado": "PLAYA/DUNA COSTERA/LAGUNA COSTERA/ARRECIFE/ACANTILADO" },
+              "no": { "resultado": "OTRO ACUÁTICO NATURAL" }
+            }
+          }
+        }
+      }
+    },
+    "no": {
+      "pregunta": "¿Formado por hielo o nieve perenne?",
+      "si": { "resultado": "GLACIAR/CASQUETE" },
+      "no": {
+        "pregunta": "¿Está completamente rodeado de agua?",
+        "si": { "resultado": "ISLA/ARCHIPIÉLAGO/ATOLÓN" },
+        "no": {
+          "pregunta": "¿Presenta elevación marcada (>300 m)?",
+          "si": {
+            "pregunta": "¿Origen volcánico?",
+            "si": {
+              "pregunta": "¿Actividad histórica/reciente?",
+              "si": { "resultado": "VOLCÁN ACTIVO" },
+              "no": { "resultado": "VOLCÁN INACTIVO/EXTINTO" }
+            },
+            "no": {
+              "pregunta": "¿Cima individual prominente o plana/extensa?",
+              "si": { "resultado": "MONTAÑA/CERRO o MESETA" },
+              "no": { "resultado": "SIERRA/CORDILLERA" }
+            }
+          },
+          "no": {
+            "pregunta": "¿Depresión lineal escarpada?",
+            "si": { "resultado": "CAÑÓN/BARRANCO/VALLE" },
+            "no": {
+              "pregunta": "¿Clima muy seco (<250 mm/año)?",
+              "si": { "resultado": "DESIERTO" },
+              "no": {
+                "pregunta": "¿Cobertura arbórea >10–20%?",
+                "si": {
+                  "pregunta": "¿Zona tropical?",
+                  "si": { "resultado": "SELVA TROPICAL" },
+                  "no": { "resultado": "BOSQUE TEMPLADO/BOREAL" }
+                },
+                "no": {
+                  "pregunta": "¿Predomina herbácea con pocos árboles?",
+                  "si": { "resultado": "PRADERA/SABANA/PÁRAMO/TUNDRA" },
+                  "no": {
+                    "pregunta": "¿Es subterráneo (cavidad natural)?",
+                    "si": { "resultado": "CUEVA/GRUTA/KARST/CENOTE" },
+                    "no": { "resultado": "OTRO TERRESTRE NATURAL" }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "no": {
+    "pregunta": "¿Es administrativo/político?",
+    "si": { "resultado": "PAÍS/ESTADO-PROVINCIA/MUNICIPIO-CIUDAD/BARRIO" },
+    "no": {
+      "pregunta": "¿Es infraestructura/edificación?",
+      "si": { "resultado": "EDIFICIO/CASA/DEPTO/FÁBRICA/CARRETERA/PUENTE/AEROPUERTO/PUERTO/PRESA/CANAL/MINA/ISLA ARTIFICIAL" },
+      "no": { "resultado": "OTRO CONSTRUIDO" }
+    }
+  }
+}

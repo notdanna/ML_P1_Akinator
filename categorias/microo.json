@@ -1,0 +1,80 @@
+{
+  "pregunta": "¿Tiene células? (si no, puede ser virus/viroide/prión)",
+  "si": {
+    "pregunta": "¿Tiene núcleo dentro de la célula? (eucariota)",
+    "si": {
+      "pregunta": "¿Se mueve por sí mismo como un 'animalito'?",
+      "si": {
+        "pregunta": "¿Se mueve cambiando de forma, como 'masa' que se estira?",
+        "si": { "resultado": "AMEBA (protozoo que se arrastra)" },
+        "no": {
+          "pregunta": "¿Se mueve con muchos pelitos cortos alrededor?",
+          "si": { "resultado": "CILIADO (protozoo con cilios)" },
+          "no": {
+            "pregunta": "¿Se mueve con una o varias 'colitas' (flagelos)?",
+            "si": { "resultado": "FLAGELADO (protozoo con flagelo/s)" },
+            "no": {
+              "pregunta": "¿Vive dentro de células como parásito y casi no se mueve libremente?",
+              "si": { "resultado": "PARÁSITO INTERNO (protozoo tipo apicomplejo)" },
+              "no": { "resultado": "PROTOZOO (otro tipo)" }
+            }
+          }
+        }
+      },
+      "no": {
+        "pregunta": "¿Hace su propio alimento con luz? (tiene 'cloroplastos')",
+        "si": {
+          "pregunta": "¿Tiene pared como de vidrio con dibujitos (cáscara rígida)?",
+          "si": { "resultado": "DIATOMEA (alga microscópica con 'vidrio')" },
+          "no": {
+            "pregunta": "¿Tiene dos flagelos y a veces brilla en la noche (mareas rojas)?",
+            "si": { "resultado": "DINOFLAGELADO (alga microscópica)" },
+            "no": {
+              "pregunta": "¿Se ve de color verde?",
+              "si": { "resultado": "ALGA VERDE MICROSCÓPICA" },
+              "no": {
+                "pregunta": "¿Se ve de color pardo/marrón?",
+                "si": { "resultado": "ALGA PARDA MICROSCÓPICA" },
+                "no": {
+                  "pregunta": "¿Se ve de color rojo?",
+                  "si": { "resultado": "ALGA ROJA MICROSCÓPICA" },
+                  "no": { "resultado": "ALGA MICROSCÓPICA (otro tipo)" }
+                }
+              }
+            }
+          }
+        },
+        "no": {
+          "pregunta": "¿Se parece a un hongo (crece como 'hilos' o como bolita de pan)?",
+          "si": {
+            "pregunta": "¿Forma hilos (pelusa) extendiéndose sobre la comida/superficies?",
+            "si": { "resultado": "MOHO (hongo microscópico filamentoso)" },
+            "no": {
+              "pregunta": "¿Vive como celulitas sueltas que fermentan azúcares?",
+              "si": { "resultado": "LEVADURA (hongo microscópico)" },
+              "no": { "resultado": "HONGO MICROSCÓPICO (otro tipo)" }
+            }
+          },
+          "no": {
+            "pregunta": "¿Parece moho de agua (vive en agua/destaca en plantas) aunque no es hongo real?",
+            "si": { "resultado": "MOHO DE AGUA (oomiceto, tipo 'no hongo')" },
+            "no": { "resultado": "MICROEUCARIOTA NO CLASIFICADO" }
+          }
+        }
+      }
+    },
+    "no": {
+      "pregunta": "¿Puede vivir en lugares muy extremos (mucha sal, agua muy caliente, sin oxígeno, gases como metano)?",
+      "si": { "resultado": "ARQUEA (procariota de ambientes extremos u otros)" },
+      "no": {
+        "pregunta": "¿Hace fotosíntesis y puede formar colonias verdosas/azuladas?",
+        "si": { "resultado": "CIANOBACTERIA (bacteria que hace fotosíntesis)" },
+        "no": {
+          "pregunta": "¿Vive en lugares comunes (agua, suelo, cuerpo humano) y no es extremófila?",
+          "si": { "resultado": "BACTERIA COMÚN (procariota no extrema)" },
+          "no": { "resultado": "PROCARIOTA NO CLASIFICADO (bacteria/arquea)" }
+        }
+      }
+    }
+  }
+}

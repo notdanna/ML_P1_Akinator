@@ -1,0 +1,121 @@
+{
+  "pregunta": "¿Es intangible pero se puede percibir sin tocarlo (con la vista, el oído, el olfato, el gusto o por temperatura)?",
+  "si": {
+    "pregunta": "¿Se ve (entra por los ojos)?",
+    "si": {
+      "pregunta": "¿Hay luz visible (no es oscuridad)?",
+      "si": {
+        "pregunta": "¿Te refieres a LUZ constante (no destellos o intermitentes) ni a una imagen ni a un color concreto?",
+        "si": {
+          "pregunta": "¿Proviene del Sol (exterior, de día)?",
+          "si": { "resultado": "LUZ SOLAR" },
+          "no": { "resultado": "LUZ (ILUMINACIÓN) NO SOLAR, como focos, linternas, o elementos luminicentes" }
+        },
+        "no": {
+          "pregunta": "¿Ves destellos o estelas de COLORES en el cielo?",
+          "si": {
+            "pregunta": "¿También se oye un estallido o varias explosiones?",
+            "si": {
+              "pregunta": "¿Es de origen humano (fiesta/show/evento)?",
+              "si": { "resultado": "FUEGOS ARTIFICIALES (ESPECTÁCULO)" },
+              "no": { "resultado": "TORMENTA ELÉCTRICA / TRUENO / RAYO / OTRO LUMINOSO CON SONIDO (REVISAR)" }
+            },
+            "no": {
+              "pregunta": "¿Parece un efecto óptico del ambiente (sin ruido)?",
+              "si": { "resultado": "FENÓMENO ÓPTICO COLORIDO (ARCOÍRIS/AURORA/OTRO)" },
+              "no": { "resultado": "OTRO VISUAL COLORIDO (REVISAR)" }
+            }
+          },
+          "no": {
+            "pregunta": "¿Es un COLOR específico (rojo/verde/azul, etc.)?",
+            "si": { "resultado": "COLOR" },
+            "no": {
+              "pregunta": "¿Es una IMAGEN o PATRÓN (figura, texto, dibujo, ilusión óptica)?",
+              "si": { "resultado": "IMAGEN / PATRÓN / ILUSIÓN ÓPTICA" },
+              "no": {
+                "pregunta": "¿Es un FENÓMENO ÓPTICO del ambiente (sombra, reflejo, destello, halo, espejismo, refracción)?",
+                "si": { "resultado": "FENÓMENO ÓPTICO (SOMBRA/REFLEJO/DESTELLO/HALO/ESPEJISMO/REFRACCIÓN)" },
+                "no": { "resultado": "OTRO VISUAL (REVISAR)" }
+              }
+            }
+          }
+        }
+      },
+      "no": { "resultado": "OSCURIDAD (AUSENCIA DE LUZ VISIBLE)" }
+    },
+    "no": {
+      "pregunta": "¿Se escucha (entra por los oídos)?",
+      "si": {
+        "pregunta": "¿Es audible para humanos (aprox. 20 Hz a 20 kHz)?",
+        "si": {
+          "pregunta": "¿Tiene nota/tono claro (como una nota musical o pitido)?",
+          "si": { "resultado": "TONO / NOTA / MUSICA" },
+          "no": {
+            "pregunta": "¿Es habla o voz?",
+            "si": { "resultado": "HABLA / VOZ / GRITO / ETC" },
+            "no": {
+              "pregunta": "¿Es un ruido fuerte tipo estallido/retumbo?",
+              "si": {
+                "pregunta": "¿Ocurre con tormentas y después de un destello en el cielo?",
+                "si": { "resultado": "TRUENO" },
+                "no": {
+                  "pregunta": "¿Al mismo tiempo se ven destellos de colores en el cielo?",
+                  "si": {
+                    "pregunta": "¿Es de origen humano (fiesta/show)?",
+                    "si": { "resultado": "FUEGOS ARTIFICIALES (ESPECTÁCULO)" },
+                    "no": { "resultado": "EXPLOSIÓN / LUMINOSO NATURAL (REVISAR TORMENTA ELÉCTRICA)" }
+                  },
+                  "no": { "resultado": "OTRO RUIDO (EXPLOSIÓN/GOLPE/ZUMBIDO FUERTE, ETC)" }
+                }
+              },
+              "no": {
+                "pregunta": "¿Es un efecto del sonido en el espacio (eco, reverberación, resonancia)?",
+                "si": { "resultado": "EFECTO ACÚSTICO (ECO/REVERB/RESONANCIA)" },
+                "no": { "resultado": "RUIDO SUAVE / DE FONDO (ZUMBIDO, SOPLIDO, MURMULLO)" }
+              }
+            }
+          }
+        },
+        "no": { "resultado": "SILENCIO / INFRASÓN / ULTRASÓN" }
+      },
+      "no": {
+        "pregunta": "¿Se huele (olor en el aire)?",
+        "si": {
+          "pregunta": "¿Resulta agradable?",
+          "si": { "resultado": "OLOR AGRADABLE (FLORAL/FRUTAL/VAINILLA/CÍTRICO…)" },
+          "no": {
+            "pregunta": "¿Resulta desagradable o irritante?",
+            "si": { "resultado": "OLOR DESAGRADABLE / IRRITANTE (AZUFRADO/HUMO/RANCIO/AMONÍACO…)" },
+            "no": { "resultado": "OLOR NEUTRO / ESPECÍFICO (PETRICHOR/OZONO/MENTOLADO/ALCANFORADO…)" }
+          }
+        },
+        "no": {
+          "pregunta": "¿Se siente como sabor en la lengua (no solo por el olfato)?",
+          "si": {
+            "pregunta": "¿Es un sabor básico?",
+            "si": { "resultado": "SABOR (DULCE/SALADO/ÁCIDO/AMARGO/UMAMI)" },
+            "no": {
+              "pregunta": "¿Es una sensación tipo picante/mentol/astringente/efervescente (no sabor básico)?",
+              "si": { "resultado": "QUIMIOESTESIA ORAL (PICANTE/MENTOL/ASTRINGENTE/EFERVESCENTE)" },
+              "no": { "resultado": "INSÍPIDO / OTRO" }
+            }
+          },
+          "no": {
+            "pregunta": "¿Se percibe como calor o frío sin tocar (temperatura ambiente/radiación)?",
+            "si": {
+              "pregunta": "¿Proviene más de radiación (sol/fuego) que del aire ambiente?",
+              "si": { "resultado": "CALOR/FRÍO RADIANTE (P.EJ., SOL/FOGO)" },
+              "no": {
+                "pregunta": "¿La sensación ambiental es extrema?",
+                "si": { "resultado": "EXTREMO (ARDOR / CONGELANTE)" },
+                "no": { "resultado": "MODERADO (TEMPLADO / FRESCO)" }
+              }
+            },
+            "no": { "resultado": "NEUTRO (NI CALOR NI FRÍO) / NO ENTRA AQUÍ (EMOCIONES/IDEAS/REGLAS)" }
+          }
+        }
+      }
+    }
+  },
+  "no": { "redirigir": "categorias/intangiblesimperce.json"}
+}

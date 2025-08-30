@@ -1,0 +1,117 @@
+{
+  "pregunta": "¿Tiene “venas” por donde circula agua y nutrientes? (planta con vasos)",
+  "si": {
+    "pregunta": "¿Produce semillas?",
+    "si": {
+      "pregunta": "¿Sus semillas no quedan dentro de un fruto? (sin fruto alrededor)",
+      "si": {
+        "pregunta": "¿Hace conos (piñas) y tiene hojas como agujas o escamas?",
+        "si": { "resultado": "ÁRBOLES DE CONO (pinos, abetos, cipreses, etc.)" },
+        "no": { "resultado": "OTRAS PLANTAS DE SEMILLA SIN FRUTO (cícadas, ginkgo, etc.)" }
+      },
+      "no": {
+        "pregunta": "¿Es una planta con flor y fruto? (la mayoría de las plantas comunes)",
+        "si": {
+          "pregunta": "¿Vive en el agua con hojas flotantes y flores tipo nenúfar/loto?",
+          "si": { "resultado": "NENÚFARES/LOTOS" },
+          "no": {
+            "pregunta": "¿Sus hojas suelen tener venas paralelas (tipo pasto/palma/lirio)?",
+            "si": {
+              "pregunta": "¿Es un pasto/cereal (tallo hueco, espiga)?",
+              "si": { "resultado": "PASTOS Y CEREALES (trigo, maíz, arroz, bambú, céspedes, etc.)" },
+              "no": {
+                "pregunta": "¿Es una orquídea (flor con ‘labio’ muy marcada y simétrica)?",
+                "si": { "resultado": "ORQUÍDEAS" },
+                "no": {
+                  "pregunta": "¿Es tipo lirio/azucena/iris/amarilis (flores grandes y vistosas)?",
+                  "si": { "resultado": "LIRIOS Y AFINES (lirios, azucenas, iris, amarilis, etc.)" },
+                  "no": {
+                    "pregunta": "¿Es una palma (tronco único y hojas en abanico o pluma arriba)?",
+                    "si": { "resultado": "PALMAS" },
+                    "no": {
+                      "pregunta": "¿Tiene hojas grandes y la flor es una espiga envuelta en una ‘hoja’ de color (monstera, anthurium, etc.)?",
+                      "si": { "resultado": "PLANTAS DE HOJA GRANDE CON FLOR ENVUELTA (monstera, anthurium, etc.)" },
+                      "no": {
+                        "pregunta": "¿Es de roseta suculenta tipo agave/áloe/yuca (hojas duras y carnosas)?",
+                        "si": { "resultado": "AGAVES, ÁLOES Y YUCAS" },
+                        "no": { "resultado": "OTRAS PLANTAS DE HOJAS CON VENAS PARALELAS (bromelias, juncos, plátanos, etc.)" }
+                      }
+                    }
+                  }
+                }
+              }
+            },
+            "no": {
+              "pregunta": "¿Sus flores parecen muchas florecitas juntas formando un ‘botón’ (como girasol/margarita)?",
+              "si": { "resultado": "FAMILIA DEL GIRASOL (girasoles, margaritas, dalias, etc.)" },
+              "no": {
+                "pregunta": "¿Da vainas (legumbres) y suele tener hojas compuestas? (flor tipo ‘mariposa’)",
+                "si": { "resultado": "FAMILIA DE LAS LEGUMBRES (frijol, chícharo, acacias, jacarandas, etc.)" },
+                "no": {
+                  "pregunta": "¿Flores de 5 pétalos; a veces con espinas; incluye rosas y varios frutales?",
+                  "si": { "resultado": "ROSAS Y PARIENTES (rosas, manzano, fresa, cerezo, etc.)" },
+                  "no": {
+                    "pregunta": "¿Flores de 4 pétalos en cruz; sabor tipo mostaza/rábano; frutos delgados alargados?",
+                    "si": { "resultado": "FAMILIA DE LAS MOSTAZAS/COLES" },
+                    "no": {
+                      "pregunta": "¿Trepadora o rastrera con frutos tipo calabaza/pepino/melón?",
+                      "si": { "resultado": "FAMILIA DE LAS CALABAZAS (calabazas, pepinos, melones, etc.)" },
+                      "no": {
+                        "pregunta": "¿Aromática, tallos cuadrados y flores con ‘boca’ (menta, albahaca, romero, lavanda)?",
+                        "si": { "resultado": "FAMILIA DE LAS MENTAS (menta, albahaca, romero, lavanda, etc.)" },
+                        "no": {
+                          "pregunta": "¿Flores en ‘paraguas’ (umbelas) como zanahoria/apio/hinojo?",
+                          "si": { "resultado": "FAMILIA DEL APIO/ZANAHORIA (perejil, hinojo, etc.)" },
+                          "no": {
+                            "pregunta": "¿Es suculenta con espinas que salen de pequeños cojincitos (areolas)?",
+                            "si": { "resultado": "CACTUS (cactus columnares, globosos, nopales, etc.)" },
+                            "no": {
+                              "pregunta": "¿Es suculenta sin esos cojincitos (hojas o tallos carnosos)?",
+                              "si": { "resultado": "OTRAS SUCULENTAS (crásulas, euforbias suculentas, etc.)" },
+                              "no": {
+                                "pregunta": "¿Árbol de cítricos o parientes (hojas con puntitos de aceite, huelen a cítrico)?",
+                                "si": { "resultado": "CÍTRICOS (naranjo, limón, toronja, etc.)" },
+                                "no": {
+                                  "pregunta": "¿Árbol tipo olivo/jazmín/fresno?",
+                                  "si": { "resultado": "OLIVOS Y PARIENTES (olivo, jazmín, fresno, etc.)" },
+                                  "no": {
+                                    "pregunta": "¿Árbol tipo arce (hojas palmadas; algunas dan savia dulce)?",
+                                    "si": { "resultado": "ARCES Y PARIENTES" },
+                                    "no": {
+                                      "pregunta": "¿Roble/haya/castaño (bellotas o amentos)?",
+                                      "si": { "resultado": "ROBLES, HAYAS Y CASTAÑOS" },
+                                      "no": {
+                                        "pregunta": "¿Eucalipto/guayabo/mirto (hojas duras y aromáticas)?",
+                                        "si": { "resultado": "MIRTOS Y PARIENTES (eucalipto, guayabo, clavo, etc.)" },
+                                        "no": {
+                                          "pregunta": "¿Aguacate/laurel/canela?",
+                                          "si": { "resultado": "LAURELES Y PARIENTES (aguacate, laurel, canela, etc.)" },
+                                          "no": {
+                                            "pregunta": "¿Higuera/morera (savia lechosa; higos especiales)?",
+                                            "si": { "resultado": "HIGUERAS Y MORERAS" },
+                                            "no": { "resultado": "OTRAS PLANTAS DE FLORES COMUNES (varias familias)" }
+                                          }
+                                        }
+                                      }
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "no": { "resultado": "REVISAR: SI TIENE FLOR/FRUTO, DEBERÍA SER ANGIOSPERMA" }
+      }
+    },
+    "no": { "resultado": "HELECHOS Y PARECIDOS (helechos, colas de caballo, licopodios, etc.)" }
+  },
+  "no": { "resultado": "MUSGOS Y PARECIDOS (musgos, hepáticas, antocerotes, etc.)" }
+}

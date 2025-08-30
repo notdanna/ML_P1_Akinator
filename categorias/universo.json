@@ -1,0 +1,209 @@
+{
+  "pregunta": "¿Pertenece al Sistema Solar?",
+  "si": {
+    "pregunta": "¿Emite luz propia?",
+    "si": { "resultado": "SOL (la única estrella del Sistema Solar)" },
+    "no": {
+      "pregunta": "¿Es una REGIÓN con muchos objetos (banda/nube) y no un único objeto?",
+      "si": {
+        "pregunta": "¿Está entre Marte y Júpiter?",
+        "si": { "resultado": "CINTURÓN DE ASTEROIDES" },
+        "no": {
+          "pregunta": "¿Está más allá de Neptuno como un gran anillo disperso?",
+          "si": { "resultado": "CINTURÓN DE KUIPER" },
+          "no": {
+            "pregunta": "¿Rodea al Sistema Solar muy, muy lejos en forma de nube esférica?",
+            "si": { "resultado": "NUBE DE OORT" },
+            "no": { "resultado": "REGIÓN DEL SISTEMA SOLAR NO CLASIFICADA" }
+          }
+        }
+      },
+      "no": {
+        "pregunta": "¿Orbita a un planeta?",
+        "si": {
+          "pregunta": "¿Orbita a la Tierra?",
+          "si": { "resultado": "LUNA (satélite natural de la Tierra)" },
+          "no": { "resultado": "OTRA LUNA DEL SISTEMA SOLAR (Titán, Europa, Ganímedes, etc.)" }
+        },
+        "no": {
+          "pregunta": "¿Presenta cola de gas/polvo cuando se acerca al Sol?",
+          "si": { "resultado": "COMETA" },
+          "no": {
+            "pregunta": "¿Es aproximadamente redondo (no muy irregular)?",
+            "si": {
+              "pregunta": "¿Es uno de los 8 planetas principales?",
+              "si": {
+                "pregunta": "¿Tiene superficie rocosa sólida (planeta 'terrestre')?",
+                "si": {
+                  "pregunta": "¿Es muy pequeño y el más cercano al Sol?",
+                  "si": { "resultado": "MERCURIO" },
+                  "no": {
+                    "pregunta": "¿Está muy caliente con atmósfera muy densa y efecto invernadero extremo?",
+                    "si": { "resultado": "VENUS" },
+                    "no": {
+                      "pregunta": "¿Es nuestro propio planeta con vida conocida?",
+                      "si": { "resultado": "TIERRA" },
+                      "no": {
+                        "pregunta": "¿Es rojizo y frío, conocido como el 'Planeta Rojo'?",
+                        "si": { "resultado": "MARTE" },
+                        "no": { "resultado": "PLANETA ROCOSO NO CLASIFICADO" }
+                      }
+                    }
+                  }
+                },
+                "no": {
+                  "pregunta": "¿Es un planeta gigante (atmósfera espesa, muy grande)?",
+                  "si": {
+                    "pregunta": "¿Es el más grande de todos?",
+                    "si": { "resultado": "JÚPITER" },
+                    "no": {
+                      "pregunta": "¿Tiene anillos muy notorios y apariencia amarillenta?",
+                      "si": { "resultado": "SATURNO" },
+                      "no": {
+                        "pregunta": "¿Es azul-verdoso y rota 'de lado' (eje muy inclinado)?",
+                        "si": { "resultado": "URANO" },
+                        "no": {
+                          "pregunta": "¿Es azul intenso y el más lejano de los 8 planetas?",
+                          "si": { "resultado": "NEPTUNO" },
+                          "no": { "resultado": "PLANETA GIGANTE NO CLASIFICADO" }
+                        }
+                      }
+                    }
+                  },
+                  "no": { "resultado": "PLANETA NO CLASIFICADO" }
+                }
+              },
+              "no": {
+                "pregunta": "¿Comparte su zona orbital con muchos objetos y es más pequeño que los planetas principales?",
+                "si": {
+                  "pregunta": "¿Está entre Marte y Júpiter?",
+                  "si": { "resultado": "CERES (planeta enano del cinturón de asteroides)" },
+                  "no": {
+                    "pregunta": "¿Está más allá de Neptuno?",
+                    "si": {
+                      "pregunta": "¿Es el famoso ex-planeta con 'corazón' en su superficie?",
+                      "si": { "resultado": "PLUTÓN (planeta enano)" },
+                      "no": {
+                        "pregunta": "¿Es uno de los más masivos, comparable a Plutón?",
+                        "si": { "resultado": "ERIS (planeta enano transneptuniano)" },
+                        "no": {
+                          "pregunta": "¿Tiene forma muy alargada/ovalada?",
+                          "si": { "resultado": "HAUMEA (planeta enano transneptuniano)" },
+                          "no": {
+                            "pregunta": "¿Presenta superficie rojiza brillante (hielo/tiolinas)?",
+                            "si": { "resultado": "MAKEMAKE (planeta enano transneptuniano)" },
+                            "no": { "resultado": "PLANETA ENANO TRANSNEPTUNIANO (otro)" }
+                          }
+                        }
+                      }
+                    },
+                    "no": { "resultado": "PLANETA ENANO NO CLASIFICADO" }
+                  }
+                },
+                "no": { "resultado": "OBJETO REDONDO DEL S.S. NO CLASIFICADO" }
+              }
+            },
+            "no": {
+              "pregunta": "¿Es rocoso/metálico e irregular (sin cola)?",
+              "si": { "resultado": "ASTEROIDE (incluye troyanos y NEAs)" },
+              "no": {
+                "pregunta": "¿Está entrando en la atmósfera de un planeta como 'estrella fugaz'?",
+                "si": { "resultado": "METEORO" },
+                "no": {
+                  "pregunta": "¿Es un fragmento que ya cayó y está en la superficie?",
+                  "si": { "resultado": "METEORITO" },
+                  "no": { "resultado": "CUERPO MENOR DEL S.S. NO CLASIFICADO" }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "no": {
+    "pregunta": "¿Es una galaxia completa?",
+    "si": {
+      "pregunta": "¿Es la galaxia donde vivimos?",
+      "si": { "resultado": "VÍA LÁCTEA (galaxia espiral)" },
+      "no": {
+        "pregunta": "¿Es la gran vecina espiral más cercana a la Vía Láctea?",
+        "si": { "resultado": "ANDRÓMEDA (M31, galaxia espiral)" },
+        "no": {
+          "pregunta": "¿Es una compañera pequeña de la Vía Láctea visible en el hemisferio sur?",
+          "si": { "resultado": "NUBES DE MAGALLANES (galaxias enanas)" },
+          "no": {
+            "pregunta": "¿Tiene un núcleo extremadamente brillante (quásar/núcleo activo)?",
+            "si": { "resultado": "GALAXIA ACTIVA / QUÁSAR" },
+            "no": { "resultado": "OTRA GALAXIA (espiral, elíptica o irregular)" }
+          }
+        }
+      }
+    },
+    "no": {
+      "pregunta": "¿Orbita una estrella FUERA del Sistema Solar?",
+      "si": {
+        "pregunta": "¿Es muy grande y muy cercano a su estrella (muy caliente)?",
+        "si": { "resultado": "EXOPLANETA TIPO 'JÚPITER CALIENTE'" },
+        "no": {
+          "pregunta": "¿Es más grande que la Tierra pero más pequeño que Neptuno?",
+          "si": { "resultado": "EXOPLANETA 'SÚPER-TIERRA' o 'MINI-NEPTUNO'" },
+          "no": {
+            "pregunta": "¿No orbita ninguna estrella (viaja solo por el espacio)?",
+            "si": { "resultado": "PLANETA ERRANTE (interestelar)" },
+            "no": { "resultado": "EXOPLANETA (otro tipo)" }
+          }
+        }
+      },
+      "no": {
+        "pregunta": "¿Es una nube de gas y polvo (brilla o bloquea luz)?",
+        "si": {
+          "pregunta": "¿Está formando estrellas nuevas (regiones brillantes/emisoras)?",
+          "si": { "resultado": "NEBULOSA DE FORMACIÓN ESTELAR (emisión/reflexión)" },
+          "no": {
+            "pregunta": "¿Es una 'burbuja' expulsada por una estrella moribunda?",
+            "si": { "resultado": "NEBULOSA PLANETARIA / RESTO ESTELAR" },
+            "no": { "resultado": "NEBULOSA (otro tipo)" }
+          }
+        },
+        "no": {
+          "pregunta": "¿Es un grupo de MUCHAS estrellas juntas?",
+          "si": {
+            "pregunta": "¿Es muy compacto y esférico (miles a millones de estrellas, muy antiguo)?",
+            "si": { "resultado": "CÚMULO GLOBULAR" },
+            "no": { "resultado": "CÚMULO ABIERTO (como las Pléyades)" }
+          },
+          "no": {
+            "pregunta": "¿Es un objeto extremadamente denso, resto de una estrella?",
+            "si": {
+              "pregunta": "¿Emite pulsos regulares de radio/luz?",
+              "si": { "resultado": "PÚLSAR (estrella de neutrones)" },
+              "no": {
+                "pregunta": "¿Es pequeño, muy caliente y tenue (del tamaño de un planeta)?",
+                "si": { "resultado": "ENANA BLANCA" },
+                "no": {
+                  "pregunta": "¿Tiene gravedad tan fuerte que ni la luz escapa?",
+                  "si": { "resultado": "AGUJERO NEGRO ESTELAR" },
+                  "no": { "resultado": "REMANENTE ESTELAR NO CLASIFICADO" }
+                }
+              }
+            },
+            "no": {
+              "pregunta": "¿Es un agujero negro gigante en el centro de una galaxia?",
+              "si": { "resultado": "AGUJERO NEGRO SUPERMASIVO (núcleo galáctico)" },
+              "no": {
+                "pregunta": "¿Es un gran conjunto de galaxias unidas por gravedad?",
+                "si": { "resultado": "CÚMULO DE GALAXIAS" },
+                "no": {
+                  "pregunta": "¿Es la radiación de fondo del universo (eco del Big Bang)?",
+                  "si": { "resultado": "FONDO CÓSMICO DE MICROONDAS" },
+                  "no": { "resultado": "OBJETO/FRAGMENTO CÓSMICO NO CLASIFICADO" }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

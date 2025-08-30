@@ -1,0 +1,413 @@
+{
+  "pregunta": "¿Es un vertebrado (tiene huesos)?",
+  "si": {
+    "pregunta": "¿Es un mamífero (pelo y da leche)?",
+    "si": {
+      "pregunta": "¿Vive solo en el agua?",
+      "si": {
+        "pregunta": "¿Tiene un agujero para respirar arriba de la cabeza (como ballenas/delfines)?",
+        "si": {
+          "pregunta": "¿Tiene dientes visibles (tipo delfín/orca)?",
+          "si": { "resultado": "DELFINES Y PARIENTES" },
+          "no": { "resultado": "BALLENAS DE BARBAS" }
+        },
+        "no": {
+          "pregunta": "¿Parece foca o lobo marino?",
+          "si": {
+            "pregunta": "¿Tiene orejas visibles y 'camina' con las aletas delanteras?",
+            "si": { "resultado": "LOBOS MARINOS" },
+            "no": { "resultado": "FOCAS" }
+          },
+          "no": { "resultado": "MAMÍFERO MARINO (otro)" }
+        }
+      },
+      "no": {
+        "pregunta": "¿Puede volar con alas de piel (murciélago)?",
+        "si": { "resultado": "MURCIÉLAGOS" },
+        "no": {
+          "pregunta": "¿Pone huevos (muy raro en mamíferos)?",
+          "si": {
+            "pregunta": "¿Tiene pico de pato y vive en ríos australianos?",
+            "si": { "resultado": "ORNITORRINCO" },
+            "no": { "resultado": "EQUÍDNA" }
+          },
+          "no": {
+            "pregunta": "¿Tiene pezuñas (como vacas, caballos, ciervos)?",
+            "si": {
+              "pregunta": "¿Pata con una sola 'uña' grande (caballo/cebra/burro)?",
+              "si": { "resultado": "CABALLOS, ZEBRAS Y BURROS" },
+              "no": {
+                "pregunta": "¿Tiene cuernos que no se caen (vaca, cabra, antílope)?",
+                "si": { "resultado": "VACAS, CABRAS Y ANTÍLOPES" },
+                "no": {
+                  "pregunta": "¿Los machos tienen astas ramificadas que se caen (venados)?",
+                  "si": { "resultado": "VENADOS Y ALCE" },
+                  "no": {
+                    "pregunta": "¿Cuello muy largo (jirafa)?",
+                    "si": { "resultado": "JIRAFA" },
+                    "no": {
+                      "pregunta": "¿Tiene joroba o es pariente del camello/llama?",
+                      "si": { "resultado": "CAMELLOS Y LLAMAS" },
+                      "no": {
+                        "pregunta": "¿Muy pesado, vive en ríos (hipopótamo)?",
+                        "si": { "resultado": "HIPOPÓTAMO" },
+                        "no": {
+                          "pregunta": "¿Hocico chato y colmillos grandes (cerdo/jabalí)?",
+                          "si": { "resultado": "CERDOS Y JABALÍES" },
+                          "no": { "resultado": "OTROS ANIMALES CON PEZUÑAS" }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            },
+            "no": {
+              "pregunta": "¿Tiene garras y colmillos (carnívoro tipo gato/perro/oso)?",
+              "si": {
+                "pregunta": "¿Garras que se esconden (como los gatos)?",
+                "si": { "resultado": "GATOS Y GRANDES GATOS (FELINOS)" },
+                "no": {
+                  "pregunta": "¿Hocico largo y orejas triangulares (perros, lobos, zorros)?",
+                  "si": { "resultado": "PERROS, LOBOS Y ZORROS (CANINOS)" },
+                  "no": {
+                    "pregunta": "¿Muy grande, camina 'plantado' y casi sin cola (oso)?",
+                    "si": { "resultado": "OSOS" },
+                    "no": {
+                      "pregunta": "¿Cuerpo alargado, a veces vive cerca del agua (nutria, comadreja, tejón)?",
+                      "si": { "resultado": "NUTRIAS, TEJONES Y COMADREJAS" },
+                      "no": {
+                        "pregunta": "¿Cola con anillos y 'antifaz' en la cara (mapache)?",
+                        "si": { "resultado": "MAPACHES" },
+                        "no": {
+                          "pregunta": "¿Parece perro pero con lomo caído y mandíbula muy fuerte (hiena)?",
+                          "si": { "resultado": "HIENAS" },
+                          "no": {
+                            "pregunta": "¿Parece gato delgado con olor fuerte (civeta) o es una mangosta?",
+                            "si": { "resultado": "CIVETAS Y MANGOSTAS" },
+                            "no": { "resultado": "OTRO CARNÍVORO" }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              },
+              "no": {
+                "pregunta": "¿Los dientes de adelante nunca dejan de crecer (ratón/ardilla/conejo)?",
+                "si": {
+                  "pregunta": "¿Orejas muy largas y salta mucho (conejo/liebre)?",
+                  "si": { "resultado": "CONEJOS Y LIEBRES" },
+                  "no": {
+                    "pregunta": "¿Cola larga y aspecto de ratón/ratita?",
+                    "si": { "resultado": "RATONES Y RATAS" },
+                    "no": {
+                      "pregunta": "¿Cola esponjosa y vive en árboles (ardilla)?",
+                      "si": { "resultado": "ARDILLAS" },
+                      "no": { "resultado": "OTRO ROEDOR" }
+                    }
+                  }
+                },
+                "no": {
+                  "pregunta": "¿Es un mono o simio (primate)?",
+                  "si": {
+                    "pregunta": "¿Es una persona (humano)?",
+                    "si": { "resultado": "HUMANO (PERSONA)" },
+                    "no": {
+                      "pregunta": "¿Sin cola y cuerpo grande (gorila, chimpancé, orangután)?",
+                      "si": { "resultado": "GRANDES SIMIOS" },
+                      "no": {
+                        "pregunta": "¿Cola que se agarra, selvas de América (mono araña/aullador)?",
+                        "si": { "resultado": "MONOS DEL NUEVO MUNDO" },
+                        "no": { "resultado": "MONOS DEL VIEJO MUNDO (babuinos/macacos)" }
+                      }
+                    }
+                  },
+                  "no": {
+                    "pregunta": "¿Lleva a las crías en una bolsa (marsupial)?",
+                    "si": {
+                      "pregunta": "¿Salta con patas traseras muy fuertes (canguro/wallaby)?",
+                      "si": { "resultado": "CANGUROS Y PARIENTES" },
+                      "no": {
+                        "pregunta": "¿Vive en árboles y come eucalipto (koala)?",
+                        "si": { "resultado": "KOALA" },
+                        "no": { "resultado": "OTRO MARSUPIAL" }
+                      }
+                    },
+                    "no": {
+                      "pregunta": "¿Se mueve lento con garras curvas (perezoso) o tiene placas (armadillo)?",
+                      "si": {
+                        "pregunta": "¿Cuerpo cubierto de placas como armadura?",
+                        "si": { "resultado": "ARMADILLOS" },
+                        "no": { "resultado": "PEREZOSOS" }
+                      },
+                      "no": {
+                        "pregunta": "¿Tiene trompa larga (elefante)?",
+                        "si": { "resultado": "ELEFANTES" },
+                        "no": { "resultado": "OTRO MAMÍFERO" }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "no": {
+      "pregunta": "¿Es un ave (plumas)?",
+      "si": {
+        "pregunta": "¿Es de corral, casi no vuela y escarba el suelo?",
+        "si": {
+          "pregunta": "¿Es doméstica (gallina/gallo)?",
+          "si": { "resultado": "GALLINAS Y PARIENTES (gallinas, faisanes, codornices, perdices)" },
+          "no": { "resultado": "GALLIFORMES SILVESTRES (codorniz, perdiz, faisán)" }
+        },
+        "no": {
+          "pregunta": "¿Tiene patas palmeadas y nada seguido (pato/ganso)?",
+          "si": { "resultado": "PATOS, GANSOS Y CISNES" },
+          "no": {
+            "pregunta": "¿Es ave de presa diurna con garras fuertes (águila/halcón)?",
+            "si": { "resultado": "ÁGUILAS Y HALCONES" },
+            "no": {
+              "pregunta": "¿No vuela y nada muy bien con 'traje' negro y blanco?",
+              "si": { "resultado": "PINGÜINOS" },
+              "no": {
+                "pregunta": "¿No vuela y corre muy rápido (avestruz/ñandú/emu)?",
+                "si": { "resultado": "AVESTRUZ Y PARIENTES" },
+                "no": {
+                  "pregunta": "¿Pico curvo, muy colorido e inteligente (loro/guacamayo)?",
+                  "si": { "resultado": "LOROS Y GUACAMAYOS" },
+                  "no": {
+                    "pregunta": "¿Caza de noche y tiene ojos grandes (búho/lechuza)?",
+                    "si": { "resultado": "BÚHOS Y LECHUZAS" },
+                    "no": {
+                      "pregunta": "¿Ave urbana que arrulla (paloma/torcaza)?",
+                      "si": { "resultado": "PALOMAS" },
+                      "no": { "resultado": "OTRAS AVES" }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "no": {
+        "pregunta": "¿Es un reptil (escamas secas)?",
+        "si": {
+          "pregunta": "¿Tiene caparazón duro (tortuga)?",
+          "si": {
+            "pregunta": "¿Vive en tierra y tiene caparazón alto?",
+            "si": { "resultado": "TORTUGAS TERRESTRES" },
+            "no": {
+              "pregunta": "¿Vive en el mar y tiene aletas?",
+              "si": { "resultado": "TORTUGAS MARINAS" },
+              "no": { "resultado": "OTRAS TORTUGAS DE AGUA DULCE" }
+            }
+          },
+          "no": {
+            "pregunta": "¿Cuerpo alargado sin patas (serpiente)?",
+            "si": {
+              "pregunta": "¿Cabeza triangular y pupila vertical (tipo víbora/cascabel)?",
+              "si": { "resultado": "VÍBORAS Y SERPIENTES VENENOSAS" },
+              "no": {
+                "pregunta": "¿Puede 'abrir capucha' o tiene colores muy vivos peligrosos (cobra/coral)?",
+                "si": { "resultado": "COBRAS Y CORALES" },
+                "no": { "resultado": "SERPIENTES NO VENENOSAS COMUNES" }
+              }
+            },
+            "no": {
+              "pregunta": "¿Parece cocodrilo o caimán?",
+              "si": {
+                "pregunta": "¿Hocico ancho en forma de U (caimán/alligator)?",
+                "si": { "resultado": "CAIMANES/ALLIGATORES" },
+                "no": { "resultado": "COCODRILOS" }
+              },
+              "no": {
+                "pregunta": "¿Dedos con ventosas y trepa vidrios (gecko)?",
+                "si": { "resultado": "GECKOS" },
+                "no": {
+                  "pregunta": "¿Gran lagarto depredador (dragón de Komodo/varano)?",
+                  "si": { "resultado": "VARANOS" },
+                  "no": {
+                    "pregunta": "¿Lagarto herbívoro de colores (iguana)?",
+                    "si": { "resultado": "IGUANAS" },
+                    "no": { "resultado": "OTROS LAGARTOS" }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "no": {
+          "pregunta": "¿Es un anfibio (piel húmeda)?",
+          "si": {
+            "pregunta": "¿De adulto sigue con cola (salamandra/tritón)?",
+            "si": {
+              "pregunta": "¿Con branquias externas visibles (ajolote)?",
+              "si": { "resultado": "AJOLOTES" },
+              "no": { "resultado": "SALAMANDRAS" }
+            },
+            "no": {
+              "pregunta": "¿Piel lisa y salta mucho (rana)?",
+              "si": { "resultado": "RANAS" },
+              "no": { "resultado": "SAPOS" }
+            }
+          },
+          "no": {
+            "pregunta": "¿Es un pez?",
+            "si": {
+              "pregunta": "¿Esqueleto de cartílago (tiburón/raya)?",
+              "si": {
+                "pregunta": "¿Aplanado como 'alfombra' (raya/manta)?",
+                "si": { "resultado": "RAYAS Y MANTAS" },
+                "no": { "resultado": "TIBURONES" }
+              },
+              "no": {
+                "pregunta": "¿Vive en ríos o lagos?",
+                "si": {
+                  "pregunta": "¿Tipo carpa/tilapia?",
+                  "si": { "resultado": "PECES DE RÍO COMUNES (carpas/tilapias)" },
+                  "no": {
+                    "pregunta": "¿Parece trucha o salmón?",
+                    "si": { "resultado": "SALMONES Y TRUCHAS" },
+                    "no": { "resultado": "OTROS PECES DE AGUA DULCE" }
+                  }
+                },
+                "no": {
+                  "pregunta": "¿Nada en mar abierto y es muy rápido (atún/caballa)?",
+                  "si": { "resultado": "ATUNES Y PARIENTES" },
+                  "no": { "resultado": "PECES MARINOS VARIOS" }
+                }
+              }
+            },
+            "no": { "resultado": "VERTEBRADO NO IDENTIFICADO AQUÍ" }
+          }
+        }
+      }
+    }
+  },
+  "no": {
+    "pregunta": "¿Es un artrópodo (patas articuladas, 'caparazón' externo)?",
+    "si": {
+      "pregunta": "¿Tiene 6 patas (insecto)?",
+      "si": {
+        "pregunta": "¿Alas delanteras duras como casquito (escarabajo)?",
+        "si": { "resultado": "ESCARABAJOS" },
+        "no": {
+          "pregunta": "¿Solo un par de alas útiles (mosca/mosquito)?",
+          "si": { "resultado": "MOSCAS Y MOSQUITOS" },
+          "no": {
+            "pregunta": "¿Alas con 'polvito' de colores (mariposa/polilla)?",
+            "si": { "resultado": "MARIPOSAS Y POLILLAS" },
+            "no": {
+              "pregunta": "¿Aguijón o vive en colmenas/hormigueros?",
+              "si": { "resultado": "ABEJAS, AVISPAS Y HORMIGAS" },
+              "no": {
+                "pregunta": "¿Salta y 'canta' (saltamontes/grillo)?",
+                "si": { "resultado": "SALTAMONTES Y GRILLOS" },
+                "no": { "resultado": "OTROS INSECTOS" }
+              }
+            }
+          }
+        }
+      },
+      "no": {
+        "pregunta": "¿Tiene 8 patas (arañas y parientes)?",
+        "si": {
+          "pregunta": "¿Teje telarañas redondas en el jardín?",
+          "si": { "resultado": "ARAÑAS TEJEDORAS" },
+          "no": {
+            "pregunta": "¿Pinzas y aguijón en la cola (escorpión)?",
+            "si": { "resultado": "ESCORPIONES" },
+            "no": { "resultado": "OTROS ARÁCNIDOS (ácaros/opiliones)" }
+          }
+        },
+        "no": {
+          "pregunta": "¿Caparazón y pinzas (cangrejo/langosta/camarón)?",
+          "si": {
+            "pregunta": "¿Cangrejo ancho de playa/roca?",
+            "si": { "resultado": "CANGREJOS" },
+            "no": {
+              "pregunta": "¿Langosta con antenas largas?",
+              "si": { "resultado": "LANGOSTAS" },
+              "no": {
+                "pregunta": "¿Camarón/gamba?",
+                "si": { "resultado": "CAMARONES" },
+                "no": { "resultado": "OTROS CRUSTÁCEOS" }
+              }
+            }
+          },
+          "no": {
+            "pregunta": "¿Cuerpo largo con muchos segmentos (ciempiés/milpiés)?",
+            "si": {
+              "pregunta": "¿Un par de patas por segmento (ciempiés)?",
+              "si": { "resultado": "CIEMPIÉS" },
+              "no": {
+                "pregunta": "¿Dos pares por segmento (milpiés)?",
+                "si": { "resultado": "MILPIÉS" },
+                "no": { "resultado": "OTROS MIRIÁPODOS" }
+              }
+            },
+            "no": { "resultado": "ARTRÓPODO (otro)" }
+          }
+        }
+      }
+    },
+    "no": {
+      "pregunta": "¿Es un molusco (cuerpo blando, a veces con concha)?",
+      "si": {
+        "pregunta": "¿Tiene dos conchas que se cierran (almeja/ostra)?",
+        "si": { "resultado": "ALMEJAS Y OSTRAS" },
+        "no": {
+          "pregunta": "¿Concha en espiral (caracol) o sin concha (babosa)?",
+          "si": { "resultado": "CARACOLES Y BABOSAS" },
+          "no": {
+            "pregunta": "¿Tentáculos y cabeza grande (pulpo/calamar)?",
+            "si": { "resultado": "PULPOS Y CALAMARES" },
+            "no": { "resultado": "OTROS MOLUSCOS" }
+          }
+        }
+      },
+      "no": {
+        "pregunta": "¿Es un equinodermo (estrellas/erizos de mar)?",
+        "si": { "resultado": "ESTRELLAS Y ERIZOS DE MAR" },
+        "no": {
+          "pregunta": "¿Es un gusano segmentado (anélido)?",
+          "si": {
+            "pregunta": "¿Vive en la tierra y 'airea' el suelo (lombriz)?",
+            "si": { "resultado": "LOMBRICES" },
+            "no": {
+              "pregunta": "¿Parásito que chupa sangre (sanguijuela)?",
+              "si": { "resultado": "SANGUIJUELAS" },
+              "no": { "resultado": "GUSANOS MARINOS (poliquetos)" }
+            }
+          },
+          "no": {
+            "pregunta": "¿Tiene tentáculos urticantes (coral/medusa/hidra)?",
+            "si": {
+              "pregunta": "¿Vive fijo como 'plantita' marina (coral/anémona)?",
+              "si": { "resultado": "CORALES Y ANÉMONAS" },
+              "no": {
+                "pregunta": "¿Medusa grande con campana redonda?",
+                "si": { "resultado": "MEDUSAS VERDADERAS" },
+                "no": {
+                  "pregunta": "¿Medusa de caja muy venenosa?",
+                  "si": { "resultado": "MEDUSA DE CAJA" },
+                  "no": { "resultado": "HIDRAS Y COLONIAS (carabela portuguesa)" }
+                }
+              }
+            },
+            "no": {
+              "pregunta": "¿Es una esponja (porífero)?",
+              "si": { "resultado": "ESPONJAS DE MAR" },
+              "no": { "resultado": "INVERTEBRADO NO IDENTIFICADO AQUÍ" }
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "pregunta": "¿Necesita entrar en otro ser vivo para multiplicarse?",
+  "si": {
+    "pregunta": "¿Posee una cápside (cubierta proteica) alrededor de su material genético?",
+    "si": {
+      "pregunta": "¿El virus infecta principalmente animales (incluido el ser humano)?",
+      "si": { "resultado": "VIRUS ANIMAL (ej. gripe, VIH, rabia, coronavirus, etc.)" },
+      "no": {
+        "pregunta": "¿El virus infecta plantas?",
+        "si": { "resultado": "VIRUS VEGETAL (ej. mosaico del tabaco, virosis en cultivos, etc.)" },
+        "no": {
+          "pregunta": "¿El virus infecta bacterias?",
+          "si": { "resultado": "BACTERIÓFAGO (virus de bacterias)" },
+          "no": {
+            "pregunta": "¿El virus necesita otro virus para multiplicarse?",
+            "si": { "resultado": "VIRUS SATÉLITE (ej. virus delta, virus asociados a adenovirus)" },
+            "no": { "resultado": "OTRO TIPO DE VIRUS (no clasificado en esta rama)" }
+          }
+        }
+      }
+    },
+    "no": {
+      "pregunta": "¿Solo tiene material genético sin cápside proteica y afecta plantas?",
+      "si": { "resultado": "VIROIDE (ej. viroide del aguacate, viroide de la papa, etc.)" },
+      "no": {
+        "pregunta": "¿Es únicamente una proteína infecciosa que puede causar enfermedad?",
+        "si": { "resultado": "PRION (ej. prion de la vaca loca, Creutzfeldt-Jakob)" },
+        "no": { "resultado": "AGENTE ACELULAR NO CLASIFICADO (puede ser desconocido)" }
+      }
+    }
+  },
+  "no": { "resultado": "NO ES UN AGENTE BIOLÓGICO ACELULAR (probablemente ser vivo o molécula inerte)" }
+}

@@ -1,0 +1,229 @@
+{
+  "pregunta": "¿Se trata de una SENSACIÓN CORPORAL INTERNA (INTEROCEPCIÓN/PROPIOCEPCIÓN)? (se percibe 'desde adentro': dolor, hambre, sed, sueño, fatiga, náusea, picazón/comezón, mareo, tensión corporal, escalofríos, etc.)",
+  "si": {
+    "pregunta": "¿Es DOLOR?",
+    "si": {
+      "pregunta": "¿El dolor está causado por una ENFERMEDAD o INFECCIÓN (virus, bacteria, hongo, parásito) diagnosticable?",
+      "si": {
+        "pregunta": "¿Parece INFECCIOSO (p. ej., fiebre/malestar general) más que una condición no infecciosa?",
+        "si": { "resultado": "DOLOR POR INFECCIÓN (virus como COVID-19/influenza; bacterias como otitis/caries; hongos; parásitos; etc.)" },
+        "no": {
+          "pregunta": "¿Se debe a una ENFERMEDAD NO INFECCIOSA?",
+          "si": { "resultado": "DOLOR POR ENFERMEDAD NO INFECCIOSA (migraña, artritis, cáncer, autoinmune, etc.)" },
+          "no": { "resultado": "DOLOR POR PADECIMIENTO NO ESPECIFICADO" }
+        }
+      },
+      "no": {
+        "pregunta": "¿El dolor viene de una causa INMEDIATA/EXTERNA (golpe, corte, quemadura) o de uso/posición (sobreesfuerzo, mala postura)?",
+        "si": { "resultado": "DOLOR POR LESIÓN/ESTÍMULO INMEDIATO (golpe, quemadura, sobreesfuerzo, postura, etc.)" },
+        "no": {
+          "pregunta": "¿Es un dolor PERSISTENTE sin causa reciente clara (crónico/neuropático/psicosomático)?",
+          "si": { "resultado": "DOLOR CRÓNICO/NEUROPÁTICO/PSICOSOMÁTICO (lumbalgia crónica, neuropatía, somatización, etc.)" },
+          "no": { "resultado": "DOLOR NO ESPECIFICADO (agudo o crónico, local o difuso)" }
+        }
+      }
+    },
+    "no": {
+      "pregunta": "¿Es hambre o sed? (incluye apetito, antojo)",
+      "si": { "resultado": "IMPULSO FISIOLÓGICO (hambre, sed, apetito, antojo, etc.)" },
+      "no": {
+        "pregunta": "¿Es sueño, cansancio o fatiga?",
+        "si": { "resultado": "ESTADO FISIOLÓGICO (sueño, fatiga, agotamiento, somnolencia, etc.)" },
+        "no": {
+          "pregunta": "¿Es náusea, mareo, picazón, escalofrío o tensión corporal?",
+          "si": { "resultado": "OTRAS SENSACIONES INTERNAS (náusea, mareo, picazón, escalofrío, tensión, etc.)" },
+          "no": { "resultado": "SENSACIÓN CORPORAL INTERNA NO ESPECIFICADA" }
+        }
+      }
+    }
+  },
+  "no": {
+    "pregunta": "¿Se trata de un SUCESO, PROCESO o ACCIÓN? (algo que ocurre o se realiza, natural o dirigido)",
+    "si": {
+      "pregunta": "¿Es un PROCESO NATURAL (sin intención humana directa)?",
+      "si": { "resultado": "PROCESO NATURAL (erosión, evaporación, crecimiento, selección natural, meteorización, ciclo del agua, etc.)" },
+      "no": {
+        "pregunta": "¿Es una ACCIÓN HUMANA INDIVIDUAL? (acto personal: correr, escribir, pensar, decidir, imaginar, etc.)",
+        "si": { "resultado": "ACCIÓN HUMANA INDIVIDUAL (correr, escribir, pensar, decidir, etc.)" },
+        "no": {
+          "pregunta": "¿Es una ACCIÓN COLECTIVA o SOCIAL? (actividad coordinada o institucional: negociar, enseñar, cooperar, votar, legislar, etc.)",
+          "si": { "resultado": "ACCIÓN COLECTIVA/SOCIAL (negociar, enseñar, cooperar, votar, etc.)" },
+          "no": {
+            "pregunta": "¿Es un SUCESO/HECHO (histórico, meteorológico, deportivo, mental) más que una acción? (ocurre sin agente claro o se describe como evento)",
+            "si": { "resultado": "SUCESO/EVENTO (terremoto, accidente, descubrimiento, inspiración súbita, etc.)" },
+            "no": { "resultado": "PROCESO/ACCIÓN NO CLASIFICADO (flujo, cambio, transición, etc.)" }
+          }
+        }
+      }
+    },
+    "no": {
+      "pregunta": "¿Se trata de una CUALIDAD o ATRIBUTO que describe algo o a alguien?",
+      "si": {
+        "pregunta": "¿Es una CUALIDAD OBJETIVA y medible? (física o cuantificable: rapidez, altura, temperatura, masa, precisión, rendimiento, etc.)",
+        "si": { "resultado": "CUALIDAD OBJETIVA/MEDIBLE (rapidez, altura, precisión, etc.)" },
+        "no": {
+          "pregunta": "¿Es una CUALIDAD PSICOLÓGICA o de personalidad? (inteligencia, creatividad, apertura, responsabilidad, etc.)",
+          "si": { "resultado": "CUALIDAD PSICOLÓGICA (inteligencia, creatividad, rasgos de personalidad, etc.)" },
+          "no": {
+            "pregunta": "¿Es una CUALIDAD ÉTICA o MORAL? (honestidad, justicia, humildad, valentía, compasión, etc.)",
+            "si": { "resultado": "CUALIDAD ÉTICA/MORAL (honestidad, justicia, humildad, etc.)" },
+            "no": {
+              "pregunta": "¿Es una CUALIDAD ESTÉTICA? (belleza, armonía, elegancia, fealdad, estilo, etc.)",
+              "si": { "resultado": "CUALIDAD ESTÉTICA (belleza, armonía, elegancia, etc.)" },
+              "no": { "resultado": "OTRA CUALIDAD/ATRIBUTO (rareza, importancia, utilidad, etc.)" }
+            }
+          }
+        }
+      },
+      "no": {
+        "pregunta": "¿Se trata de una CAPACIDAD, TALENTO o HABILIDAD DESARROLLABLE? (mejora con práctica/aprendizaje)",
+        "si": {
+          "pregunta": "¿Predomina lo físico?",
+          "si": { "resultado": "HABILIDAD FÍSICA (agilidad, fuerza, resistencia, coordinación, etc.)" },
+          "no": {
+            "pregunta": "¿Predomina lo cognitivo/metacognitivo?",
+            "si": { "resultado": "HABILIDAD COGNITIVA/METACOGNITIVA (concentración, análisis, planificación, etc.)" },
+            "no": {
+              "pregunta": "¿Predomina lo social/comunicativo?",
+              "si": { "resultado": "HABILIDAD SOCIAL/COMUNICATIVA (empatía, liderazgo, etc.)" },
+              "no": {
+                "pregunta": "¿Predomina lo creativo/artístico/técnico?",
+                "si": { "resultado": "HABILIDAD CREATIVA/ARTÍSTICA/TÉCNICA (música, dibujo, programación, etc.)" },
+                "no": { "resultado": "OTRA HABILIDAD/COMPETENCIA (autorregulación, resiliencia, etc.)" }
+              }
+            }
+          }
+        },
+        "no": {
+          "pregunta": "¿Se trata de una EMOCIÓN, SENTIMIENTO o ESTADO DE ÁNIMO? (afecto de corta o larga duración; si es puramente corporal ya se clasificó antes)",
+          "si": {
+            "pregunta": "¿Es positiva (atractiva)?",
+            "si": { "resultado": "EMOCIÓN POSITIVA (alegría, amor, esperanza, gratitud, alivio, etc.)" },
+            "no": {
+              "pregunta": "¿Es negativa/aversiva?",
+              "si": { "resultado": "EMOCIÓN NEGATIVA (ira, miedo, tristeza, culpa, vergüenza, ansiedad, etc.)" },
+              "no": {
+                "pregunta": "¿Es neutra/ambivalente?",
+                "si": { "resultado": "EMOCIÓN/AFECTO NEUTRO/AMBIVALENTE (sorpresa, serenidad, etc.)" },
+                "no": {
+                  "pregunta": "¿Es una sensación emocional general (bienestar/malestar/tensión)?",
+                  "si": { "resultado": "SENSACIÓN EMOCIONAL (bienestar, malestar, tensión, etc.)" },
+                  "no": { "resultado": "AFECTO/ESTADO ANÍMICO NO ESPECIFICADO" }
+                }
+              }
+            }
+          },
+          "no": {
+            "pregunta": "¿Es un ÁREA DE CONOCIMIENTO, DISCIPLINA o SABER ORGANIZADO?",
+            "si": {
+              "pregunta": "¿Son CIENCIAS FORMALES/EXACTAS?",
+              "si": { "resultado": "CIENCIAS FORMALES/EXACTAS (matemáticas, lógica, computación teórica, estadística, etc.)" },
+              "no": {
+                "pregunta": "¿Son CIENCIAS NATURALES?",
+                "si": { "resultado": "CIENCIAS NATURALES (física, química, biología, etc.)" },
+                "no": {
+                  "pregunta": "¿Son CIENCIAS SOCIALES?",
+                  "si": { "resultado": "CIENCIAS SOCIALES (sociología, economía, etc.)" },
+                  "no": {
+                    "pregunta": "¿Son HUMANIDADES/ARTES?",
+                    "si": { "resultado": "HUMANIDADES Y ARTES (filosofía, historia, literatura, etc.)" },
+                    "no": {
+                      "pregunta": "¿Son ÁREAS APLICADAS/PROFESIONALES?",
+                      "si": { "resultado": "SABERES APLICADOS/PROFESIONALES (ingeniería, medicina, derecho, etc.)" },
+                      "no": { "resultado": "OTRA ÁREA DE CONOCIMIENTO (interdisciplinarias, data science, etc.)" }
+                    }
+                  }
+                }
+              }
+            },
+            "no": {
+              "pregunta": "¿Es una CONSTRUCCIÓN SOCIAL o CULTURAL?",
+              "si": {
+                "pregunta": "¿Son VALORES/PRINCIPIOS?",
+                "si": { "resultado": "VALORES/PRINCIPIOS (respeto, solidaridad, libertad, equidad, etc.)" },
+                "no": {
+                  "pregunta": "¿Son NORMAS/SISTEMAS NORMATIVOS?",
+                  "si": { "resultado": "NORMAS Y SISTEMAS NORMATIVOS (leyes, moral, religión, costumbres, etc.)" },
+                  "no": {
+                    "pregunta": "¿Son INSTITUCIONES/ORGANIZACIONES?",
+                    "si": { "resultado": "INSTITUCIÓN/ORGANIZACIÓN SOCIAL (familia, Estado, empresa, etc.)" },
+                    "no": {
+                      "pregunta": "¿Son ROLES/ESTATUS/IDENTIDADES SOCIALES?",
+                      "si": { "resultado": "ROL/ESTATUS/IDENTIDAD SOCIAL (ciudadano, docente, paciente, etc.)" },
+                      "no": { "resultado": "OTRA CONSTRUCCIÓN SOCIAL/CULTURAL (tradiciones, subculturas, modas, reputación, prestigio, etc.)" }
+                    }
+                  }
+                }
+              },
+              "no": {
+                "pregunta": "¿Se relaciona con CREENCIAS ESPIRITUALES, nociones EXISTENCIALES o conceptos METAFÍSICOS?",
+                "si": {
+                  "pregunta": "¿Es una PRÁCTICA ESPIRITUAL?",
+                  "si": { "resultado": "PRÁCTICA ESPIRITUAL (meditación, oración, ritual, etc.)" },
+                  "no": {
+                    "pregunta": "¿Es un CONCEPTO ONTOLÓGICO/METAFÍSICO?",
+                    "si": { "resultado": "CONCEPTO METAFÍSICO/ONTOLÓGICO (ser, nada, alma, destino, etc.)" },
+                    "no": {
+                      "pregunta": "¿Es una CUESTIÓN EXISTENCIAL/DE SENTIDO (vida, muerte, propósito, consciencia)?",
+                      "si": { "resultado": "CUESTIÓN EXISTENCIAL (vida, muerte, sentido, consciencia, etc.)" },
+                      "no": { "resultado": "OTRA CREENCIA/DOCTRINA ESPIRITUAL (cosmologías, teologías, etc.)" }
+                    }
+                  }
+                },
+                "no": {
+                  "pregunta": "¿Es una IDEA, SÍMBOLO o CONCEPTO ABSTRACTO?",
+                  "si": {
+                    "pregunta": "¿Pertenece al LENGUAJE y SÍMBOLOS?",
+                    "si": { "resultado": "LENGUAJE Y SÍMBOLOS (idioma, palabras, gramática, números, signos, notación musical, símbolos lógicos, emojis, etc.)" },
+                    "no": {
+                      "pregunta": "¿Es un OBJETO/MARCO MATEMÁTICO-LÓGICO?",
+                      "si": { "resultado": "ABSTRACCIÓN MATEMÁTICA/LÓGICA (número, infinito, algoritmo, causalidad, etc.)" },
+                      "no": {
+                        "pregunta": "¿Es un MODELO/TEORÍA/CONCEPTO CIENTÍFICO?",
+                        "si": { "resultado": "MODELO/TEORÍA/CONCEPTO CIENTÍFICO (evolución, entropía, campo, etc.)" },
+                        "no": {
+                          "pregunta": "¿Es de INFORMÁTICA/SOFTWARE/ALGORITMOS?",
+                          "si": { "resultado": "CONCEPTO DE INFORMACIÓN Y CÓMPUTO (algoritmo, protocolo, software, IA, etc.)" },
+                          "no": { "resultado": "ABSTRACCIÓN/IDEA GENERAL (teoría de juegos, justicia distributiva, contrato social, etc.)" }
+                        }
+                      }
+                    }
+                  },
+                  "no": {
+                    "pregunta": "¿Se trata de INFORMACIÓN, DATOS, MEDIDAS o VALORES ABSTRACTOS?",
+                    "si": {
+                      "pregunta": "¿Es DATO/HECHO/EVIDENCIA/CONOCIMIENTO?",
+                      "si": { "resultado": "DATO/HECHO/EVIDENCIA/CONOCIMIENTO (verdad, mentira, evidencia, metadatos, etc.)" },
+                      "no": {
+                        "pregunta": "¿Es MAGNITUD/ÍNDICE/VALOR (económico o de riesgo)?",
+                        "si": { "resultado": "VALOR/MAGNITUD/ÍNDICE (precio, deuda, riesgo, ranking, etc.)" },
+                        "no": { "resultado": "INFORMACIÓN ABSTRACTA (señal, código, clave, rumor, desinformación, etc.)" }
+                      }
+                    },
+                    "no": {
+                      "pregunta": "¿Es una ENTIDAD HIPOTÉTICA/NO COMPROBADA o de FICCIÓN/IMAGINARIO?",
+                      "si": {
+                        "pregunta": "¿Es FICCIÓN/IMAGINARIO (dragón, magia, mundos ficticios)?",
+                        "si": { "resultado": "FICCIÓN/IMAGINARIO (dragón, unicornio, magia, superpoderes, etc.)" },
+                        "no": {
+                          "pregunta": "¿Es HIPÓTESIS/ENTIDAD NO CONFIRMADA científicamente (vida extraterrestre, multiverso)?",
+                          "si": { "resultado": "HIPÓTESIS/ENTIDAD NO CONFIRMADA (vida extraterrestre, multiverso, etc.)" },
+                          "no": {
+                            "pregunta": "¿Extraterrestres como PERSONAJES DE FICCIÓN específicos?",
+                            "si": { "resultado": "EXTRATERRESTRES DE FICCIÓN (marcianos, xenomorfos, etc.)" },
+                            "no": { "resultado": "OTRO IMAGINARIO/HIPOTÉTICO (leyendas urbanas, críptidos conceptuales, etc.)" }
+                          }
+                        }
+                      },
+                      "no": { "resultado": "CONCEPTO INTANGIBLE GENERAL (cajón de sastre/ninguna de las anteriores)" }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
