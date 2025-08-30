@@ -1,239 +1,399 @@
 {
-  "pregunta": "¿Fue creado o fabricado por humanos?",
-  "si": {
-    "pregunta": "¿Tiene electrónica o depende de electricidad para funcionar?",
+    "pregunta": "¿Fue creado o fabricado por humanos?",
     "si": {
-      "pregunta": "¿Su función principal es comunicar, calcular o mostrar información?",
-      "si": { "resultado": "DISPOSITIVO ELECTRÓNICO (teléfono, computadora, televisor, sensor)" },
-      "no": {
-        "pregunta": "¿Su función principal es ILUMINAR?",
-        "si": { "resultado": "ILUMINACIÓN (foco/LED, linterna, lámpara, proyector)" },
-        "no": {
-          "pregunta": "¿Su función principal es EMITIR SONIDO?",
-          "si": { "resultado": "AUDIO (altavoz, auriculares, micrófono, sirena)" },
-          "no": { "resultado": "ELECTRODOMÉSTICO / HERRAMIENTA ELÉCTRICA (taladro, licuadora, horno, aspiradora)" }
-        }
-      }
-    },
-    "no": {
-      "pregunta": "¿Sirve para TRANSPORTAR personas o cosas?",
-      "si": {
-        "pregunta": "¿Se mueve principalmente por TIERRA?",
-        "si": { "resultado": "TRANSPORTE TERRESTRE (auto, bici, tren, moto)" },
-        "no": {
-          "pregunta": "¿Se mueve principalmente por AIRE?",
-          "si": { "resultado": "TRANSPORTE AÉREO (avión, helicóptero, dron, globo)" },
-          "no": { "resultado": "TRANSPORTE ACUÁTICO (barco, lancha, kayak)" }
-        }
-      },
-      "no": {
-        "pregunta": "¿Sirve para CONTENER o GUARDAR cosas?",
+        "pregunta": "¿Tiene electrónica o depende de electricidad para funcionar?",
         "si": {
-          "pregunta": "¿Es un envase pequeño/mediano (portátil)?",
-          "si": { "resultado": "ENVASE / CONTENEDOR (botella, frasco, caja, lata, bolsa)" },
-          "no": { "resultado": "DEPÓSITO / ALMACENAMIENTO (tanque, silo, baúl, bidón)" }
-        },
-        "no": {
-          "pregunta": "¿Es una PRENDA de vestir o un ACCESORIO?",
-          "si": {
-            "pregunta": "¿Se usa en cabeza / manos / pies?",
-            "si": { "resultado": "ACCESORIO (sombrero/gorra, guantes, calcetines/zapatos)" },
-            "no": { "resultado": "PRENDA (camisa, pantalón, abrigo, vestido)" }
-          },
-          "no": {
-            "pregunta": "¿Es un MUEBLE?",
+            "pregunta": "¿Su función principal es comunicar, calcular o mostrar información?",
             "si": {
-              "pregunta": "¿Sirve para sentarse/dormir/comer?",
-              "si": { "resultado": "MUEBLE DE USO (silla, sofá, cama, mesa)" },
-              "no": { "resultado": "MUEBLE DE ALMACENAJE (clóset, cajonera, estantería)" }
+                "resultado": "DISPOSITIVO ELECTRÓNICO (teléfono, computadora, televisor, sensor, calculadora)"
             },
             "no": {
-              "pregunta": "¿Es una HERRAMIENTA o UTENSILIO manual (cortar, medir, sujetar)?",
-              "si": { "resultado": "HERRAMIENTA / UTENSILIO (cuchillo, martillo, destornillador, regla, pinzas)" },
-              "no": {
-                "pregunta": "¿Es un INSTRUMENTO MUSICAL?",
+                "pregunta": "¿Su función principal es ILUMINAR?",
                 "si": {
-                  "pregunta": "¿Es de CUERDA?",
-                  "si": { "resultado": "INSTRUMENTO DE CUERDA (guitarra, violín, bajo)" },
-                  "no": {
-                    "pregunta": "¿Es de VIENTO?",
-                    "si": { "resultado": "INSTRUMENTO DE VIENTO (flauta, saxofón, trompeta)" },
-                    "no": {
-                      "pregunta": "¿Es de PERCUSIÓN?",
-                      "si": { "resultado": "INSTRUMENTO DE PERCUSIÓN (batería, tambor, marimba)" },
-                      "no": { "resultado": "INSTRUMENTO MUSICAL (otro/mixto)" }
-                    }
-                  }
+                    "resultado": "ILUMINACIÓN (foco/LED, linterna, lámpara, proyector)"
                 },
                 "no": {
-                  "pregunta": "¿Es ALIMENTO o BEBIDA? (incluye elaborados por humanos)",
-                  "si": {
-                    "pregunta": "¿Está listo para consumo directo o es una preparación/ingrediente humano?",
+                    "pregunta": "¿Su función principal es EMITIR SONIDO?",
                     "si": {
-                      "pregunta": "¿Es BEBIDA?",
-                      "si": {
-                        "pregunta": "¿Contiene alcohol?",
-                        "si": { "resultado": "BEBIDA ALCOHÓLICA (cerveza, vino, tequila, mezcal, sidra, cócteles, etc.)" },
-                        "no": { "resultado": "BEBIDA NO ALCOHÓLICA (agua embotellada, refresco, jugo pasteurizado, café preparado, té, leche, bebidas vegetales, etc.)" }
-                      },
-                      "no": {
-                        "pregunta": "¿Es DULCE/PANIFICADO o SALADO?",
-                        "si": { "resultado": "COMIDA ELABORADA DULCE (pan dulce, pastel, galletas, chocolate, mermelada, dulce de leche, etc.)" },
-                        "no": { "resultado": "COMIDA ELABORADA SALADA (quesos, encurtidos, salsas, sopas listas, embutidos, enlatados, etc.)" }
-                      }
+                        "resultado": "AUDIO (altavoz, auriculares, micrófono, sirena)"
                     },
                     "no": {
-                      "pregunta": "¿Es un INGREDIENTE/BASE culinaria (típicamente no se consume solo)?",
-                      "si": { "resultado": "INGREDIENTE CULINARIO (harinas, aceites, azúcar, sal, especias, levadura, vinagre, etc.)" },
-                      "no": { "resultado": "ALIMENTO LISTO PARA CONSUMO (snacks, barritas, yogur listo, cereales listos, etc.)" }
+                        "resultado": "ELECTRODOMÉSTICO / HERRAMIENTA ELÉCTRICA (taladro, licuadora, horno, aspiradora)"
                     }
-                  },
-                  "no": {
-                    "pregunta": "¿Es un MATERIAL MANUFACTURADO (materia prima industrial)?",
-                    "si": { "resultado": "MATERIAL MANUFACTURADO (plástico, vidrio, papel, tela, acero, cemento, cerámica)" },
-                    "no": { "resultado": "OTRO ARTIFICIAL (juguete, artículo deportivo, arte/ornamento, peluche)" }
-                  }
                 }
-              }
             }
-          }
-        }
-      }
-    }
-  },
-  "no": {
-    "pregunta": "¿Es SÓLIDO en su estado natural más común (0–30 °C)?",
-    "si": {
-      "pregunta": "¿Tiene ORIGEN BIOLÓGICO reciente (parte de planta/animal/hongo)?",
-      "si": {
-        "pregunta": "¿Es COMESTIBLE para humanos de uso común?",
-        "si": {
-          "pregunta": "¿PROVIENE de PLANTAS?",
-          "si": {
-            "pregunta": "¿La parte comestible es la estructura reproductiva con semillas? (fruto en sentido botánico)",
+        },
+        "no": {
+            "pregunta": "¿Sirve para TRANSPORTAR personas o cosas?",
             "si": {
-              "pregunta": "¿Se consume principalmente DULCE y en fresco? (criterio culinario)",
-              "si": {
-                "resultado": "FRUTA (culinario, dulce/fresco) (manzana, pera, plátano/banana, fresa, frambuesa, arándano, uva, naranja, mandarina, limón, toronja, mango, piña, papaya, melón, sandía, durazno, ciruela, cereza, higo, kiwi, granada, etc.)"
-              },
-              "no": {
-                "pregunta": "¿Es un fruto botánico usado como VERDURA (sabores neutros/salados)?",
+                "pregunta": "¿Se mueve principalmente por TIERRA?",
                 "si": {
-                  "resultado": "VERDURA FRUTAL (fruto botánico de uso salado) (tomate/jitomate, chiles/pimientos, pepino, calabaza/calabacita, berenjena, chayote, aguacate, aceituna, ejote/vaina tierna, chícharo/edamame, etc.)"
+                    "resultado": "TRANSPORTE TERRESTRE (auto, bici, tren, moto)"
                 },
                 "no": {
-                  "resultado": "FRUTO BOTÁNICO POCO DULCE / USO MIXTO (aceituna, aguacate, bayas poco dulces u otros; clasificar según uso local)"
+                    "pregunta": "¿Se mueve principalmente por AIRE?",
+                    "si": {
+                        "resultado": "TRANSPORTE AÉREO (avión, helicóptero, dron, globo aeroestatico)"
+                    },
+                    "no": {
+                        "resultado": "TRANSPORTE ACUÁTICO (barco, lancha, kayak, yate)"
+                    }
                 }
-              }
             },
             "no": {
-              "pregunta": "VERDURAS/HORTALIZAS por parte de planta (criterio anatómico)",
-              "si": {
-                "resultado": "HOJAS (lechuga, espinaca, acelga, kale, repollo/col, berros, hojas de betabel, etc.)"
-              },
-              "no": {
-                "pregunta": "¿Es TALLO/PECÍOLO/FLOR?",
-                "si": { "resultado": "TALLOS y FLORES (apio, espárrago, brócoli, coliflor, alcachofa, nopal, brotes de bambú, etc.)" },
+                "pregunta": "¿Sirve para CONTENER o GUARDAR cosas?",
+                "si": {
+                    "pregunta": "¿Es un envase pequeño/mediano (portátil)?",
+                    "si": {
+                        "resultado": "ENVASE / CONTENEDOR (botella, frasco, caja, lata, bolsa)"
+                    },
+                    "no": {
+                        "resultado": "DEPÓSITO / ALMACENAMIENTO (tanque, silo, bidón, garrafon, sisterna)"
+                    }
+                },
                 "no": {
-                  "pregunta": "¿Es RAÍZ/BULBO/TUBÉRCULO?",
-                  "si": { "resultado": "RAÍCES, BULBOS y TUBÉRCULOS (zanahoria, betabel, rábano, jengibre, cúrcuma, cebolla, ajo, papa/patata, camote/batata, yuca/mandioca, nabo, poro/puerro, etc.)" },
-                  "no": {
-                    "pregunta": "¿Es SEMILLA/GRANO o LEGUMINOSA seca?",
-                    "si": { "resultado": "SEMILLAS y CEREALES (arroz, maíz, trigo, avena, quinoa, amaranto, chía, linaza, ajonjolí/sésamo) y LEGUMINOSAS SECAS (frijol, lenteja, garbanzo, habas, soya)" },
-                    "no": { "resultado": "HONGOS COMESTIBLES* (champiñón, portobello, shiitake, setas, trufa, etc.) *No son vegetales, pero se tratan como verdura en cocina." }
-                  }
+                    "pregunta": "¿Es una PRENDA de vestir o un ACCESORIO?",
+                    "si": {
+                        "pregunta": "¿Se usa en cabeza / manos / pies?",
+                        "si": {
+                            "resultado": "ACCESORIO (sombrero/gorra, guantes, calcetines/zapatos, joyeria)"
+                        },
+                        "no": {
+                            "resultado": "PRENDA (camisa, player, pantalón, abrigo, vestido)"
+                        }
+                    },
+                    "no": {
+                        "pregunta": "¿Es un MUEBLE?",
+                        "si": {
+                            "pregunta": "¿Sirve para sentarse/dormir/comer?",
+                            "si": {
+                                "resultado": "MUEBLE DE USO (silla, sofá, cama, mesa, estufa)"
+                            },
+                            "no": {
+                                "resultado": "MUEBLE DE ALMACENAJE (clóset, cajonera, estantería, baul, refrigerador, hielera)"
+                            }
+                        },
+                        "no": {
+                            "pregunta": "¿Se utiliza para escribir, dibujar o para actividades escolares/de oficina?",
+                            "si": {
+                                "resultado": "ÚTIL ESCOLAR / DE OFICINA (lápiz, pluma, regla, tijeras, borrador)"
+                            },
+                            "no": {
+                                "pregunta": "¿Su función principal es golpear, atornillar, cortar o sujetar cosas (reparación/construcción)?",
+                                "si": {
+                                    "resultado": "HERRAMIENTA DE REPARACIÓN / CONSTRUCCIÓN (martillo, destornillador, pinzas, serrucho)"
+                                },
+                                "no": {
+                                    "pregunta": "¿Se utiliza para tareas de jardinería o limpieza de áreas grandes?",
+                                    "si": {
+                                        "resultado": "HERRAMIENTA DE JARDINERÍA / LIMPIEZA (rastrillo, pala, escoba)"
+                                    },
+                                    "no": {
+                                        "pregunta": "¿Es un INSTRUMENTO MUSICAL?",
+                                        "si": {
+                                            "pregunta": "¿Es de CUERDA?",
+                                            "si": {
+                                                "resultado": "INSTRUMENTO DE CUERDA (guitarra, violín, bajo)"
+                                            },
+                                            "no": {
+                                                "pregunta": "¿Es de VIENTO?",
+                                                "si": {
+                                                    "resultado": "INSTRUMENTO DE VIENTO (flauta, saxofón, trompeta)"
+                                                },
+                                                "no": {
+                                                    "pregunta": "¿Es de PERCUSIÓN?",
+                                                    "si": {
+                                                        "resultado": "INSTRUMENTO DE PERCUSIÓN (batería, tambor, marimba)"
+                                                    },
+                                                    "no": {
+                                                        "resultado": "INSTRUMENTO MUSICAL (otro/mixto)"
+                                                    }
+                                                }
+                                            }
+                                        },
+                                        "no": {
+                                            "pregunta": "¿Es una bebida?",
+                                            "si": {
+                                                "pregunta": "¿Contiene alcohol?",
+                                                "si": {
+                                                    "pregunta": "¿Se elabora a partir de agave?",
+                                                    "si": {
+                                                        "resultado": "BEBIDA DE AGAVE (Tequila, Mezcal)"
+                                                    },
+                                                    "no": {
+                                                        "pregunta": "¿Se elabora por fermentación de uvas o cereales?",
+                                                        "si": {
+                                                            "resultado": "BEBIDA FERMENTADA (Vino, Cerveza, Sidra)"
+                                                        },
+                                                        "no": {
+                                                            "resultado": "LICOR / COCTEL"
+                                                        }
+                                                    }
+                                                },
+                                                "no": {
+                                                    "pregunta": "¿Es una bebida carbonatada (tiene gas)?",
+                                                    "si": {
+                                                        "resultado": "REFRESCO / SODA / AGUA MINERAL"
+                                                    },
+                                                    "no": {
+                                                        "pregunta": "¿Normalmente se sirve caliente?",
+                                                        "si": {
+                                                            "resultado": "BEBIDA CALIENTE (Café, Té, Chocolate caliente)"
+                                                        },
+                                                        "no": {
+                                                            "resultado": "BEBIDA FRÍA SIN GAS (Jugo procesado, Leche, Agua de sabor)"
+                                                        }
+                                                    }
+                                                }
+                                            },
+                                            "no": {
+                                                "pregunta": "¿Se considera un plato fuerte o principal?",
+                                                "si": {
+                                                    "pregunta": "¿Su base principal es la pasta?",
+                                                    "si": {
+                                                        "resultado": "PLATO DE PASTA (Espagueti, Lasaña, Fettuccine)"
+                                                    },
+                                                    "no": {
+                                                        "pregunta": "¿Se sirve sobre o dentro de una tortilla?",
+                                                        "si": {
+                                                            "resultado": "PLATO BASADO EN TORTILLA (Tacos, Quesadillas, Enchiladas)"
+                                                        },
+                                                        "no": {
+                                                            "pregunta": "¿Se sirve entre dos piezas de pan?",
+                                                            "si": {
+                                                                "resultado": "SÁNDWICH / HAMBURGUESA / TORTA"
+                                                            },
+                                                            "no": {
+                                                                "pregunta": "¿Es una preparación líquida que se come con cuchara?",
+                                                                "si": {
+                                                                    "resultado": "SOPA / CREMA / GUISO"
+                                                                },
+                                                                "no": {
+                                                                    "resultado": "OTRO PLATO FUERTE (Pizza, Sushi, Arroces preparados)"
+                                                                }
+                                                            }
+                                                        }
+                                                    }
+                                                },
+                                                "no": {
+                                                    "pregunta": "¿Es predominantemente dulce?",
+                                                    "si": {
+                                                        "pregunta": "¿Requiere hornearse, como un pastel, galleta o pan?",
+                                                        "si": {
+                                                            "resultado": "POSTRE HORNEADO (Pastel, Galletas, Pan dulce, Flan)"
+                                                        },
+                                                        "no": {
+                                                            "pregunta": "¿Es principalmente una golosina de azúcar o chocolate?",
+                                                            "si": {
+                                                                "resultado": "DULCES / GOLOSINAS (Gomitas, Chocolates, Caramelos)"
+                                                            },
+                                                            "no": {
+                                                                "resultado": "POSTRE FRÍO (Helado, Gelatina)"
+                                                            }
+                                                        }
+                                                    },
+                                                    "no": {
+                                                        "resultado": "SNACK SALADO (Papas fritas, Palomitas, Frituras)"
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
                 }
-              }
             }
-          },
-          "no": {
-            "resultado": "ALIMENTO NATURAL NO VEGETAL (carne, pescado, mariscos, huevo, leche, miel, algas comestibles, etc.)"
-          }
-        },
-        "no": {
-          "pregunta": "¿PROVIENE de PLANTAS?",
-          "si": { "resultado": "BIOMASA VEGETAL NO COMESTIBLE (madera, corcho, fibras: algodón/lino, resina, ámbar)" },
-          "no": { "resultado": "BIOMASA ANIMAL/FÚNGICA NO COMESTIBLE (hueso, marfil, concha, cuero, lana, esponja natural)" }
         }
-      },
-      "no": {
-        "pregunta": "¿Es un MINERAL cristalino (composición y estructura definidas)?",
-        "si": {
-          "pregunta": "¿Se usa como MENA/METALES?",
-          "si": { "resultado": "MINERAL METÁLICO (hematita/Fe, bauxita/Al, calcopirita/Cu, galena/Pb)" },
-          "no": {
-            "pregunta": "¿Es mineral INDUSTRIAL o GEMA?",
-            "si": { "resultado": "MINERAL INDUSTRIAL/GEMA (cuarzo, calcita, halita/sal, yeso, talco, arcillas, diamante, rubí)" },
-            "no": { "resultado": "OTRO MINERAL (silicatos, carbonatos, óxidos, sulfuros, fosfatos, haluros…)" }
-          }
-        },
-        "no": {
-          "pregunta": "¿Es una ROCA (agregado de minerales) consolidada?",
-          "si": {
-            "pregunta": "¿Es ÍGNEA (enfriamiento de magma)?",
-            "si": { "resultado": "ROCA ÍGNEA (granito, basalto, obsidiana)" },
-            "no": {
-              "pregunta": "¿Es SEDIMENTARIA (compactación/cementación)?",
-              "si": { "resultado": "ROCA SEDIMENTARIA (arenisca, caliza, conglomerado)" },
-              "no": { "resultado": "ROCA METAMÓRFICA (mármol, pizarra, gneis)" }
-            }
-          },
-          "no": {
-            "pregunta": "¿Es SEDIMENTO/SUELO no cementado (granos sueltos)?",
-            "si": { "resultado": "SEDIMENTO / SUELO (grava, arena, limo, arcilla)" },
-            "no": {
-              "pregunta": "¿Es un ELEMENTO NATIVO?",
-              "si": { "resultado": "ELEMENTO NATIVO (oro, plata, cobre, azufre, carbono: grafito/diamante)" },
-              "no": { "resultado": "OTRO SÓLIDO NATURAL (carbón, hielo, sales hidratadas)" }
-            }
-          }
-        }
-      }
     },
     "no": {
-      "pregunta": "¿Es LÍQUIDO en su estado natural más común?(0–30 °C)",
-      "si": {
-        "pregunta": "¿Es AGUA?",
-        "si": { "resultado": "AGUA (dulce/salada; puede estar purificada o no)" },
-        "no": {
-          "pregunta": "¿Es un HIDROCARBURO natural?",
-          "si": { "resultado": "PETRÓLEO CRUDO / CONDENSADOS" },
-          "no": {
-            "pregunta": "¿Es LAVA/MAGMA o METAL LÍQUIDO natural (mercurio)?",
-            "si": { "resultado": "LAVA / MERCURIO NATURAL" },
-            "no": { "resultado": "OTRO LÍQUIDO NATURAL (salmueras, aguas termales, ácidos naturales)" }
-          }
-        }
-      },
-      "no": {
-        "pregunta": "¿Es GAS en su estado natural más común?",
+        "pregunta": "¿Es SÓLIDO en su estado natural más común (0–30 °C)?",
         "si": {
-          "pregunta": "¿Es MEZCLA de gases del aire?",
-          "si": { "resultado": "AIRE (mezcla: N₂, O₂, Ar, CO₂, etc.)" },
-          "no": {
-            "pregunta": "¿Es NITRÓGENO (N₂)?",
-            "si": { "resultado": "NITRÓGENO (N₂)" },
-            "no": {
-              "pregunta": "¿Es OXÍGENO (O₂)?",
-              "si": { "resultado": "OXÍGENO (O₂)" },
-              "no": {
-                "pregunta": "¿Es DIÓXIDO DE CARBONO (CO₂)?",
-                "si": { "resultado": "DIÓXIDO DE CARBONO (CO₂)" },
+            "pregunta": "¿Tiene ORIGEN BIOLÓGICO reciente (parte de planta/animal/hongo)?",
+            "si": {
+                "pregunta": "¿Es COMESTIBLE para humanos de uso común?",
+                "si": {
+                    "pregunta": "¿PROVIENE de PLANTAS?",
+                    "si": {
+                        "pregunta": "¿La parte comestible es la estructura reproductiva con semillas? (fruto en sentido botánico)",
+                        "si": {
+                            "pregunta": "¿Se consume principalmente DULCE y en fresco? (criterio culinario)",
+                            "si": {
+                                "resultado": "FRUTA (culinario, dulce/fresco) (manzana, pera, plátano/banana, fresa, frambuesa, arándano, uva, naranja, mandarina, limón, toronja, mango, piña, papaya, melón, sandía, durazno, ciruela, cereza, higo, kiwi, granada, etc.)"
+                            },
+                            "no": {
+                                "pregunta": "¿Es un fruto botánico usado como VERDURA (sabores neutros/salados)?",
+                                "si": {
+                                    "resultado": "VERDURA FRUTAL (fruto botánico de uso salado) (tomate/jitomate, chiles/pimientos, pepino, calabaza/calabacita, berenjena, chayote, aguacate, aceituna, ejote/vaina tierna, chícharo/edamame, etc.)"
+                                },
+                                "no": {
+                                    "resultado": "FRUTO BOTÁNICO POCO DULCE / USO MIXTO (aceituna, aguacate, bayas poco dulces u otros; clasificar según uso local)"
+                                }
+                            }
+                        },
+                        "no": {
+                            "pregunta": "VERDURAS/HORTALIZAS por parte de planta (criterio anatómico)",
+                            "si": {
+                                "resultado": "HOJAS (lechuga, espinaca, acelga, kale, repollo/col, berros, hojas de betabel, etc.)"
+                            },
+                            "no": {
+                                "pregunta": "¿Es TALLO/PECÍOLO/FLOR?",
+                                "si": {
+                                    "resultado": "TALLOS y FLORES (apio, espárrago, brócoli, coliflor, alcachofa, nopal, brotes de bambú, etc.)"
+                                },
+                                "no": {
+                                    "pregunta": "¿Es RAÍZ/BULBO/TUBÉRCULO?",
+                                    "si": {
+                                        "resultado": "RAÍCES, BULBOS y TUBÉRCULOS (zanahoria, betabel, rábano, jengibre, cúrcuma, cebolla, ajo, papa/patata, camote/batata, yuca/mandioca, nabo, poro/puerro, etc.)"
+                                    },
+                                    "no": {
+                                        "pregunta": "¿Es SEMILLA/GRANO o LEGUMINOSA seca?",
+                                        "si": {
+                                            "resultado": "SEMILLAS y CEREALES (arroz, maíz, trigo, avena, quinoa, amaranto, chía, linaza, ajonjolí/sésamo) y LEGUMINOSAS SECAS (frijol, lenteja, garbanzo, habas, soya)"
+                                        },
+                                        "no": {
+                                            "resultado": "HONGOS COMESTIBLES* (champiñón, portobello, shiitake, setas, trufa, etc.) *No son vegetales, pero se tratan como verdura en cocina."
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    },
+                    "no": {
+                        "resultado": "ALIMENTO NATURAL NO VEGETAL (carne, pescado, mariscos, huevo, leche, miel, algas comestibles, etc.)"
+                    }
+                },
                 "no": {
-                  "pregunta": "¿Es METANO (CH₄)?",
-                  "si": { "resultado": "METANO (CH₄)" },
-                  "no": { "resultado": "OTRO GAS NATURAL (He, Ar, H₂S, H₂…)" }
+                    "pregunta": "¿PROVIENE de PLANTAS?",
+                    "si": {
+                        "resultado": "BIOMASA VEGETAL NO COMESTIBLE (madera, corcho, fibras: algodón/lino, resina, ámbar)"
+                    },
+                    "no": {
+                        "resultado": "BIOMASA ANIMAL/FÚNGICA NO COMESTIBLE (hueso, marfil, concha, cuero, lana, esponja natural)"
+                    }
                 }
-              }
+            },
+            "no": {
+                "pregunta": "¿Es un MINERAL cristalino (composición y estructura definidas)?",
+                "si": {
+                    "pregunta": "¿Se usa como MENA/METALES?",
+                    "si": {
+                        "resultado": "MINERAL METÁLICO (hematita/Fe, bauxita/Al, calcopirita/Cu, galena/Pb)"
+                    },
+                    "no": {
+                        "pregunta": "¿Es mineral INDUSTRIAL o GEMA?",
+                        "si": {
+                            "resultado": "MINERAL INDUSTRIAL/GEMA (cuarzo, calcita, halita/sal, yeso, talco, arcillas, diamante, rubí)"
+                        },
+                        "no": {
+                            "resultado": "OTRO MINERAL (silicatos, carbonatos, óxidos, sulfuros, fosfatos, haluros…)"
+                        }
+                    }
+                },
+                "no": {
+                    "pregunta": "¿Es una ROCA (agregado de minerales) consolidada?",
+                    "si": {
+                        "pregunta": "¿Es ÍGNEA (enfriamiento de magma)?",
+                        "si": {
+                            "resultado": "ROCA ÍGNEA (granito, basalto, obsidiana)"
+                        },
+                        "no": {
+                            "pregunta": "¿Es SEDIMENTARIA (compactación/cementación)?",
+                            "si": {
+                                "resultado": "ROCA SEDIMENTARIA (arenisca, caliza, conglomerado)"
+                            },
+                            "no": {
+                                "resultado": "ROCA METAMÓRFICA (mármol, pizarra, gneis)"
+                            }
+                        }
+                    },
+                    "no": {
+                        "pregunta": "¿Es SEDIMENTO/SUELO no cementado (granos sueltos)?",
+                        "si": {
+                            "resultado": "SEDIMENTO / SUELO (grava, arena, limo, arcilla)"
+                        },
+                        "no": {
+                            "pregunta": "¿Es un ELEMENTO NATIVO?",
+                            "si": {
+                                "resultado": "ELEMENTO NATIVO (oro, plata, cobre, azufre, carbono: grafito/diamante)"
+                            },
+                            "no": {
+                                "resultado": "OTRO SÓLIDO NATURAL (carbón, hielo, sales hidratadas)"
+                            }
+                        }
+                    }
+                }
             }
-          }
         },
         "no": {
-          "pregunta": "¿Es PLASMA u OTRO estado poco común en superficie?",
-          "si": { "resultado": "PLASMA NATURAL / DESCARGA / IONIZACIÓN" },
-          "no": { "resultado": "MEZCLA / CASO ESPECIAL (barro, coloide, nieve sucia, sedimento saturado)" }
+            "pregunta": "¿Es LÍQUIDO en su estado natural más común?(0–30 °C)",
+            "si": {
+                "pregunta": "¿Es AGUA?",
+                "si": {
+                    "resultado": "AGUA (dulce/salada; puede estar purificada o no)"
+                },
+                "no": {
+                    "pregunta": "¿Es un HIDROCARBURO natural?",
+                    "si": {
+                        "resultado": "PETRÓLEO CRUDO / CONDENSADOS"
+                    },
+                    "no": {
+                        "pregunta": "¿Es LAVA/MAGMA o METAL LÍQUIDO natural (mercurio)?",
+                        "si": {
+                            "resultado": "LAVA / MERCURIO NATURAL"
+                        },
+                        "no": {
+                            "resultado": "OTRO LÍQUIDO NATURAL (salmueras, aguas termales, ácidos naturales)"
+                        }
+                    }
+                }
+            },
+            "no": {
+                "pregunta": "¿Es GAS en su estado natural más común?",
+                "si": {
+                    "pregunta": "¿Es MEZCLA de gases del aire?",
+                    "si": {
+                        "resultado": "AIRE (mezcla: N₂, O₂, Ar, CO₂, etc.)"
+                    },
+                    "no": {
+                        "pregunta": "¿Es NITRÓGENO (N₂)?",
+                        "si": {
+                            "resultado": "NITRÓGENO (N₂)"
+                        },
+                        "no": {
+                            "pregunta": "¿Es OXÍGENO (O₂)?",
+                            "si": {
+                                "resultado": "OXÍGENO (O₂)"
+                            },
+                            "no": {
+                                "pregunta": "¿Es DIÓXIDO DE CARBONO (CO₂)?",
+                                "si": {
+                                    "resultado": "DIÓXIDO DE CARBONO (CO₂)"
+                                },
+                                "no": {
+                                    "pregunta": "¿Es METANO (CH₄)?",
+                                    "si": {
+                                        "resultado": "METANO (CH₄)"
+                                    },
+                                    "no": {
+                                        "resultado": "OTRO GAS NATURAL (He, Ar, H₂S, H₂…)"
+                                    }
+                                }
+                            }
+                        }
+                    }
+                },
+                "no": {
+                    "pregunta": "¿Es PLASMA u OTRO estado poco común en superficie?",
+                    "si": {
+                        "resultado": "PLASMA NATURAL / DESCARGA / IONIZACIÓN"
+                    },
+                    "no": {
+                        "resultado": "MEZCLA / CASO ESPECIAL (barro, coloide, nieve sucia, sedimento saturado)"
+                    }
+                }
+            }
         }
-      }
     }
-  }
 }
