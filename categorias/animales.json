@@ -100,7 +100,7 @@
                   "si": { "resultado": "CONEJOS Y LIEBRES" },
                   "no": {
                     "pregunta": "¿Cola larga y aspecto de ratón/ratita?",
-                    "si": { "resultado": "RATONES Y RATAS" },
+                    "si": { "resultado": "RATON, RATA O INCLUSO PODRIA SER UNA ARDILLA " },
                     "no": {
                       "pregunta": "¿Cola esponjosa y vive en árboles (ardilla)?",
                       "si": { "resultado": "ARDILLAS" },
