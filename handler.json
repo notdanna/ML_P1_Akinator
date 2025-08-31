@@ -1134,7 +1134,7 @@
                     "no": {
                       "pregunta": "¿Se utiliza para escribir, dibujar o para actividades escolares/de oficina?",
                       "si": {
-                        "resultado": "ÚTIL ESCOLAR / DE OFICINA (lápiz, pluma, regla, tijeras, borrador)"
+                        "resultado": "ÚTIL ESCOLAR / DE OFICINA (lápiz, pluma, regla, tijeras, borrador) o incluso un juguete (muñeco, rompecabezas, pelota)"
                       },
                       "no": {
                         "pregunta": "¿Su función principal es golpear, atornillar, cortar o sujetar cosas (reparación/construcción)?",

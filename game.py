@@ -4,7 +4,7 @@ import json
 VERDE = '\033[92m'
 AMARILLO = '\033[93m'
 RESET = '\033[0m'
-TAB = " "  # 4 espacios para indentación
+TAB = " " 
 
 # Función para cargar un archivo JSON y devolver su contenido como diccionario
 def cargar_arbol(archivo):
