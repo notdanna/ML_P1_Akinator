@@ -177,7 +177,7 @@
                           "si": {
                             "pregunta": "¿Es una persona (humano)?",
                             "si": {
-                              "resultado": "HUMANO (PERSONA)"
+                              "resultado": "HUMANO (PERSONA, mujer, hombre, infante)"
                             },
                             "no": {
                               "pregunta": "¿Sin cola y cuerpo grande (gorila, chimpancé, orangután)?",
@@ -290,7 +290,7 @@
                                 "resultado": "PALOMAS"
                               },
                               "no": {
-                                "resultado": "OTRAS AVES"
+                                "resultado": "colibri o OTRAS AVES"
                               }
                             }
                           }
@@ -2184,7 +2184,7 @@
       }
     },
     "no": {
-      "pregunta": "¿Se trata de una SENSACIÓN CORPORAL INTERNA? (se percibe 'desde adentro': dolor, hambre, sed, sueño, fatiga, náusea, picazón/comezón, mareo, tensión corporal, escalofríos, etc.)",
+      "pregunta": "¿Se trata de una SENSACIÓN CORPORAL INTERNA? (se percibe 'desde adentro, principalmente por el cuerpo': dolor, hambre, sed, sueño, fatiga, náusea, picazón/comezón, mareo, tensión corporal, escalofríos, etc.)",
       "si": {
         "pregunta": "¿Es DOLOR?",
         "si": {
