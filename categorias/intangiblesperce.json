@@ -1,11 +1,11 @@
 {
-  "pregunta": "¿Es intangible pero se puede percibir sin tocarlo (con la vista, el oído, el olfato, el gusto o por temperatura)?",
+  "pregunta": "¿Es intangible (no se puede tocar), pero se puede percibir con la vista, el oído, el olfato, el gusto o por temperatura?",
   "si": {
-    "pregunta": "¿Se ve (entra por los ojos)?",
+    "pregunta": "¿Se veS?",
     "si": {
       "pregunta": "¿Hay luz visible (no es oscuridad)?",
       "si": {
-        "pregunta": "¿Te refieres a LUZ constante (no destellos o intermitentes) ni a una imagen ni a un color concreto?",
+        "pregunta": "¿Te refieres a LUZ constante (no son destellos o luces intermitentes)?",
         "si": {
           "pregunta": "¿Proviene del Sol (exterior, de día)?",
           "si": { "resultado": "LUZ SOLAR" },

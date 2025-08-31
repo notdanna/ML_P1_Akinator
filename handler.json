@@ -1,41 +1,2532 @@
 {
-  "pregunta": "¿Es tangible (se puede tocar físicamente) si se puede percibir sin tocarlo (con la vista, el oído, el olfato, el gusto o por temperatura) responda 'n'?",
+  "pregunta": "¿Es tangible (se puede tocar físicamente)?",
   "si": {
-    "pregunta": "¿Está en la Tierra? (si no, podría ser astronómico/espacial o simplemente fuera de nuestro planeta)",
+    "pregunta": "¿Está en el planeta Tierra? (si no, podría ser astronómico/espacial o simplemente fuera de nuestro planeta)",
     "si": {
       "pregunta": "¿Es un ser vivo?",
       "si": {
         "pregunta": "¿Es un animal?",
-        "si": { "redirigir": "categorias/animales.json" },
+        "si": {
+          "pregunta": "¿Es un vertebrado (tiene huesos)?",
+          "si": {
+            "pregunta": "¿Es un mamífero (pelo y da leche)?",
+            "si": {
+              "pregunta": "¿Vive solo en el agua?",
+              "si": {
+                "pregunta": "¿Tiene un agujero para respirar arriba de la cabeza (como ballenas/delfines)?",
+                "si": {
+                  "pregunta": "¿Tiene dientes visibles (tipo delfín/orca)?",
+                  "si": {
+                    "resultado": "DELFINES Y PARIENTES"
+                  },
+                  "no": {
+                    "resultado": "BALLENAS DE BARBAS"
+                  }
+                },
+                "no": {
+                  "pregunta": "¿Parece foca o lobo marino?",
+                  "si": {
+                    "pregunta": "¿Tiene orejas visibles y 'camina' con las aletas delanteras?",
+                    "si": {
+                      "resultado": "LOBOS MARINOS"
+                    },
+                    "no": {
+                      "resultado": "FOCAS"
+                    }
+                  },
+                  "no": {
+                    "resultado": "MAMÍFERO MARINO (otro)"
+                  }
+                }
+              },
+              "no": {
+                "pregunta": "¿Puede volar con alas de piel (murciélago)?",
+                "si": {
+                  "resultado": "MURCIÉLAGOS"
+                },
+                "no": {
+                  "pregunta": "¿Pone huevos (muy raro en mamíferos)?",
+                  "si": {
+                    "pregunta": "¿Tiene pico de pato y vive en ríos australianos?",
+                    "si": {
+                      "resultado": "ORNITORRINCO"
+                    },
+                    "no": {
+                      "resultado": "EQUÍDNA"
+                    }
+                  },
+                  "no": {
+                    "pregunta": "¿Tiene pezuñas (como vacas, caballos, ciervos)?",
+                    "si": {
+                      "pregunta": "¿Pata con una sola 'uña' grande (caballo/cebra/burro)?",
+                      "si": {
+                        "resultado": "CABALLOS, ZEBRAS Y BURROS"
+                      },
+                      "no": {
+                        "pregunta": "¿Tiene cuernos que no se caen (vaca, cabra, antílope)?",
+                        "si": {
+                          "resultado": "VACAS, CABRAS Y ANTÍLOPES"
+                        },
+                        "no": {
+                          "pregunta": "¿Los machos tienen astas ramificadas que se caen (venados)?",
+                          "si": {
+                            "resultado": "VENADOS Y ALCE"
+                          },
+                          "no": {
+                            "pregunta": "¿Cuello muy largo (jirafa)?",
+                            "si": {
+                              "resultado": "JIRAFA"
+                            },
+                            "no": {
+                              "pregunta": "¿Tiene joroba o es pariente del camello/llama?",
+                              "si": {
+                                "resultado": "CAMELLOS Y LLAMAS"
+                              },
+                              "no": {
+                                "pregunta": "¿Muy pesado, vive en ríos (hipopótamo)?",
+                                "si": {
+                                  "resultado": "HIPOPÓTAMO"
+                                },
+                                "no": {
+                                  "pregunta": "¿Hocico chato y colmillos grandes (cerdo/jabalí)?",
+                                  "si": {
+                                    "resultado": "CERDOS Y JABALÍES"
+                                  },
+                                  "no": {
+                                    "resultado": "OTROS ANIMALES CON PEZUÑAS"
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    },
+                    "no": {
+                      "pregunta": "¿Tiene garras y colmillos (carnívoro tipo gato/perro/oso)?",
+                      "si": {
+                        "pregunta": "¿Garras que se esconden (como los gatos)?",
+                        "si": {
+                          "resultado": "GATOS Y GRANDES GATOS (FELINOS)"
+                        },
+                        "no": {
+                          "pregunta": "¿Hocico largo y orejas triangulares (perros, lobos, zorros)?",
+                          "si": {
+                            "resultado": "PERROS, LOBOS Y ZORROS (CANINOS)"
+                          },
+                          "no": {
+                            "pregunta": "¿Muy grande, camina 'plantado' y casi sin cola (oso)?",
+                            "si": {
+                              "resultado": "OSOS"
+                            },
+                            "no": {
+                              "pregunta": "¿Cuerpo alargado, a veces vive cerca del agua (nutria, comadreja, tejón)?",
+                              "si": {
+                                "resultado": "NUTRIAS, TEJONES Y COMADREJAS"
+                              },
+                              "no": {
+                                "pregunta": "¿Cola con anillos y 'antifaz' en la cara (mapache)?",
+                                "si": {
+                                  "resultado": "MAPACHES"
+                                },
+                                "no": {
+                                  "pregunta": "¿Parece perro pero con lomo caído y mandíbula muy fuerte (hiena)?",
+                                  "si": {
+                                    "resultado": "HIENAS"
+                                  },
+                                  "no": {
+                                    "pregunta": "¿Parece gato delgado con olor fuerte (civeta) o es una mangosta?",
+                                    "si": {
+                                      "resultado": "CIVETAS Y MANGOSTAS"
+                                    },
+                                    "no": {
+                                      "resultado": "OTRO CARNÍVORO"
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        }
+                      },
+                      "no": {
+                        "pregunta": "¿Los dientes de adelante nunca dejan de crecer (ratón/ardilla/conejo)?",
+                        "si": {
+                          "pregunta": "¿Orejas muy largas y salta mucho (conejo/liebre)?",
+                          "si": {
+                            "resultado": "CONEJOS Y LIEBRES"
+                          },
+                          "no": {
+                            "pregunta": "¿Cola larga y aspecto de ratón/ratita?",
+                            "si": {
+                              "resultado": "RATON, RATA O INCLUSO PODRIA SER UNA ARDILLA "
+                            },
+                            "no": {
+                              "pregunta": "¿Cola esponjosa y vive en árboles (ardilla)?",
+                              "si": {
+                                "resultado": "ARDILLAS"
+                              },
+                              "no": {
+                                "resultado": "OTRO ROEDOR"
+                              }
+                            }
+                          }
+                        },
+                        "no": {
+                          "pregunta": "¿Es un mono o simio (primate)?",
+                          "si": {
+                            "pregunta": "¿Es una persona (humano)?",
+                            "si": {
+                              "resultado": "HUMANO (PERSONA)"
+                            },
+                            "no": {
+                              "pregunta": "¿Sin cola y cuerpo grande (gorila, chimpancé, orangután)?",
+                              "si": {
+                                "resultado": "GRANDES SIMIOS"
+                              },
+                              "no": {
+                                "pregunta": "¿Cola que se agarra, selvas de América (mono araña/aullador)?",
+                                "si": {
+                                  "resultado": "MONOS DEL NUEVO MUNDO"
+                                },
+                                "no": {
+                                  "resultado": "MONOS DEL VIEJO MUNDO (babuinos/macacos)"
+                                }
+                              }
+                            }
+                          },
+                          "no": {
+                            "pregunta": "¿Lleva a las crías en una bolsa (marsupial)?",
+                            "si": {
+                              "pregunta": "¿Salta con patas traseras muy fuertes (canguro/wallaby)?",
+                              "si": {
+                                "resultado": "CANGUROS Y PARIENTES"
+                              },
+                              "no": {
+                                "pregunta": "¿Vive en árboles y come eucalipto (koala)?",
+                                "si": {
+                                  "resultado": "KOALA"
+                                },
+                                "no": {
+                                  "resultado": "OTRO MARSUPIAL"
+                                }
+                              }
+                            },
+                            "no": {
+                              "pregunta": "¿Se mueve lento con garras curvas (perezoso) o tiene placas (armadillo)?",
+                              "si": {
+                                "pregunta": "¿Cuerpo cubierto de placas como armadura?",
+                                "si": {
+                                  "resultado": "ARMADILLOS"
+                                },
+                                "no": {
+                                  "resultado": "PEREZOSOS"
+                                }
+                              },
+                              "no": {
+                                "pregunta": "¿Tiene trompa larga (elefante)?",
+                                "si": {
+                                  "resultado": "ELEFANTES"
+                                },
+                                "no": {
+                                  "resultado": "OTRO MAMÍFERO"
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            },
+            "no": {
+              "pregunta": "¿Es un ave (plumas)?",
+              "si": {
+                "pregunta": "¿Es de corral, casi no vuela y escarba el suelo?",
+                "si": {
+                  "pregunta": "¿Es doméstica (gallina/gallo)?",
+                  "si": {
+                    "resultado": "GALLINAS Y PARIENTES (gallinas, faisanes, codornices, perdices)"
+                  },
+                  "no": {
+                    "resultado": "GALLIFORMES SILVESTRES (codorniz, perdiz, faisán)"
+                  }
+                },
+                "no": {
+                  "pregunta": "¿Tiene patas palmeadas y nada seguido (pato/ganso)?",
+                  "si": {
+                    "resultado": "PATOS, GANSOS Y CISNES"
+                  },
+                  "no": {
+                    "pregunta": "¿Es ave de presa diurna con garras fuertes (águila/halcón)?",
+                    "si": {
+                      "resultado": "ÁGUILAS Y HALCONES"
+                    },
+                    "no": {
+                      "pregunta": "¿No vuela y nada muy bien con 'traje' negro y blanco?",
+                      "si": {
+                        "resultado": "PINGÜINOS"
+                      },
+                      "no": {
+                        "pregunta": "¿No vuela y corre muy rápido (avestruz/ñandú/emu)?",
+                        "si": {
+                          "resultado": "AVESTRUZ Y PARIENTES"
+                        },
+                        "no": {
+                          "pregunta": "¿Pico curvo, muy colorido e inteligente (loro/guacamayo)?",
+                          "si": {
+                            "resultado": "LOROS Y GUACAMAYOS"
+                          },
+                          "no": {
+                            "pregunta": "¿Caza de noche y tiene ojos grandes (búho/lechuza)?",
+                            "si": {
+                              "resultado": "BÚHOS Y LECHUZAS"
+                            },
+                            "no": {
+                              "pregunta": "¿Ave urbana que arrulla (paloma/torcaza)?",
+                              "si": {
+                                "resultado": "PALOMAS"
+                              },
+                              "no": {
+                                "resultado": "OTRAS AVES"
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              },
+              "no": {
+                "pregunta": "¿Es un reptil (escamas secas)?",
+                "si": {
+                  "pregunta": "¿Tiene caparazón duro (tortuga)?",
+                  "si": {
+                    "pregunta": "¿Vive en tierra y tiene caparazón alto?",
+                    "si": {
+                      "resultado": "TORTUGAS TERRESTRES"
+                    },
+                    "no": {
+                      "pregunta": "¿Vive en el mar y tiene aletas?",
+                      "si": {
+                        "resultado": "TORTUGAS MARINAS"
+                      },
+                      "no": {
+                        "resultado": "OTRAS TORTUGAS DE AGUA DULCE"
+                      }
+                    }
+                  },
+                  "no": {
+                    "pregunta": "¿Cuerpo alargado sin patas (serpiente)?",
+                    "si": {
+                      "pregunta": "¿Cabeza triangular y pupila vertical (tipo víbora/cascabel)?",
+                      "si": {
+                        "resultado": "VÍBORAS Y SERPIENTES VENENOSAS"
+                      },
+                      "no": {
+                        "pregunta": "¿Puede 'abrir capucha' o tiene colores muy vivos peligrosos (cobra/coral)?",
+                        "si": {
+                          "resultado": "COBRAS Y CORALES"
+                        },
+                        "no": {
+                          "resultado": "SERPIENTES NO VENENOSAS COMUNES"
+                        }
+                      }
+                    },
+                    "no": {
+                      "pregunta": "¿Parece cocodrilo o caimán?",
+                      "si": {
+                        "pregunta": "¿Hocico ancho en forma de U (caimán/alligator)?",
+                        "si": {
+                          "resultado": "CAIMANES/ALLIGATORES"
+                        },
+                        "no": {
+                          "resultado": "COCODRILOS"
+                        }
+                      },
+                      "no": {
+                        "pregunta": "¿Dedos con ventosas y trepa vidrios (gecko)?",
+                        "si": {
+                          "resultado": "GECKOS"
+                        },
+                        "no": {
+                          "pregunta": "¿Gran lagarto depredador (dragón de Komodo/varano)?",
+                          "si": {
+                            "resultado": "VARANOS"
+                          },
+                          "no": {
+                            "pregunta": "¿Lagarto herbívoro de colores (iguana)?",
+                            "si": {
+                              "resultado": "IGUANAS"
+                            },
+                            "no": {
+                              "resultado": "OTROS LAGARTOS"
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                },
+                "no": {
+                  "pregunta": "¿Es un anfibio (piel húmeda)?",
+                  "si": {
+                    "pregunta": "¿De adulto sigue con cola (salamandra/tritón)?",
+                    "si": {
+                      "pregunta": "¿Con branquias externas visibles (ajolote)?",
+                      "si": {
+                        "resultado": "AJOLOTES"
+                      },
+                      "no": {
+                        "resultado": "SALAMANDRAS"
+                      }
+                    },
+                    "no": {
+                      "pregunta": "¿Piel lisa y salta mucho (rana)?",
+                      "si": {
+                        "resultado": "RANAS"
+                      },
+                      "no": {
+                        "resultado": "SAPOS"
+                      }
+                    }
+                  },
+                  "no": {
+                    "pregunta": "¿Es un pez?",
+                    "si": {
+                      "pregunta": "¿Esqueleto de cartílago (tiburón/raya)?",
+                      "si": {
+                        "pregunta": "¿Aplanado como 'alfombra' (raya/manta)?",
+                        "si": {
+                          "resultado": "RAYAS Y MANTAS"
+                        },
+                        "no": {
+                          "resultado": "TIBURONES"
+                        }
+                      },
+                      "no": {
+                        "pregunta": "¿Vive en ríos o lagos?",
+                        "si": {
+                          "pregunta": "¿Tipo carpa/tilapia?",
+                          "si": {
+                            "resultado": "PECES DE RÍO COMUNES (carpas/tilapias)"
+                          },
+                          "no": {
+                            "pregunta": "¿Parece trucha o salmón?",
+                            "si": {
+                              "resultado": "SALMONES Y TRUCHAS"
+                            },
+                            "no": {
+                              "resultado": "OTROS PECES DE AGUA DULCE"
+                            }
+                          }
+                        },
+                        "no": {
+                          "pregunta": "¿Nada en mar abierto y es muy rápido (atún/caballa)?",
+                          "si": {
+                            "resultado": "ATUNES Y PARIENTES"
+                          },
+                          "no": {
+                            "resultado": "PECES MARINOS VARIOS"
+                          }
+                        }
+                      }
+                    },
+                    "no": {
+                      "resultado": "VERTEBRADO NO IDENTIFICADO AQUÍ"
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "no": {
+            "pregunta": "¿Es un artrópodo (patas articuladas, 'caparazón' externo)?",
+            "si": {
+              "pregunta": "¿Tiene 6 patas (insecto)?",
+              "si": {
+                "pregunta": "¿Alas delanteras duras como casquito (escarabajo)?",
+                "si": {
+                  "resultado": "ESCARABAJOS"
+                },
+                "no": {
+                  "pregunta": "¿Solo un par de alas útiles (mosca/mosquito)?",
+                  "si": {
+                    "resultado": "MOSCAS Y MOSQUITOS"
+                  },
+                  "no": {
+                    "pregunta": "¿Alas con 'polvito' de colores (mariposa/polilla)?",
+                    "si": {
+                      "resultado": "MARIPOSAS Y POLILLAS"
+                    },
+                    "no": {
+                      "pregunta": "¿Aguijón o vive en colmenas/hormigueros?",
+                      "si": {
+                        "resultado": "ABEJAS, AVISPAS Y HORMIGAS"
+                      },
+                      "no": {
+                        "pregunta": "¿Salta y 'canta' (saltamontes/grillo)?",
+                        "si": {
+                          "resultado": "SALTAMONTES Y GRILLOS"
+                        },
+                        "no": {
+                          "resultado": "OTROS INSECTOS"
+                        }
+                      }
+                    }
+                  }
+                }
+              },
+              "no": {
+                "pregunta": "¿Tiene 8 patas (arañas y parientes)?",
+                "si": {
+                  "pregunta": "¿Teje telarañas redondas en el jardín?",
+                  "si": {
+                    "resultado": "ARAÑAS TEJEDORAS"
+                  },
+                  "no": {
+                    "pregunta": "¿Pinzas y aguijón en la cola (escorpión)?",
+                    "si": {
+                      "resultado": "ESCORPIONES"
+                    },
+                    "no": {
+                      "resultado": "OTROS ARÁCNIDOS (ácaros/opiliones)"
+                    }
+                  }
+                },
+                "no": {
+                  "pregunta": "¿Caparazón y pinzas (cangrejo/langosta/camarón)?",
+                  "si": {
+                    "pregunta": "¿Cangrejo ancho de playa/roca?",
+                    "si": {
+                      "resultado": "CANGREJOS"
+                    },
+                    "no": {
+                      "pregunta": "¿Langosta con antenas largas?",
+                      "si": {
+                        "resultado": "LANGOSTAS"
+                      },
+                      "no": {
+                        "pregunta": "¿Camarón/gamba?",
+                        "si": {
+                          "resultado": "CAMARONES"
+                        },
+                        "no": {
+                          "resultado": "OTROS CRUSTÁCEOS"
+                        }
+                      }
+                    }
+                  },
+                  "no": {
+                    "pregunta": "¿Cuerpo largo con muchos segmentos (ciempiés/milpiés)?",
+                    "si": {
+                      "pregunta": "¿Un par de patas por segmento (ciempiés)?",
+                      "si": {
+                        "resultado": "CIEMPIÉS"
+                      },
+                      "no": {
+                        "pregunta": "¿Dos pares por segmento (milpiés)?",
+                        "si": {
+                          "resultado": "MILPIÉS"
+                        },
+                        "no": {
+                          "resultado": "OTROS MIRIÁPODOS"
+                        }
+                      }
+                    },
+                    "no": {
+                      "resultado": "ARTRÓPODO (otro)"
+                    }
+                  }
+                }
+              }
+            },
+            "no": {
+              "pregunta": "¿Es un molusco (cuerpo blando, a veces con concha)?",
+              "si": {
+                "pregunta": "¿Tiene dos conchas que se cierran (almeja/ostra)?",
+                "si": {
+                  "resultado": "ALMEJAS Y OSTRAS"
+                },
+                "no": {
+                  "pregunta": "¿Concha en espiral (caracol) o sin concha (babosa)?",
+                  "si": {
+                    "resultado": "CARACOLES Y BABOSAS"
+                  },
+                  "no": {
+                    "pregunta": "¿Tentáculos y cabeza grande (pulpo/calamar)?",
+                    "si": {
+                      "resultado": "PULPOS Y CALAMARES"
+                    },
+                    "no": {
+                      "resultado": "OTROS MOLUSCOS"
+                    }
+                  }
+                }
+              },
+              "no": {
+                "pregunta": "¿Es un equinodermo (estrellas/erizos de mar)?",
+                "si": {
+                  "resultado": "ESTRELLAS Y ERIZOS DE MAR"
+                },
+                "no": {
+                  "pregunta": "¿Es un gusano segmentado (anélido)?",
+                  "si": {
+                    "pregunta": "¿Vive en la tierra y 'airea' el suelo (lombriz)?",
+                    "si": {
+                      "resultado": "LOMBRICES"
+                    },
+                    "no": {
+                      "pregunta": "¿Parásito que chupa sangre (sanguijuela)?",
+                      "si": {
+                        "resultado": "SANGUIJUELAS"
+                      },
+                      "no": {
+                        "resultado": "GUSANOS MARINOS (poliquetos)"
+                      }
+                    }
+                  },
+                  "no": {
+                    "pregunta": "¿Tiene tentáculos urticantes (coral/medusa/hidra)?",
+                    "si": {
+                      "pregunta": "¿Vive fijo como 'plantita' marina (coral/anémona)?",
+                      "si": {
+                        "resultado": "CORALES Y ANÉMONAS"
+                      },
+                      "no": {
+                        "pregunta": "¿Medusa grande con campana redonda?",
+                        "si": {
+                          "resultado": "MEDUSAS VERDADERAS"
+                        },
+                        "no": {
+                          "pregunta": "¿Medusa de caja muy venenosa?",
+                          "si": {
+                            "resultado": "MEDUSA DE CAJA"
+                          },
+                          "no": {
+                            "resultado": "HIDRAS Y COLONIAS (carabela portuguesa)"
+                          }
+                        }
+                      }
+                    },
+                    "no": {
+                      "pregunta": "¿Es una esponja (porífero)?",
+                      "si": {
+                        "resultado": "ESPONJAS DE MAR"
+                      },
+                      "no": {
+                        "resultado": "INVERTEBRADO NO IDENTIFICADO AQUÍ"
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
         "no": {
           "pregunta": "¿Es una planta?",
-          "si": { "redirigir": "categorias/plantas.json" },
+          "si": {
+            "pregunta": "¿Tiene “venas” por donde circula agua y nutrientes? (planta con vasos)",
+            "si": {
+              "pregunta": "¿Produce semillas?",
+              "si": {
+                "pregunta": "¿Sus semillas no quedan dentro de un fruto? (sin fruto alrededor)",
+                "si": {
+                  "pregunta": "¿Hace conos (piñas) y tiene hojas como agujas o escamas?",
+                  "si": {
+                    "resultado": "ÁRBOLES DE CONO (pinos, abetos, cipreses, etc.)"
+                  },
+                  "no": {
+                    "resultado": "OTRAS PLANTAS DE SEMILLA SIN FRUTO (cícadas, ginkgo, etc.)"
+                  }
+                },
+                "no": {
+                  "pregunta": "¿Es una planta con flor y fruto? (la mayoría de las plantas comunes)",
+                  "si": {
+                    "pregunta": "¿Vive en el agua con hojas flotantes y flores tipo nenúfar/loto?",
+                    "si": {
+                      "resultado": "NENÚFARES/LOTOS"
+                    },
+                    "no": {
+                      "pregunta": "¿Sus hojas suelen tener venas paralelas (tipo pasto/palma/lirio)?",
+                      "si": {
+                        "pregunta": "¿Es un pasto/cereal (tallo hueco, espiga)?",
+                        "si": {
+                          "resultado": "PASTOS Y CEREALES (trigo, maíz, arroz, bambú, céspedes, etc.)"
+                        },
+                        "no": {
+                          "pregunta": "¿Es una orquídea (flor con ‘labio’ muy marcada y simétrica)?",
+                          "si": {
+                            "resultado": "ORQUÍDEAS"
+                          },
+                          "no": {
+                            "pregunta": "¿Es tipo lirio/azucena/iris/amarilis (flores grandes y vistosas)?",
+                            "si": {
+                              "resultado": "LIRIOS Y AFINES (lirios, azucenas, iris, amarilis, etc.)"
+                            },
+                            "no": {
+                              "pregunta": "¿Es una palma (tronco único y hojas en abanico o pluma arriba)?",
+                              "si": {
+                                "resultado": "PALMAS"
+                              },
+                              "no": {
+                                "pregunta": "¿Tiene hojas grandes y la flor es una espiga envuelta en una ‘hoja’ de color (monstera, anthurium, etc.)?",
+                                "si": {
+                                  "resultado": "PLANTAS DE HOJA GRANDE CON FLOR ENVUELTA (monstera, anthurium, etc.)"
+                                },
+                                "no": {
+                                  "pregunta": "¿Es de roseta suculenta tipo agave/áloe/yuca (hojas duras y carnosas)?",
+                                  "si": {
+                                    "resultado": "AGAVES, ÁLOES Y YUCAS"
+                                  },
+                                  "no": {
+                                    "resultado": "OTRAS PLANTAS DE HOJAS CON VENAS PARALELAS (bromelias, juncos, plátanos, etc.)"
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        }
+                      },
+                      "no": {
+                        "pregunta": "¿Sus flores parecen muchas florecitas juntas formando un ‘botón’ (como girasol/margarita)?",
+                        "si": {
+                          "resultado": "FAMILIA DEL GIRASOL (girasoles, margaritas, dalias, etc.)"
+                        },
+                        "no": {
+                          "pregunta": "¿Da vainas (legumbres) y suele tener hojas compuestas? (flor tipo ‘mariposa’)",
+                          "si": {
+                            "resultado": "FAMILIA DE LAS LEGUMBRES (frijol, chícharo, acacias, jacarandas, etc.)"
+                          },
+                          "no": {
+                            "pregunta": "¿Flores de 5 pétalos; a veces con espinas; incluye rosas y varios frutales?",
+                            "si": {
+                              "resultado": "ROSAS Y PARIENTES (rosas, manzano, fresa, cerezo, etc.)"
+                            },
+                            "no": {
+                              "pregunta": "¿Flores de 4 pétalos en cruz; sabor tipo mostaza/rábano; frutos delgados alargados?",
+                              "si": {
+                                "resultado": "FAMILIA DE LAS MOSTAZAS/COLES"
+                              },
+                              "no": {
+                                "pregunta": "¿Trepadora o rastrera con frutos tipo calabaza/pepino/melón?",
+                                "si": {
+                                  "resultado": "FAMILIA DE LAS CALABAZAS (calabazas, pepinos, melones, etc.)"
+                                },
+                                "no": {
+                                  "pregunta": "¿Aromática, tallos cuadrados y flores con ‘boca’ (menta, albahaca, romero, lavanda)?",
+                                  "si": {
+                                    "resultado": "FAMILIA DE LAS MENTAS (menta, albahaca, romero, lavanda, etc.)"
+                                  },
+                                  "no": {
+                                    "pregunta": "¿Flores en ‘paraguas’ (umbelas) como zanahoria/apio/hinojo?",
+                                    "si": {
+                                      "resultado": "FAMILIA DEL APIO/ZANAHORIA (perejil, hinojo, etc.)"
+                                    },
+                                    "no": {
+                                      "pregunta": "¿Es suculenta con espinas que salen de pequeños cojincitos (areolas)?",
+                                      "si": {
+                                        "resultado": "CACTUS (cactus columnares, globosos, nopales, etc.)"
+                                      },
+                                      "no": {
+                                        "pregunta": "¿Es suculenta sin esos cojincitos (hojas o tallos carnosos)?",
+                                        "si": {
+                                          "resultado": "OTRAS SUCULENTAS (crásulas, euforbias suculentas, etc.)"
+                                        },
+                                        "no": {
+                                          "pregunta": "¿Árbol de cítricos o parientes (hojas con puntitos de aceite, huelen a cítrico)?",
+                                          "si": {
+                                            "resultado": "CÍTRICOS (naranjo, limón, toronja, etc.)"
+                                          },
+                                          "no": {
+                                            "pregunta": "¿Árbol tipo olivo/jazmín/fresno?",
+                                            "si": {
+                                              "resultado": "OLIVOS Y PARIENTES (olivo, jazmín, fresno, etc.)"
+                                            },
+                                            "no": {
+                                              "pregunta": "¿Árbol tipo arce (hojas palmadas; algunas dan savia dulce)?",
+                                              "si": {
+                                                "resultado": "ARCES Y PARIENTES"
+                                              },
+                                              "no": {
+                                                "pregunta": "¿Roble/haya/castaño (bellotas o amentos)?",
+                                                "si": {
+                                                  "resultado": "ROBLES, HAYAS Y CASTAÑOS"
+                                                },
+                                                "no": {
+                                                  "pregunta": "¿Eucalipto/guayabo/mirto (hojas duras y aromáticas)?",
+                                                  "si": {
+                                                    "resultado": "MIRTOS Y PARIENTES (eucalipto, guayabo, clavo, etc.)"
+                                                  },
+                                                  "no": {
+                                                    "pregunta": "¿Aguacate/laurel/canela?",
+                                                    "si": {
+                                                      "resultado": "LAURELES Y PARIENTES (aguacate, laurel, canela, etc.)"
+                                                    },
+                                                    "no": {
+                                                      "pregunta": "¿Higuera/morera (savia lechosa; higos especiales)?",
+                                                      "si": {
+                                                        "resultado": "HIGUERAS Y MORERAS"
+                                                      },
+                                                      "no": {
+                                                        "resultado": "OTRAS PLANTAS DE FLORES COMUNES (varias familias)"
+                                                      }
+                                                    }
+                                                  }
+                                                }
+                                              }
+                                            }
+                                          }
+                                        }
+                                      }
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  },
+                  "no": {
+                    "resultado": "REVISAR: SI TIENE FLOR/FRUTO, DEBERÍA SER ANGIOSPERMA"
+                  }
+                }
+              },
+              "no": {
+                "resultado": "HELECHOS Y PARECIDOS (helechos, colas de caballo, licopodios, etc.)"
+              }
+            },
+            "no": {
+              "resultado": "MUSGOS Y PARECIDOS (musgos, hepáticas, antocerotes, etc.)"
+            }
+          },
           "no": {
             "pregunta": "¿Es un hongo?",
-            "si": { "redirigir": "categorias/hongos.json" },
+            "si": {
+              "pregunta": "¿Forma una 'seta' o cuerpo visible (más de ~1 cm)?",
+              "si": {
+                "pregunta": "¿Crece bajo tierra sin sombrero visible en la superficie?",
+                "si": {
+                  "resultado": "TRUFAS Y PARECIDOS (hongos subterráneos/aromáticos)"
+                },
+                "no": {
+                  "pregunta": "¿Tiene sombrero con láminas finas por debajo?",
+                  "si": {
+                    "resultado": "SETAS CON LÁMINAS (champiñones, amanitas y similares)"
+                  },
+                  "no": {
+                    "pregunta": "¿Tiene poros como de esponja por debajo del sombrero o tubos visibles?",
+                    "si": {
+                      "pregunta": "¿Tiene sombrero y pie carnosos (no es duro pegado a madera)?",
+                      "si": {
+                        "resultado": "HONGOS DE POROS CON PIE (tipo 'boletes' como porcini)"
+                      },
+                      "no": {
+                        "pregunta": "¿Crece como repisas/‘orejas’ duras pegadas a troncos?",
+                        "si": {
+                          "resultado": "HONGOS DE REPISA EN MADERA (yesqueros)"
+                        },
+                        "no": {
+                          "resultado": "HONGO CON POROS NO CLASIFICADO (revisar más rasgos)"
+                        }
+                      }
+                    },
+                    "no": {
+                      "pregunta": "¿La parte fértil son 'dientitos' o espinitas colgantes?",
+                      "si": {
+                        "resultado": "HONGOS DE DIENTES (p. ej., 'barba de león')"
+                      },
+                      "no": {
+                        "pregunta": "¿Es gelatinoso al tacto (blando y vibrante)?",
+                        "si": {
+                          "resultado": "HONGOS GELATINOSOS (gelatinas/orejas gelatinosas)"
+                        },
+                        "no": {
+                          "pregunta": "¿Tiene forma de copa/platillo o panal (como colmenilla)?",
+                          "si": {
+                            "resultado": "COPAS Y COLMENILLAS (cazoletas, colmenillas)"
+                          },
+                          "no": {
+                            "pregunta": "¿Es una bola cerrada que al romperse suelta polvo de esporas?",
+                            "si": {
+                              "resultado": "BOLAS DE HUMO Y ESTRELLAS DE TIERRA (pedos de lobo)"
+                            },
+                            "no": {
+                              "pregunta": "¿Huele muy fuerte/feo y parece una columna o red pegajosa?",
+                              "si": {
+                                "resultado": "HONGOS APESTOSOS EN COLUMNA (tipo 'falo hediondo')"
+                              },
+                              "no": {
+                                "pregunta": "¿Parece un coral o ramo de ramitas?",
+                                "si": {
+                                  "resultado": "HONGOS CORAL"
+                                },
+                                "no": {
+                                  "pregunta": "¿Forma una capa como pintura/costra sobre la madera (sin sombrero)?",
+                                  "si": {
+                                    "resultado": "HONGOS COSTRA EN MADERA"
+                                  },
+                                  "no": {
+                                    "resultado": "HONGO CON SETA NO CLASIFICADO (otros tipos menos comunes)"
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              },
+              "no": {
+                "pregunta": "¿Vive junto con algas formando manchas/costras/hojitas sobre rocas o troncos?",
+                "si": {
+                  "resultado": "LÍQUENES (hongo + alga como socios)"
+                },
+                "no": {
+                  "pregunta": "¿Son células sueltas que fermentan azúcares (pan, cerveza, vino)?",
+                  "si": {
+                    "resultado": "LEVADURAS"
+                  },
+                  "no": {
+                    "pregunta": "¿Hace mohos algodonosos o polvosos en comida o paredes?",
+                    "si": {
+                      "resultado": "MOHOS (verdes, azules, negros…)"
+                    },
+                    "no": {
+                      "pregunta": "¿Enferma plantas con manchas anaranjadas ('roya') o tizones negros?",
+                      "si": {
+                        "resultado": "HONGOS DE PLAGAS EN PLANTAS (royas y tizones/carbones)"
+                      },
+                      "no": {
+                        "pregunta": "¿Vive en el agua y es microscópico (lagunas/charcas)?",
+                        "si": {
+                          "resultado": "HONGOS ACUÁTICOS MICROSCÓPICOS"
+                        },
+                        "no": {
+                          "pregunta": "¿Vive pegado a raíces de plantas como 'socios' que ayudan a absorber nutrientes?",
+                          "si": {
+                            "resultado": "HONGOS DE RAÍZ (micorrizas)"
+                          },
+                          "no": {
+                            "resultado": "HONGO PEQUEÑO/MICROSCÓPICO NO CLASIFICADO"
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            },
             "no": {
               "pregunta": "¿Es un microorganismo celular? (bacteria, arquea, protozoo, alga unicelular)",
-              "si": { "redirigir": "categorias/microo.json" },
-              "no": { "resultado": "SER VIVO NO CLASIFICADO (revisa categorías o añade una nueva rama)" }
+              "si": {
+                "pregunta": "¿Tiene células? (si no, puede ser virus/viroide/prión)",
+                "si": {
+                  "pregunta": "¿Tiene núcleo dentro de la célula? (eucariota)",
+                  "si": {
+                    "pregunta": "¿Se mueve por sí mismo como un 'animalito'?",
+                    "si": {
+                      "pregunta": "¿Se mueve cambiando de forma, como 'masa' que se estira?",
+                      "si": {
+                        "resultado": "AMEBA (protozoo que se arrastra)"
+                      },
+                      "no": {
+                        "pregunta": "¿Se mueve con muchos pelitos cortos alrededor?",
+                        "si": {
+                          "resultado": "CILIADO (protozoo con cilios)"
+                        },
+                        "no": {
+                          "pregunta": "¿Se mueve con una o varias 'colitas' (flagelos)?",
+                          "si": {
+                            "resultado": "FLAGELADO (protozoo con flagelo/s)"
+                          },
+                          "no": {
+                            "pregunta": "¿Vive dentro de células como parásito y casi no se mueve libremente?",
+                            "si": {
+                              "resultado": "PARÁSITO INTERNO (protozoo tipo apicomplejo)"
+                            },
+                            "no": {
+                              "resultado": "PROTOZOO (otro tipo)"
+                            }
+                          }
+                        }
+                      }
+                    },
+                    "no": {
+                      "pregunta": "¿Hace su propio alimento con luz? (tiene 'cloroplastos')",
+                      "si": {
+                        "pregunta": "¿Tiene pared como de vidrio con dibujitos (cáscara rígida)?",
+                        "si": {
+                          "resultado": "DIATOMEA (alga microscópica con 'vidrio')"
+                        },
+                        "no": {
+                          "pregunta": "¿Tiene dos flagelos y a veces brilla en la noche (mareas rojas)?",
+                          "si": {
+                            "resultado": "DINOFLAGELADO (alga microscópica)"
+                          },
+                          "no": {
+                            "pregunta": "¿Se ve de color verde?",
+                            "si": {
+                              "resultado": "ALGA VERDE MICROSCÓPICA"
+                            },
+                            "no": {
+                              "pregunta": "¿Se ve de color pardo/marrón?",
+                              "si": {
+                                "resultado": "ALGA PARDA MICROSCÓPICA"
+                              },
+                              "no": {
+                                "pregunta": "¿Se ve de color rojo?",
+                                "si": {
+                                  "resultado": "ALGA ROJA MICROSCÓPICA"
+                                },
+                                "no": {
+                                  "resultado": "ALGA MICROSCÓPICA (otro tipo)"
+                                }
+                              }
+                            }
+                          }
+                        }
+                      },
+                      "no": {
+                        "pregunta": "¿Se parece a un hongo (crece como 'hilos' o como bolita de pan)?",
+                        "si": {
+                          "pregunta": "¿Forma hilos (pelusa) extendiéndose sobre la comida/superficies?",
+                          "si": {
+                            "resultado": "MOHO (hongo microscópico filamentoso)"
+                          },
+                          "no": {
+                            "pregunta": "¿Vive como celulitas sueltas que fermentan azúcares?",
+                            "si": {
+                              "resultado": "LEVADURA (hongo microscópico)"
+                            },
+                            "no": {
+                              "resultado": "HONGO MICROSCÓPICO (otro tipo)"
+                            }
+                          }
+                        },
+                        "no": {
+                          "pregunta": "¿Parece moho de agua (vive en agua/destaca en plantas) aunque no es hongo real?",
+                          "si": {
+                            "resultado": "MOHO DE AGUA (oomiceto, tipo 'no hongo')"
+                          },
+                          "no": {
+                            "resultado": "MICROEUCARIOTA NO CLASIFICADO"
+                          }
+                        }
+                      }
+                    }
+                  },
+                  "no": {
+                    "pregunta": "¿Puede vivir en lugares muy extremos (mucha sal, agua muy caliente, sin oxígeno, gases como metano)?",
+                    "si": {
+                      "resultado": "ARQUEA (procariota de ambientes extremos u otros)"
+                    },
+                    "no": {
+                      "pregunta": "¿Hace fotosíntesis y puede formar colonias verdosas/azuladas?",
+                      "si": {
+                        "resultado": "CIANOBACTERIA (bacteria que hace fotosíntesis)"
+                      },
+                      "no": {
+                        "pregunta": "¿Vive en lugares comunes (agua, suelo, cuerpo humano) y no es extremófila?",
+                        "si": {
+                          "resultado": "BACTERIA COMÚN (procariota no extrema)"
+                        },
+                        "no": {
+                          "resultado": "PROCARIOTA NO CLASIFICADO (bacteria/arquea)"
+                        }
+                      }
+                    }
+                  }
+                }
+              },
+              "no": {
+                "resultado": "SER VIVO NO CLASIFICADO (revisa categorías o añade una nueva rama)"
+              }
             }
           }
         }
       },
       "no": {
         "pregunta": "¿Es un objeto inanimado (natural o hecho por el ser humano)?",
-        "si": { "redirigir": "categorias/objetos.json" },
+        "si": {
+          "pregunta": "¿Fue creado o fabricado por humanos?",
+          "si": {
+            "pregunta": "¿Tiene electrónica o depende de electricidad para funcionar?",
+            "si": {
+              "pregunta": "¿Su función principal es comunicar, calcular o mostrar información?",
+              "si": {
+                "resultado": "DISPOSITIVO ELECTRÓNICO (teléfono, computadora, televisor, sensor, calculadora)"
+              },
+              "no": {
+                "pregunta": "¿Su función principal es ILUMINAR?",
+                "si": {
+                  "resultado": "ILUMINACIÓN (foco/LED, linterna, lámpara, proyector)"
+                },
+                "no": {
+                  "pregunta": "¿Su función principal es EMITIR SONIDO?",
+                  "si": {
+                    "resultado": "AUDIO (altavoz, auriculares, micrófono, sirena)"
+                  },
+                  "no": {
+                    "resultado": "ELECTRODOMÉSTICO / HERRAMIENTA ELÉCTRICA (taladro, licuadora, horno, aspiradora)"
+                  }
+                }
+              }
+            },
+            "no": {
+              "pregunta": "¿Sirve para TRANSPORTAR personas o cosas?",
+              "si": {
+                "pregunta": "¿Se mueve principalmente por TIERRA?",
+                "si": {
+                  "resultado": "TRANSPORTE TERRESTRE (auto, bici, tren, moto)"
+                },
+                "no": {
+                  "pregunta": "¿Se mueve principalmente por AIRE?",
+                  "si": {
+                    "resultado": "TRANSPORTE AÉREO (avión, helicóptero, dron, globo aeroestatico)"
+                  },
+                  "no": {
+                    "resultado": "TRANSPORTE ACUÁTICO (barco, lancha, kayak, yate)"
+                  }
+                }
+              },
+              "no": {
+                "pregunta": "¿Sirve para CONTENER o GUARDAR cosas?",
+                "si": {
+                  "pregunta": "¿Es un envase pequeño/mediano (portátil)?",
+                  "si": {
+                    "resultado": "ENVASE / CONTENEDOR (botella, frasco, caja, lata, bolsa)"
+                  },
+                  "no": {
+                    "resultado": "DEPÓSITO / ALMACENAMIENTO (tanque, silo, bidón, garrafon, sisterna)"
+                  }
+                },
+                "no": {
+                  "pregunta": "¿Es una PRENDA de vestir, CALZADO o un ACCESORIO?",
+                  "si": {
+                    "pregunta": "¿Se usa en cabeza / manos / pies?",
+                    "si": {
+                      "resultado": "ACCESORIO (sombrero/gorra, guantes, calcetines/zapatos, joyeria)"
+                    },
+                    "no": {
+                      "resultado": "PRENDA (camisa, player, pantalón, abrigo, vestido)"
+                    }
+                  },
+                  "no": {
+                    "pregunta": "¿Es un MUEBLE?",
+                    "si": {
+                      "pregunta": "¿Sirve para sentarse/dormir/comer?",
+                      "si": {
+                        "resultado": "MUEBLE DE USO (silla, sofá, cama, mesa, estufa)"
+                      },
+                      "no": {
+                        "resultado": "MUEBLE DE ALMACENAJE (clóset, cajonera, estantería, baul, refrigerador, hielera)"
+                      }
+                    },
+                    "no": {
+                      "pregunta": "¿Se utiliza para escribir, dibujar o para actividades escolares/de oficina?",
+                      "si": {
+                        "resultado": "ÚTIL ESCOLAR / DE OFICINA (lápiz, pluma, regla, tijeras, borrador)"
+                      },
+                      "no": {
+                        "pregunta": "¿Su función principal es golpear, atornillar, cortar o sujetar cosas (reparación/construcción)?",
+                        "si": {
+                          "resultado": "HERRAMIENTA DE REPARACIÓN / CONSTRUCCIÓN (martillo, destornillador, pinzas, serrucho)"
+                        },
+                        "no": {
+                          "pregunta": "¿Se utiliza para tareas de jardinería o limpieza de áreas grandes?",
+                          "si": {
+                            "resultado": "HERRAMIENTA DE JARDINERÍA / LIMPIEZA (rastrillo, pala, escoba)"
+                          },
+                          "no": {
+                            "pregunta": "¿Es un INSTRUMENTO MUSICAL?",
+                            "si": {
+                              "pregunta": "¿Es de CUERDA?",
+                              "si": {
+                                "resultado": "INSTRUMENTO DE CUERDA (guitarra, violín, bajo)"
+                              },
+                              "no": {
+                                "pregunta": "¿Es de VIENTO?",
+                                "si": {
+                                  "resultado": "INSTRUMENTO DE VIENTO (flauta, saxofón, trompeta)"
+                                },
+                                "no": {
+                                  "pregunta": "¿Es de PERCUSIÓN?",
+                                  "si": {
+                                    "resultado": "INSTRUMENTO DE PERCUSIÓN (batería, tambor, marimba)"
+                                  },
+                                  "no": {
+                                    "resultado": "INSTRUMENTO MUSICAL (otro/mixto)"
+                                  }
+                                }
+                              }
+                            },
+                            "no": {
+                              "pregunta": "¿Es una bebida?",
+                              "si": {
+                                "pregunta": "¿Contiene alcohol?",
+                                "si": {
+                                  "pregunta": "¿Se elabora a partir de agave?",
+                                  "si": {
+                                    "resultado": "BEBIDA DE AGAVE (Tequila, Mezcal)"
+                                  },
+                                  "no": {
+                                    "pregunta": "¿Se elabora por fermentación de uvas o cereales?",
+                                    "si": {
+                                      "resultado": "BEBIDA FERMENTADA (Vino, Cerveza, Sidra)"
+                                    },
+                                    "no": {
+                                      "resultado": "LICOR / COCTEL"
+                                    }
+                                  }
+                                },
+                                "no": {
+                                  "pregunta": "¿Es una bebida carbonatada (tiene gas)?",
+                                  "si": {
+                                    "resultado": "REFRESCO / SODA / AGUA MINERAL"
+                                  },
+                                  "no": {
+                                    "pregunta": "¿Normalmente se sirve caliente?",
+                                    "si": {
+                                      "resultado": "BEBIDA CALIENTE (Café, Té, Chocolate caliente)"
+                                    },
+                                    "no": {
+                                      "resultado": "BEBIDA FRÍA SIN GAS (Jugo procesado, Leche, Agua de sabor)"
+                                    }
+                                  }
+                                }
+                              },
+                              "no": {
+                                "pregunta": "¿Se considera un plato fuerte o principal?",
+                                "si": {
+                                  "pregunta": "¿Su base principal es la pasta?",
+                                  "si": {
+                                    "resultado": "PLATO DE PASTA (Espagueti, Lasaña, Fettuccine)"
+                                  },
+                                  "no": {
+                                    "pregunta": "¿Se sirve sobre o dentro de una tortilla?",
+                                    "si": {
+                                      "resultado": "PLATO BASADO EN TORTILLA (Tacos, Quesadillas, Enchiladas)"
+                                    },
+                                    "no": {
+                                      "pregunta": "¿Se sirve entre dos piezas de pan?",
+                                      "si": {
+                                        "resultado": "SÁNDWICH / HAMBURGUESA / TORTA"
+                                      },
+                                      "no": {
+                                        "pregunta": "¿Es una preparación líquida que se come con cuchara?",
+                                        "si": {
+                                          "resultado": "SOPA / CREMA / GUISO"
+                                        },
+                                        "no": {
+                                          "resultado": "OTRO PLATO FUERTE (Pizza, Sushi, Arroces preparados)"
+                                        }
+                                      }
+                                    }
+                                  }
+                                },
+                                "no": {
+                                  "pregunta": "¿Es predominantemente dulce?",
+                                  "si": {
+                                    "pregunta": "¿Requiere hornearse, como un pastel, galleta o pan?",
+                                    "si": {
+                                      "resultado": "POSTRE HORNEADO (Pastel, Galletas, Pan dulce, Flan)"
+                                    },
+                                    "no": {
+                                      "pregunta": "¿Es principalmente una golosina de azúcar o chocolate?",
+                                      "si": {
+                                        "resultado": "DULCES / GOLOSINAS (Gomitas, Chocolates, Caramelos)"
+                                      },
+                                      "no": {
+                                        "resultado": "POSTRE FRÍO (Helado, Gelatina)"
+                                      }
+                                    }
+                                  },
+                                  "no": {
+                                    "resultado": "SNACK SALADO (Papas fritas, Palomitas, Frituras)"
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "no": {
+            "pregunta": "¿Es SÓLIDO en su estado natural más común (0–30 °C)?",
+            "si": {
+              "pregunta": "¿Tiene ORIGEN BIOLÓGICO reciente (parte de planta/animal/hongo)?",
+              "si": {
+                "pregunta": "¿Es COMESTIBLE para humanos de uso común?",
+                "si": {
+                  "pregunta": "¿PROVIENE de PLANTAS?",
+                  "si": {
+                    "pregunta": "¿La parte comestible es la estructura reproductiva con semillas? (fruto en sentido botánico)",
+                    "si": {
+                      "pregunta": "¿Se consume principalmente DULCE y en fresco? (criterio culinario)",
+                      "si": {
+                        "resultado": "FRUTA (culinario, dulce/fresco) (manzana, pera, plátano/banana, fresa, frambuesa, arándano, uva, naranja, mandarina, limón, toronja, mango, piña, papaya, melón, sandía, durazno, ciruela, cereza, higo, kiwi, granada, etc.)"
+                      },
+                      "no": {
+                        "pregunta": "¿Es un fruto botánico usado como VERDURA (sabores neutros/salados)?",
+                        "si": {
+                          "resultado": "VERDURA FRUTAL (fruto botánico de uso salado) (tomate/jitomate, chiles/pimientos, pepino, calabaza/calabacita, berenjena, chayote, aguacate, aceituna, ejote/vaina tierna, chícharo/edamame, etc.)"
+                        },
+                        "no": {
+                          "resultado": "FRUTO BOTÁNICO POCO DULCE / USO MIXTO (aceituna, aguacate, bayas poco dulces u otros; clasificar según uso local)"
+                        }
+                      }
+                    },
+                    "no": {
+                      "pregunta": "VERDURAS/HORTALIZAS por parte de planta (criterio anatómico)",
+                      "si": {
+                        "resultado": "HOJAS (lechuga, espinaca, acelga, kale, repollo/col, berros, hojas de betabel, etc.)"
+                      },
+                      "no": {
+                        "pregunta": "¿Es TALLO/PECÍOLO/FLOR?",
+                        "si": {
+                          "resultado": "TALLOS y FLORES (apio, espárrago, brócoli, coliflor, alcachofa, nopal, brotes de bambú, etc.)"
+                        },
+                        "no": {
+                          "pregunta": "¿Es RAÍZ/BULBO/TUBÉRCULO?",
+                          "si": {
+                            "resultado": "RAÍCES, BULBOS y TUBÉRCULOS (zanahoria, betabel, rábano, jengibre, cúrcuma, cebolla, ajo, papa/patata, camote/batata, yuca/mandioca, nabo, poro/puerro, etc.)"
+                          },
+                          "no": {
+                            "pregunta": "¿Es SEMILLA/GRANO o LEGUMINOSA seca?",
+                            "si": {
+                              "resultado": "SEMILLAS y CEREALES (arroz, maíz, trigo, avena, quinoa, amaranto, chía, linaza, ajonjolí/sésamo) y LEGUMINOSAS SECAS (frijol, lenteja, garbanzo, habas, soya)"
+                            },
+                            "no": {
+                              "resultado": "HONGOS COMESTIBLES* (champiñón, portobello, shiitake, setas, trufa, etc.) *No son vegetales, pero se tratan como verdura en cocina."
+                            }
+                          }
+                        }
+                      }
+                    }
+                  },
+                  "no": {
+                    "resultado": "ALIMENTO NATURAL NO VEGETAL (carne, pescado, mariscos, huevo, leche, miel, algas comestibles, etc.)"
+                  }
+                },
+                "no": {
+                  "pregunta": "¿PROVIENE de PLANTAS?",
+                  "si": {
+                    "resultado": "BIOMASA VEGETAL NO COMESTIBLE (madera, corcho, fibras: algodón/lino, resina, ámbar)"
+                  },
+                  "no": {
+                    "resultado": "BIOMASA ANIMAL/FÚNGICA NO COMESTIBLE (hueso, marfil, concha, cuero, lana, esponja natural)"
+                  }
+                }
+              },
+              "no": {
+                "pregunta": "¿Es un MINERAL cristalino (composición y estructura definidas)?",
+                "si": {
+                  "pregunta": "¿Se usa como MENA/METALES?",
+                  "si": {
+                    "resultado": "MINERAL METÁLICO (hematita/Fe, bauxita/Al, calcopirita/Cu, galena/Pb)"
+                  },
+                  "no": {
+                    "pregunta": "¿Es mineral INDUSTRIAL o GEMA?",
+                    "si": {
+                      "resultado": "MINERAL INDUSTRIAL/GEMA (cuarzo, calcita, halita/sal, yeso, talco, arcillas, diamante, rubí)"
+                    },
+                    "no": {
+                      "resultado": "OTRO MINERAL (silicatos, carbonatos, óxidos, sulfuros, fosfatos, haluros…)"
+                    }
+                  }
+                },
+                "no": {
+                  "pregunta": "¿Es una ROCA (agregado de minerales) consolidada?",
+                  "si": {
+                    "pregunta": "¿Es ÍGNEA (enfriamiento de magma)?",
+                    "si": {
+                      "resultado": "ROCA ÍGNEA (granito, basalto, obsidiana)"
+                    },
+                    "no": {
+                      "pregunta": "¿Es SEDIMENTARIA (compactación/cementación)?",
+                      "si": {
+                        "resultado": "ROCA SEDIMENTARIA (arenisca, caliza, conglomerado)"
+                      },
+                      "no": {
+                        "resultado": "ROCA METAMÓRFICA (mármol, pizarra, gneis)"
+                      }
+                    }
+                  },
+                  "no": {
+                    "pregunta": "¿Es SEDIMENTO/SUELO no cementado (granos sueltos)?",
+                    "si": {
+                      "resultado": "SEDIMENTO / SUELO (grava, arena, limo, arcilla)"
+                    },
+                    "no": {
+                      "pregunta": "¿Es un ELEMENTO NATIVO?",
+                      "si": {
+                        "resultado": "ELEMENTO NATIVO (oro, plata, cobre, azufre, carbono: grafito/diamante)"
+                      },
+                      "no": {
+                        "resultado": "OTRO SÓLIDO NATURAL (carbón, hielo, sales hidratadas)"
+                      }
+                    }
+                  }
+                }
+              }
+            },
+            "no": {
+              "pregunta": "¿Es LÍQUIDO en su estado natural más común?(0–30 °C)",
+              "si": {
+                "pregunta": "¿Es AGUA?",
+                "si": {
+                  "resultado": "AGUA (dulce/salada; puede estar purificada o no)"
+                },
+                "no": {
+                  "pregunta": "¿Es un HIDROCARBURO natural?",
+                  "si": {
+                    "resultado": "PETRÓLEO CRUDO / CONDENSADOS"
+                  },
+                  "no": {
+                    "pregunta": "¿Es LAVA/MAGMA o METAL LÍQUIDO natural (mercurio)?",
+                    "si": {
+                      "resultado": "LAVA / MERCURIO NATURAL"
+                    },
+                    "no": {
+                      "resultado": "OTRO LÍQUIDO NATURAL (salmueras, aguas termales, ácidos naturales)"
+                    }
+                  }
+                }
+              },
+              "no": {
+                "pregunta": "¿Es GAS en su estado natural más común?",
+                "si": {
+                  "pregunta": "¿Es MEZCLA de gases del aire?",
+                  "si": {
+                    "resultado": "AIRE (mezcla: N₂, O₂, Ar, CO₂, etc.)"
+                  },
+                  "no": {
+                    "pregunta": "¿Es NITRÓGENO (N₂)?",
+                    "si": {
+                      "resultado": "NITRÓGENO (N₂)"
+                    },
+                    "no": {
+                      "pregunta": "¿Es OXÍGENO (O₂)?",
+                      "si": {
+                        "resultado": "OXÍGENO (O₂)"
+                      },
+                      "no": {
+                        "pregunta": "¿Es DIÓXIDO DE CARBONO (CO₂)?",
+                        "si": {
+                          "resultado": "DIÓXIDO DE CARBONO (CO₂)"
+                        },
+                        "no": {
+                          "pregunta": "¿Es METANO (CH₄)?",
+                          "si": {
+                            "resultado": "METANO (CH₄)"
+                          },
+                          "no": {
+                            "resultado": "OTRO GAS NATURAL (He, Ar, H₂S, H₂…)"
+                          }
+                        }
+                      }
+                    }
+                  }
+                },
+                "no": {
+                  "pregunta": "¿Es PLASMA u OTRO estado poco común en superficie?",
+                  "si": {
+                    "resultado": "PLASMA NATURAL / DESCARGA / IONIZACIÓN"
+                  },
+                  "no": {
+                    "resultado": "MEZCLA / CASO ESPECIAL (barro, coloide, nieve sucia, sedimento saturado)"
+                  }
+                }
+              }
+            }
+          }
+        },
         "no": {
           "pregunta": "¿Es un lugar?",
-          "si": { "redirigir": "categorias/lugares.json" },
+          "si": {
+            "pregunta": "¿Es un espacio natural? DEFINICION: superficie terrestre o acuática que conserva elementos de la naturaleza (como vegetación, fauna, geología, y fenómenos naturales) y que no ha sido significativamente alterada por la acción humana",
+            "si": {
+              "pregunta": "¿Es mayoritariamente acuático?",
+              "si": {
+                "pregunta": "¿Es salado?",
+                "si": {
+                  "pregunta": "¿Tiene escala oceánica?",
+                  "si": {
+                    "resultado": "OCÉANO"
+                  },
+                  "no": {
+                    "pregunta": "¿Está parcialmente encerrado por tierra?",
+                    "si": {
+                      "pregunta": "¿Hay mezcla dulce/salada en desembocadura?",
+                      "si": {
+                        "resultado": "ESTUARIO"
+                      },
+                      "no": {
+                        "resultado": "MAR/BAHÍA/GOLFO"
+                      }
+                    },
+                    "no": {
+                      "pregunta": "¿Es un paso angosto entre dos masas de tierra?",
+                      "si": {
+                        "resultado": "ESTRECHO"
+                      },
+                      "no": {
+                        "resultado": "MAR ABIERTO"
+                      }
+                    }
+                  }
+                },
+                "no": {
+                  "pregunta": "¿El agua está en reposo (cuenca cerrada)?",
+                  "si": {
+                    "pregunta": "¿Alta salinidad natural?",
+                    "si": {
+                      "resultado": "LAGO SALADO/SALAR INUNDABLE"
+                    },
+                    "no": {
+                      "resultado": "LAGO/LAGUNA"
+                    }
+                  },
+                  "no": {
+                    "pregunta": "¿Fluye por un cauce?",
+                    "si": {
+                      "pregunta": "¿Presenta caídas notables?",
+                      "si": {
+                        "resultado": "CASCADA"
+                      },
+                      "no": {
+                        "pregunta": "¿Forma un abanico sedimentario en la costa?",
+                        "si": {
+                          "resultado": "DELTA"
+                        },
+                        "no": {
+                          "resultado": "RÍO/ARROYO"
+                        }
+                      }
+                    },
+                    "no": {
+                      "pregunta": "¿Zona saturada de agua con vegetación hidrófila?",
+                      "si": {
+                        "resultado": "HUMEDAL (pantano/ciénaga/manglar)"
+                      },
+                      "no": {
+                        "pregunta": "¿Es costero?",
+                        "si": {
+                          "resultado": "PLAYA/DUNA COSTERA/LAGUNA COSTERA/ARRECIFE/ACANTILADO"
+                        },
+                        "no": {
+                          "resultado": "OTRO ACUÁTICO NATURAL"
+                        }
+                      }
+                    }
+                  }
+                }
+              },
+              "no": {
+                "pregunta": "¿Formado por hielo o nieve perenne?",
+                "si": {
+                  "resultado": "GLACIAR/CASQUETE"
+                },
+                "no": {
+                  "pregunta": "¿Está completamente rodeado de agua?",
+                  "si": {
+                    "resultado": "ISLA/ARCHIPIÉLAGO/ATOLÓN"
+                  },
+                  "no": {
+                    "pregunta": "¿Presenta elevación marcada (>300 m)?",
+                    "si": {
+                      "pregunta": "¿Origen volcánico?",
+                      "si": {
+                        "pregunta": "¿Actividad histórica/reciente?",
+                        "si": {
+                          "resultado": "VOLCÁN ACTIVO"
+                        },
+                        "no": {
+                          "resultado": "VOLCÁN INACTIVO/EXTINTO"
+                        }
+                      },
+                      "no": {
+                        "pregunta": "¿Cima individual prominente o plana/extensa?",
+                        "si": {
+                          "resultado": "MONTAÑA/CERRO o MESETA"
+                        },
+                        "no": {
+                          "resultado": "SIERRA/CORDILLERA"
+                        }
+                      }
+                    },
+                    "no": {
+                      "pregunta": "¿Depresión lineal escarpada?",
+                      "si": {
+                        "resultado": "CAÑÓN/BARRANCO/VALLE"
+                      },
+                      "no": {
+                        "pregunta": "¿Clima muy seco (<250 mm/año)?",
+                        "si": {
+                          "resultado": "DESIERTO"
+                        },
+                        "no": {
+                          "pregunta": "¿Cobertura arbórea >10–20%?",
+                          "si": {
+                            "pregunta": "¿Zona tropical?",
+                            "si": {
+                              "resultado": "SELVA TROPICAL"
+                            },
+                            "no": {
+                              "resultado": "BOSQUE TEMPLADO/BOREAL"
+                            }
+                          },
+                          "no": {
+                            "pregunta": "¿Predomina herbácea con pocos árboles?",
+                            "si": {
+                              "resultado": "PRADERA/SABANA/PÁRAMO/TUNDRA"
+                            },
+                            "no": {
+                              "pregunta": "¿Es subterráneo (cavidad natural)?",
+                              "si": {
+                                "resultado": "CUEVA/GRUTA/KARST/CENOTE"
+                              },
+                              "no": {
+                                "resultado": "OTRO TERRESTRE NATURAL"
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            },
+            "no": {
+              "pregunta": "¿Es administrativo/político?",
+              "si": {
+                "resultado": "PAÍS/ESTADO-PROVINCIA/MUNICIPIO-CIUDAD/BARRIO"
+              },
+              "no": {
+                "pregunta": "¿Es infraestructura/edificación?",
+                "si": {
+                  "resultado": "EDIFICIO/CASA/DEPTO/FÁBRICA/CARRETERA/PUENTE/AEROPUERTO/PUERTO/PRESA/CANAL/MINA/ISLA ARTIFICIAL"
+                },
+                "no": {
+                  "resultado": "OTRO CONSTRUIDO"
+                }
+              }
+            }
+          },
           "no": {
-            "pregunta": "¿Es un agente biológico muy pequeño biológica acelular (virus)?",
-            "si": { "redirigir": "categorias/virus.json" },
-            "no": { "resultado": "TANGIBLE NO CLASIFICADO (no es objeto, lugar ni virus; revisa la ruta o crea una categoría)" }
+            "pregunta": "¿Es un agente biológico muy pequeño acelular (virus)?",
+            "si": {
+              "pregunta": "¿Necesita entrar en otro ser vivo para multiplicarse?",
+              "si": {
+                "pregunta": "¿Posee una cápside (cubierta proteica) alrededor de su material genético?",
+                "si": {
+                  "pregunta": "¿El virus infecta principalmente animales (incluido el ser humano)?",
+                  "si": {
+                    "resultado": "VIRUS ANIMAL (ej. gripe, VIH, rabia, coronavirus, etc.)"
+                  },
+                  "no": {
+                    "pregunta": "¿El virus infecta plantas?",
+                    "si": {
+                      "resultado": "VIRUS VEGETAL (ej. mosaico del tabaco, virosis en cultivos, etc.)"
+                    },
+                    "no": {
+                      "pregunta": "¿El virus infecta bacterias?",
+                      "si": {
+                        "resultado": "BACTERIÓFAGO (virus de bacterias)"
+                      },
+                      "no": {
+                        "pregunta": "¿El virus necesita otro virus para multiplicarse?",
+                        "si": {
+                          "resultado": "VIRUS SATÉLITE (ej. virus delta, virus asociados a adenovirus)"
+                        },
+                        "no": {
+                          "resultado": "OTRO TIPO DE VIRUS (no clasificado en esta rama)"
+                        }
+                      }
+                    }
+                  }
+                },
+                "no": {
+                  "pregunta": "¿Solo tiene material genético sin cápside proteica y afecta plantas?",
+                  "si": {
+                    "resultado": "VIROIDE (ej. viroide del aguacate, viroide de la papa, etc.)"
+                  },
+                  "no": {
+                    "pregunta": "¿Es únicamente una proteína infecciosa que puede causar enfermedad?",
+                    "si": {
+                      "resultado": "PRION (ej. prion de la vaca loca, Creutzfeldt-Jakob)"
+                    },
+                    "no": {
+                      "resultado": "AGENTE ACELULAR NO CLASIFICADO (puede ser desconocido)"
+                    }
+                  }
+                }
+              },
+              "no": {
+                "resultado": "NO ES UN AGENTE BIOLÓGICO ACELULAR (probablemente ser vivo o molécula inerte)"
+              }
+            },
+            "no": {
+              "resultado": "TANGIBLE NO CLASIFICADO (no es objeto, lugar ni virus; revisa la ruta o crea una categoría)"
+            }
           }
         }
       }
     },
-    "no": { "redirigir": "categorias/universo.json" }
+    "no": {
+      "pregunta": "¿Pertenece al Sistema Solar?",
+      "si": {
+        "pregunta": "¿Emite luz propia?",
+        "si": {
+          "resultado": "SOL (la única estrella del Sistema Solar)"
+        },
+        "no": {
+          "pregunta": "¿Es una REGIÓN con muchos objetos (banda/nube) y no un único objeto?",
+          "si": {
+            "pregunta": "¿Está entre Marte y Júpiter?",
+            "si": {
+              "resultado": "CINTURÓN DE ASTEROIDES"
+            },
+            "no": {
+              "pregunta": "¿Está más allá de Neptuno como un gran anillo disperso?",
+              "si": {
+                "resultado": "CINTURÓN DE KUIPER"
+              },
+              "no": {
+                "pregunta": "¿Rodea al Sistema Solar muy, muy lejos en forma de nube esférica?",
+                "si": {
+                  "resultado": "NUBE DE OORT"
+                },
+                "no": {
+                  "resultado": "REGIÓN DEL SISTEMA SOLAR NO CLASIFICADA"
+                }
+              }
+            }
+          },
+          "no": {
+            "pregunta": "¿Orbita a un planeta?",
+            "si": {
+              "pregunta": "¿Orbita a la Tierra?",
+              "si": {
+                "resultado": "LUNA (satélite natural de la Tierra)"
+              },
+              "no": {
+                "resultado": "OTRA LUNA DEL SISTEMA SOLAR (Titán, Europa, Ganímedes, etc.)"
+              }
+            },
+            "no": {
+              "pregunta": "¿Presenta cola de gas/polvo cuando se acerca al Sol?",
+              "si": {
+                "resultado": "COMETA"
+              },
+              "no": {
+                "pregunta": "¿Es aproximadamente redondo (no muy irregular)?",
+                "si": {
+                  "pregunta": "¿Es uno de los 8 planetas principales?",
+                  "si": {
+                    "pregunta": "¿Tiene superficie rocosa sólida (planeta 'terrestre')?",
+                    "si": {
+                      "pregunta": "¿Es muy pequeño y el más cercano al Sol?",
+                      "si": {
+                        "resultado": "MERCURIO"
+                      },
+                      "no": {
+                        "pregunta": "¿Está muy caliente con atmósfera muy densa y efecto invernadero extremo?",
+                        "si": {
+                          "resultado": "VENUS"
+                        },
+                        "no": {
+                          "pregunta": "¿Es nuestro propio planeta con vida conocida?",
+                          "si": {
+                            "resultado": "TIERRA"
+                          },
+                          "no": {
+                            "pregunta": "¿Es rojizo y frío, conocido como el 'Planeta Rojo'?",
+                            "si": {
+                              "resultado": "MARTE"
+                            },
+                            "no": {
+                              "resultado": "PLANETA ROCOSO NO CLASIFICADO"
+                            }
+                          }
+                        }
+                      }
+                    },
+                    "no": {
+                      "pregunta": "¿Es un planeta gigante (atmósfera espesa, muy grande)?",
+                      "si": {
+                        "pregunta": "¿Es el más grande de todos?",
+                        "si": {
+                          "resultado": "JÚPITER"
+                        },
+                        "no": {
+                          "pregunta": "¿Tiene anillos muy notorios y apariencia amarillenta?",
+                          "si": {
+                            "resultado": "SATURNO"
+                          },
+                          "no": {
+                            "pregunta": "¿Es azul-verdoso y rota 'de lado' (eje muy inclinado)?",
+                            "si": {
+                              "resultado": "URANO"
+                            },
+                            "no": {
+                              "pregunta": "¿Es azul intenso y el más lejano de los 8 planetas?",
+                              "si": {
+                                "resultado": "NEPTUNO"
+                              },
+                              "no": {
+                                "resultado": "PLANETA GIGANTE NO CLASIFICADO"
+                              }
+                            }
+                          }
+                        }
+                      },
+                      "no": {
+                        "resultado": "PLANETA NO CLASIFICADO"
+                      }
+                    }
+                  },
+                  "no": {
+                    "pregunta": "¿Comparte su zona orbital con muchos objetos y es más pequeño que los planetas principales?",
+                    "si": {
+                      "pregunta": "¿Está entre Marte y Júpiter?",
+                      "si": {
+                        "resultado": "CERES (planeta enano del cinturón de asteroides)"
+                      },
+                      "no": {
+                        "pregunta": "¿Está más allá de Neptuno?",
+                        "si": {
+                          "pregunta": "¿Es el famoso ex-planeta con 'corazón' en su superficie?",
+                          "si": {
+                            "resultado": "PLUTÓN (planeta enano)"
+                          },
+                          "no": {
+                            "pregunta": "¿Es uno de los más masivos, comparable a Plutón?",
+                            "si": {
+                              "resultado": "ERIS (planeta enano transneptuniano)"
+                            },
+                            "no": {
+                              "pregunta": "¿Tiene forma muy alargada/ovalada?",
+                              "si": {
+                                "resultado": "HAUMEA (planeta enano transneptuniano)"
+                              },
+                              "no": {
+                                "pregunta": "¿Presenta superficie rojiza brillante (hielo/tiolinas)?",
+                                "si": {
+                                  "resultado": "MAKEMAKE (planeta enano transneptuniano)"
+                                },
+                                "no": {
+                                  "resultado": "PLANETA ENANO TRANSNEPTUNIANO (otro)"
+                                }
+                              }
+                            }
+                          }
+                        },
+                        "no": {
+                          "resultado": "PLANETA ENANO NO CLASIFICADO"
+                        }
+                      }
+                    },
+                    "no": {
+                      "resultado": "OBJETO REDONDO DEL S.S. NO CLASIFICADO"
+                    }
+                  }
+                },
+                "no": {
+                  "pregunta": "¿Es rocoso/metálico e irregular (sin cola)?",
+                  "si": {
+                    "resultado": "ASTEROIDE (incluye troyanos y NEAs)"
+                  },
+                  "no": {
+                    "pregunta": "¿Está entrando en la atmósfera de un planeta como 'estrella fugaz'?",
+                    "si": {
+                      "resultado": "METEORO"
+                    },
+                    "no": {
+                      "pregunta": "¿Es un fragmento que ya cayó y está en la superficie?",
+                      "si": {
+                        "resultado": "METEORITO"
+                      },
+                      "no": {
+                        "resultado": "CUERPO MENOR DEL S.S. NO CLASIFICADO"
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "no": {
+        "pregunta": "¿Es una galaxia completa?",
+        "si": {
+          "pregunta": "¿Es la galaxia donde vivimos?",
+          "si": {
+            "resultado": "VÍA LÁCTEA (galaxia espiral)"
+          },
+          "no": {
+            "pregunta": "¿Es la gran vecina espiral más cercana a la Vía Láctea?",
+            "si": {
+              "resultado": "ANDRÓMEDA (M31, galaxia espiral)"
+            },
+            "no": {
+              "pregunta": "¿Es una compañera pequeña de la Vía Láctea visible en el hemisferio sur?",
+              "si": {
+                "resultado": "NUBES DE MAGALLANES (galaxias enanas)"
+              },
+              "no": {
+                "pregunta": "¿Tiene un núcleo extremadamente brillante (quásar/núcleo activo)?",
+                "si": {
+                  "resultado": "GALAXIA ACTIVA / QUÁSAR"
+                },
+                "no": {
+                  "resultado": "OTRA GALAXIA (espiral, elíptica o irregular)"
+                }
+              }
+            }
+          }
+        },
+        "no": {
+          "pregunta": "¿Orbita una estrella FUERA del Sistema Solar?",
+          "si": {
+            "pregunta": "¿Es muy grande y muy cercano a su estrella (muy caliente)?",
+            "si": {
+              "resultado": "EXOPLANETA TIPO 'JÚPITER CALIENTE'"
+            },
+            "no": {
+              "pregunta": "¿Es más grande que la Tierra pero más pequeño que Neptuno?",
+              "si": {
+                "resultado": "EXOPLANETA 'SÚPER-TIERRA' o 'MINI-NEPTUNO'"
+              },
+              "no": {
+                "pregunta": "¿No orbita ninguna estrella (viaja solo por el espacio)?",
+                "si": {
+                  "resultado": "PLANETA ERRANTE (interestelar)"
+                },
+                "no": {
+                  "resultado": "EXOPLANETA (otro tipo)"
+                }
+              }
+            }
+          },
+          "no": {
+            "pregunta": "¿Es una nube de gas y polvo (brilla o bloquea luz)?",
+            "si": {
+              "pregunta": "¿Está formando estrellas nuevas (regiones brillantes/emisoras)?",
+              "si": {
+                "resultado": "NEBULOSA DE FORMACIÓN ESTELAR (emisión/reflexión)"
+              },
+              "no": {
+                "pregunta": "¿Es una 'burbuja' expulsada por una estrella moribunda?",
+                "si": {
+                  "resultado": "NEBULOSA PLANETARIA / RESTO ESTELAR"
+                },
+                "no": {
+                  "resultado": "NEBULOSA (otro tipo)"
+                }
+              }
+            },
+            "no": {
+              "pregunta": "¿Es un grupo de MUCHAS estrellas juntas?",
+              "si": {
+                "pregunta": "¿Es muy compacto y esférico (miles a millones de estrellas, muy antiguo)?",
+                "si": {
+                  "resultado": "CÚMULO GLOBULAR"
+                },
+                "no": {
+                  "resultado": "CÚMULO ABIERTO (como las Pléyades)"
+                }
+              },
+              "no": {
+                "pregunta": "¿Es un objeto extremadamente denso, resto de una estrella?",
+                "si": {
+                  "pregunta": "¿Emite pulsos regulares de radio/luz?",
+                  "si": {
+                    "resultado": "PÚLSAR (estrella de neutrones)"
+                  },
+                  "no": {
+                    "pregunta": "¿Es pequeño, muy caliente y tenue (del tamaño de un planeta)?",
+                    "si": {
+                      "resultado": "ENANA BLANCA"
+                    },
+                    "no": {
+                      "pregunta": "¿Tiene gravedad tan fuerte que ni la luz escapa?",
+                      "si": {
+                        "resultado": "AGUJERO NEGRO ESTELAR"
+                      },
+                      "no": {
+                        "resultado": "REMANENTE ESTELAR NO CLASIFICADO"
+                      }
+                    }
+                  }
+                },
+                "no": {
+                  "pregunta": "¿Es un agujero negro gigante en el centro de una galaxia?",
+                  "si": {
+                    "resultado": "AGUJERO NEGRO SUPERMASIVO (núcleo galáctico)"
+                  },
+                  "no": {
+                    "pregunta": "¿Es un gran conjunto de galaxias unidas por gravedad?",
+                    "si": {
+                      "resultado": "CÚMULO DE GALAXIAS"
+                    },
+                    "no": {
+                      "pregunta": "¿Es la radiación de fondo del universo (eco del Big Bang)?",
+                      "si": {
+                        "resultado": "FONDO CÓSMICO DE MICROONDAS"
+                      },
+                      "no": {
+                        "resultado": "OBJETO/FRAGMENTO CÓSMICO NO CLASIFICADO"
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
   },
-  "no": { "redirigir": "categorias/intangiblesperce.json" }
+  "no": {
+    "pregunta": "¿Es intangible (no se puede tocar), pero se puede percibir con la vista, el oído, el olfato, el gusto o por temperatura?",
+    "si": {
+      "pregunta": "¿Se veS?",
+      "si": {
+        "pregunta": "¿Hay luz visible (no es oscuridad)?",
+        "si": {
+          "pregunta": "¿Te refieres a LUZ constante (no son destellos o luces intermitentes)?",
+          "si": {
+            "pregunta": "¿Proviene del Sol (exterior, de día)?",
+            "si": {
+              "resultado": "LUZ SOLAR"
+            },
+            "no": {
+              "resultado": "LUZ (ILUMINACIÓN) NO SOLAR, como focos, linternas, o elementos luminicentes"
+            }
+          },
+          "no": {
+            "pregunta": "¿Ves destellos o estelas de COLORES en el cielo?",
+            "si": {
+              "pregunta": "¿También se oye un estallido o varias explosiones?",
+              "si": {
+                "pregunta": "¿Es de origen humano (fiesta/show/evento)?",
+                "si": {
+                  "resultado": "FUEGOS ARTIFICIALES (ESPECTÁCULO)"
+                },
+                "no": {
+                  "resultado": "TORMENTA ELÉCTRICA / TRUENO / RAYO / OTRO LUMINOSO CON SONIDO (REVISAR)"
+                }
+              },
+              "no": {
+                "pregunta": "¿Parece un efecto óptico del ambiente (sin ruido)?",
+                "si": {
+                  "resultado": "FENÓMENO ÓPTICO COLORIDO (ARCOÍRIS/AURORA/OTRO)"
+                },
+                "no": {
+                  "resultado": "OTRO VISUAL COLORIDO (REVISAR)"
+                }
+              }
+            },
+            "no": {
+              "pregunta": "¿Es un COLOR específico (rojo/verde/azul, etc.)?",
+              "si": {
+                "resultado": "COLOR"
+              },
+              "no": {
+                "pregunta": "¿Es una IMAGEN o PATRÓN (figura, texto, dibujo, ilusión óptica)?",
+                "si": {
+                  "resultado": "IMAGEN / PATRÓN / ILUSIÓN ÓPTICA"
+                },
+                "no": {
+                  "pregunta": "¿Es un FENÓMENO ÓPTICO del ambiente (sombra, reflejo, destello, halo, espejismo, refracción)?",
+                  "si": {
+                    "resultado": "FENÓMENO ÓPTICO (SOMBRA/REFLEJO/DESTELLO/HALO/ESPEJISMO/REFRACCIÓN)"
+                  },
+                  "no": {
+                    "resultado": "OTRO VISUAL (REVISAR)"
+                  }
+                }
+              }
+            }
+          }
+        },
+        "no": {
+          "resultado": "OSCURIDAD (AUSENCIA DE LUZ VISIBLE)"
+        }
+      },
+      "no": {
+        "pregunta": "¿Se escucha (entra por los oídos)?",
+        "si": {
+          "pregunta": "¿Es audible para humanos (aprox. 20 Hz a 20 kHz)?",
+          "si": {
+            "pregunta": "¿Tiene nota/tono claro (como una nota musical o pitido)?",
+            "si": {
+              "resultado": "TONO / NOTA / MUSICA"
+            },
+            "no": {
+              "pregunta": "¿Es habla o voz?",
+              "si": {
+                "resultado": "HABLA / VOZ / GRITO / ETC"
+              },
+              "no": {
+                "pregunta": "¿Es un ruido fuerte tipo estallido/retumbo?",
+                "si": {
+                  "pregunta": "¿Ocurre con tormentas y después de un destello en el cielo?",
+                  "si": {
+                    "resultado": "TRUENO"
+                  },
+                  "no": {
+                    "pregunta": "¿Al mismo tiempo se ven destellos de colores en el cielo?",
+                    "si": {
+                      "pregunta": "¿Es de origen humano (fiesta/show)?",
+                      "si": {
+                        "resultado": "FUEGOS ARTIFICIALES (ESPECTÁCULO)"
+                      },
+                      "no": {
+                        "resultado": "EXPLOSIÓN / LUMINOSO NATURAL (REVISAR TORMENTA ELÉCTRICA)"
+                      }
+                    },
+                    "no": {
+                      "resultado": "OTRO RUIDO (EXPLOSIÓN/GOLPE/ZUMBIDO FUERTE, ETC)"
+                    }
+                  }
+                },
+                "no": {
+                  "pregunta": "¿Es un efecto del sonido en el espacio (eco, reverberación, resonancia)?",
+                  "si": {
+                    "resultado": "EFECTO ACÚSTICO (ECO/REVERB/RESONANCIA)"
+                  },
+                  "no": {
+                    "resultado": "RUIDO SUAVE / DE FONDO (ZUMBIDO, SOPLIDO, MURMULLO)"
+                  }
+                }
+              }
+            }
+          },
+          "no": {
+            "resultado": "SILENCIO / INFRASÓN / ULTRASÓN"
+          }
+        },
+        "no": {
+          "pregunta": "¿Se huele (olor en el aire)?",
+          "si": {
+            "pregunta": "¿Resulta agradable?",
+            "si": {
+              "resultado": "OLOR AGRADABLE (FLORAL/FRUTAL/VAINILLA/CÍTRICO…)"
+            },
+            "no": {
+              "pregunta": "¿Resulta desagradable o irritante?",
+              "si": {
+                "resultado": "OLOR DESAGRADABLE / IRRITANTE (AZUFRADO/HUMO/RANCIO/AMONÍACO…)"
+              },
+              "no": {
+                "resultado": "OLOR NEUTRO / ESPECÍFICO (PETRICHOR/OZONO/MENTOLADO/ALCANFORADO…)"
+              }
+            }
+          },
+          "no": {
+            "pregunta": "¿Se siente como sabor en la lengua (no solo por el olfato)?",
+            "si": {
+              "pregunta": "¿Es un sabor básico?",
+              "si": {
+                "resultado": "SABOR (DULCE/SALADO/ÁCIDO/AMARGO/UMAMI)"
+              },
+              "no": {
+                "pregunta": "¿Es una sensación tipo picante/mentol/astringente/efervescente (no sabor básico)?",
+                "si": {
+                  "resultado": "QUIMIOESTESIA ORAL (PICANTE/MENTOL/ASTRINGENTE/EFERVESCENTE)"
+                },
+                "no": {
+                  "resultado": "INSÍPIDO / OTRO"
+                }
+              }
+            },
+            "no": {
+              "pregunta": "¿Se percibe como calor o frío sin tocar (temperatura ambiente/radiación)?",
+              "si": {
+                "pregunta": "¿Proviene más de radiación (sol/fuego) que del aire ambiente?",
+                "si": {
+                  "resultado": "CALOR/FRÍO RADIANTE (P.EJ., SOL/FOGO)"
+                },
+                "no": {
+                  "pregunta": "¿La sensación ambiental es extrema?",
+                  "si": {
+                    "resultado": "EXTREMO (ARDOR / CONGELANTE)"
+                  },
+                  "no": {
+                    "resultado": "MODERADO (TEMPLADO / FRESCO)"
+                  }
+                }
+              },
+              "no": {
+                "resultado": "NEUTRO (NI CALOR NI FRÍO) / NO ENTRA AQUÍ (EMOCIONES/IDEAS/REGLAS)"
+              }
+            }
+          }
+        }
+      }
+    },
+    "no": {
+      "pregunta": "¿Se trata de una SENSACIÓN CORPORAL INTERNA? (se percibe 'desde adentro': dolor, hambre, sed, sueño, fatiga, náusea, picazón/comezón, mareo, tensión corporal, escalofríos, etc.)",
+      "si": {
+        "pregunta": "¿Es DOLOR?",
+        "si": {
+          "pregunta": "¿El dolor está causado por una ENFERMEDAD o INFECCIÓN (virus, bacteria, hongo, parásito) diagnosticable?",
+          "si": {
+            "pregunta": "¿Parece INFECCIOSO (p. ej., fiebre/malestar general) más que una condición no infecciosa?",
+            "si": {
+              "resultado": "DOLOR POR INFECCIÓN (virus como COVID-19/influenza; bacterias como otitis/caries; hongos; parásitos; etc.)"
+            },
+            "no": {
+              "pregunta": "¿Se debe a una ENFERMEDAD NO INFECCIOSA?",
+              "si": {
+                "resultado": "DOLOR POR ENFERMEDAD NO INFECCIOSA (migraña, artritis, cáncer, autoinmune, etc.)"
+              },
+              "no": {
+                "resultado": "DOLOR POR PADECIMIENTO NO ESPECIFICADO"
+              }
+            }
+          },
+          "no": {
+            "pregunta": "¿El dolor viene de una causa INMEDIATA/EXTERNA (golpe, corte, quemadura) o de uso/posición (sobreesfuerzo, mala postura)?",
+            "si": {
+              "resultado": "DOLOR POR LESIÓN/ESTÍMULO INMEDIATO (golpe, quemadura, sobreesfuerzo, postura, etc.)"
+            },
+            "no": {
+              "pregunta": "¿Es un dolor PERSISTENTE sin causa reciente clara (crónico/neuropático/psicosomático)?",
+              "si": {
+                "resultado": "DOLOR CRÓNICO/NEUROPÁTICO/PSICOSOMÁTICO (lumbalgia crónica, neuropatía, somatización, etc.)"
+              },
+              "no": {
+                "resultado": "DOLOR NO ESPECIFICADO (agudo o crónico, local o difuso)"
+              }
+            }
+          }
+        },
+        "no": {
+          "pregunta": "¿Es hambre o sed? (incluye apetito, antojo)",
+          "si": {
+            "resultado": "IMPULSO FISIOLÓGICO (hambre, sed, apetito, antojo, etc.)"
+          },
+          "no": {
+            "pregunta": "¿Es sueño, cansancio o fatiga?",
+            "si": {
+              "resultado": "ESTADO FISIOLÓGICO (sueño, fatiga, agotamiento, somnolencia, etc.)"
+            },
+            "no": {
+              "pregunta": "¿Es náusea, mareo, picazón, escalofrío o tensión corporal?",
+              "si": {
+                "resultado": "OTRAS SENSACIONES INTERNAS (náusea, mareo, picazón, escalofrío, tensión, etc.)"
+              },
+              "no": {
+                "resultado": "SENSACIÓN CORPORAL INTERNA NO ESPECIFICADA"
+              }
+            }
+          }
+        }
+      },
+      "no": {
+        "pregunta": "¿Se trata de un SUCESO, PROCESO o ACCIÓN? (algo que ocurre o se realiza, natural o dirigido)",
+        "si": {
+          "pregunta": "¿Es un PROCESO NATURAL (sin intención humana directa)?",
+          "si": {
+            "resultado": "PROCESO NATURAL (erosión, evaporación, crecimiento, selección natural, meteorización, ciclo del agua, etc.)"
+          },
+          "no": {
+            "pregunta": "¿Es una ACCIÓN HUMANA INDIVIDUAL? (acto personal: correr, escribir, pensar, decidir, imaginar, etc.)",
+            "si": {
+              "resultado": "ACCIÓN HUMANA INDIVIDUAL (correr, escribir, pensar, decidir, etc.)"
+            },
+            "no": {
+              "pregunta": "¿Es una ACCIÓN COLECTIVA o SOCIAL? (actividad coordinada o institucional: negociar, enseñar, cooperar, votar, legislar, etc.)",
+              "si": {
+                "resultado": "ACCIÓN COLECTIVA/SOCIAL (negociar, enseñar, cooperar, votar, etc.)"
+              },
+              "no": {
+                "pregunta": "¿Es un SUCESO/HECHO (histórico, meteorológico, deportivo, mental) más que una acción? (ocurre sin agente claro o se describe como evento)",
+                "si": {
+                  "resultado": "SUCESO/EVENTO (terremoto, accidente, descubrimiento, inspiración súbita, etc.)"
+                },
+                "no": {
+                  "resultado": "PROCESO/ACCIÓN NO CLASIFICADO (flujo, cambio, transición, etc.)"
+                }
+              }
+            }
+          }
+        },
+        "no": {
+          "pregunta": "¿Se trata de una CUALIDAD o ATRIBUTO que describe algo o a alguien?",
+          "si": {
+            "pregunta": "¿Es una CUALIDAD OBJETIVA y medible? (física o cuantificable: rapidez, altura, temperatura, masa, precisión, rendimiento, etc.)",
+            "si": {
+              "resultado": "CUALIDAD OBJETIVA/MEDIBLE (rapidez, altura, precisión, etc.)"
+            },
+            "no": {
+              "pregunta": "¿Es una CUALIDAD PSICOLÓGICA o de personalidad? (inteligencia, creatividad, apertura, responsabilidad, etc.)",
+              "si": {
+                "resultado": "CUALIDAD PSICOLÓGICA (inteligencia, creatividad, rasgos de personalidad, etc.)"
+              },
+              "no": {
+                "pregunta": "¿Es una CUALIDAD ÉTICA o MORAL? (honestidad, justicia, humildad, valentía, compasión, etc.)",
+                "si": {
+                  "resultado": "CUALIDAD ÉTICA/MORAL (honestidad, justicia, humildad, etc.)"
+                },
+                "no": {
+                  "pregunta": "¿Es una CUALIDAD ESTÉTICA? (belleza, armonía, elegancia, fealdad, estilo, etc.)",
+                  "si": {
+                    "resultado": "CUALIDAD ESTÉTICA (belleza, armonía, elegancia, etc.)"
+                  },
+                  "no": {
+                    "resultado": "OTRA CUALIDAD/ATRIBUTO (rareza, importancia, utilidad, etc.)"
+                  }
+                }
+              }
+            }
+          },
+          "no": {
+            "pregunta": "¿Se trata de una CAPACIDAD, TALENTO o HABILIDAD DESARROLLABLE? (mejora con práctica/aprendizaje)",
+            "si": {
+              "pregunta": "¿Predomina lo físico?",
+              "si": {
+                "resultado": "HABILIDAD FÍSICA (agilidad, fuerza, resistencia, coordinación, etc.)"
+              },
+              "no": {
+                "pregunta": "¿Predomina lo cognitivo/metacognitivo?",
+                "si": {
+                  "resultado": "HABILIDAD COGNITIVA/METACOGNITIVA (concentración, análisis, planificación, etc.)"
+                },
+                "no": {
+                  "pregunta": "¿Predomina lo social/comunicativo?",
+                  "si": {
+                    "resultado": "HABILIDAD SOCIAL/COMUNICATIVA (empatía, liderazgo, etc.)"
+                  },
+                  "no": {
+                    "pregunta": "¿Predomina lo creativo/artístico/técnico?",
+                    "si": {
+                      "resultado": "HABILIDAD CREATIVA/ARTÍSTICA/TÉCNICA (música, dibujo, programación, etc.)"
+                    },
+                    "no": {
+                      "resultado": "OTRA HABILIDAD/COMPETENCIA (autorregulación, resiliencia, etc.)"
+                    }
+                  }
+                }
+              }
+            },
+            "no": {
+              "pregunta": "¿Se trata de una EMOCIÓN, SENTIMIENTO o ESTADO DE ÁNIMO? (afecto de corta o larga duración; si es puramente corporal ya se clasificó antes)",
+              "si": {
+                "pregunta": "¿Es positiva (atractiva)?",
+                "si": {
+                  "resultado": "EMOCIÓN POSITIVA (alegría, amor, esperanza, gratitud, alivio, etc.)"
+                },
+                "no": {
+                  "pregunta": "¿Es negativa/aversiva?",
+                  "si": {
+                    "resultado": "EMOCIÓN NEGATIVA (ira, miedo, tristeza, culpa, vergüenza, ansiedad, etc.)"
+                  },
+                  "no": {
+                    "pregunta": "¿Es neutra/ambivalente?",
+                    "si": {
+                      "resultado": "EMOCIÓN/AFECTO NEUTRO/AMBIVALENTE (sorpresa, serenidad, etc.)"
+                    },
+                    "no": {
+                      "pregunta": "¿Es una sensación emocional general (bienestar/malestar/tensión)?",
+                      "si": {
+                        "resultado": "SENSACIÓN EMOCIONAL (bienestar, malestar, tensión, etc.)"
+                      },
+                      "no": {
+                        "resultado": "AFECTO/ESTADO ANÍMICO NO ESPECIFICADO"
+                      }
+                    }
+                  }
+                }
+              },
+              "no": {
+                "pregunta": "¿Es un ÁREA DE CONOCIMIENTO, DISCIPLINA o SABER ORGANIZADO?",
+                "si": {
+                  "pregunta": "¿Son CIENCIAS FORMALES/EXACTAS?",
+                  "si": {
+                    "resultado": "CIENCIAS FORMALES/EXACTAS (matemáticas, lógica, computación teórica, estadística, etc.)"
+                  },
+                  "no": {
+                    "pregunta": "¿Son CIENCIAS NATURALES?",
+                    "si": {
+                      "resultado": "CIENCIAS NATURALES (física, química, biología, etc.)"
+                    },
+                    "no": {
+                      "pregunta": "¿Son CIENCIAS SOCIALES?",
+                      "si": {
+                        "resultado": "CIENCIAS SOCIALES (sociología, economía, etc.)"
+                      },
+                      "no": {
+                        "pregunta": "¿Son HUMANIDADES/ARTES?",
+                        "si": {
+                          "resultado": "HUMANIDADES Y ARTES (filosofía, historia, literatura, etc.)"
+                        },
+                        "no": {
+                          "pregunta": "¿Son ÁREAS APLICADAS/PROFESIONALES?",
+                          "si": {
+                            "resultado": "SABERES APLICADOS/PROFESIONALES (ingeniería, medicina, derecho, etc.)"
+                          },
+                          "no": {
+                            "resultado": "OTRA ÁREA DE CONOCIMIENTO (interdisciplinarias, data science, etc.)"
+                          }
+                        }
+                      }
+                    }
+                  }
+                },
+                "no": {
+                  "pregunta": "¿Es una CONSTRUCCIÓN SOCIAL o CULTURAL?",
+                  "si": {
+                    "pregunta": "¿Son VALORES/PRINCIPIOS?",
+                    "si": {
+                      "resultado": "VALORES/PRINCIPIOS (respeto, solidaridad, libertad, equidad, etc.)"
+                    },
+                    "no": {
+                      "pregunta": "¿Son NORMAS/SISTEMAS NORMATIVOS?",
+                      "si": {
+                        "resultado": "NORMAS Y SISTEMAS NORMATIVOS (leyes, moral, religión, costumbres, etc.)"
+                      },
+                      "no": {
+                        "pregunta": "¿Son INSTITUCIONES/ORGANIZACIONES?",
+                        "si": {
+                          "resultado": "INSTITUCIÓN/ORGANIZACIÓN SOCIAL (familia, Estado, empresa, etc.)"
+                        },
+                        "no": {
+                          "pregunta": "¿Son ROLES/ESTATUS/IDENTIDADES SOCIALES?",
+                          "si": {
+                            "resultado": "ROL/ESTATUS/IDENTIDAD SOCIAL (ciudadano, docente, paciente, etc.)"
+                          },
+                          "no": {
+                            "resultado": "OTRA CONSTRUCCIÓN SOCIAL/CULTURAL (tradiciones, subculturas, modas, reputación, prestigio, etc.)"
+                          }
+                        }
+                      }
+                    }
+                  },
+                  "no": {
+                    "pregunta": "¿Se relaciona con CREENCIAS ESPIRITUALES, nociones EXISTENCIALES o conceptos METAFÍSICOS?",
+                    "si": {
+                      "pregunta": "¿Es una PRÁCTICA ESPIRITUAL?",
+                      "si": {
+                        "resultado": "PRÁCTICA ESPIRITUAL (meditación, oración, ritual, vacio, etc.)"
+                      },
+                      "no": {
+                        "pregunta": "¿Es un CONCEPTO ONTOLÓGICO/METAFÍSICO?",
+                        "si": {
+                          "resultado": "CONCEPTO METAFÍSICO/ONTOLÓGICO (ser, nada, alma, destino, etc.)"
+                        },
+                        "no": {
+                          "pregunta": "¿Es una CUESTIÓN EXISTENCIAL/DE SENTIDO (vida, muerte, propósito, consciencia)?",
+                          "si": {
+                            "resultado": "CUESTIÓN EXISTENCIAL (vida, muerte, sentido, consciencia, etc.)"
+                          },
+                          "no": {
+                            "resultado": "OTRA CREENCIA/DOCTRINA ESPIRITUAL (cosmologías, teologías, etc.)"
+                          }
+                        }
+                      }
+                    },
+                    "no": {
+                      "pregunta": "¿Es una IDEA, SÍMBOLO o CONCEPTO ABSTRACTO?",
+                      "si": {
+                        "pregunta": "¿Pertenece al LENGUAJE y SÍMBOLOS?",
+                        "si": {
+                          "resultado": "LENGUAJE Y SÍMBOLOS (idioma, palabras, gramática, números, signos, notación musical, símbolos lógicos, emojis, etc.)"
+                        },
+                        "no": {
+                          "pregunta": "¿Es un OBJETO/MARCO MATEMÁTICO-LÓGICO?",
+                          "si": {
+                            "resultado": "ABSTRACCIÓN MATEMÁTICA/LÓGICA (número, infinito, algoritmo, causalidad, etc.)"
+                          },
+                          "no": {
+                            "pregunta": "¿Es un MODELO/TEORÍA/CONCEPTO CIENTÍFICO?",
+                            "si": {
+                              "resultado": "MODELO/TEORÍA/CONCEPTO CIENTÍFICO (evolución, entropía, campo, etc.)"
+                            },
+                            "no": {
+                              "pregunta": "¿Es de INFORMÁTICA/SOFTWARE/ALGORITMOS?",
+                              "si": {
+                                "resultado": "CONCEPTO DE INFORMACIÓN Y CÓMPUTO (algoritmo, protocolo, software, IA, etc.)"
+                              },
+                              "no": {
+                                "resultado": "ABSTRACCIÓN/IDEA GENERAL (teoría de juegos, justicia distributiva, contrato social, etc.)"
+                              }
+                            }
+                          }
+                        }
+                      },
+                      "no": {
+                        "pregunta": "¿Se trata de INFORMACIÓN, DATOS, MEDIDAS o VALORES ABSTRACTOS?",
+                        "si": {
+                          "pregunta": "¿Es DATO/HECHO/EVIDENCIA/CONOCIMIENTO?",
+                          "si": {
+                            "resultado": "DATO/HECHO/EVIDENCIA/CONOCIMIENTO (verdad, mentira, evidencia, metadatos, etc.)"
+                          },
+                          "no": {
+                            "pregunta": "¿Es MAGNITUD/ÍNDICE/VALOR (económico o de riesgo)?",
+                            "si": {
+                              "resultado": "VALOR/MAGNITUD/ÍNDICE (precio, deuda, riesgo, ranking, etc.)"
+                            },
+                            "no": {
+                              "resultado": "INFORMACIÓN ABSTRACTA (señal, código, clave, rumor, desinformación, etc.)"
+                            }
+                          }
+                        },
+                        "no": {
+                          "pregunta": "¿Es una ENTIDAD HIPOTÉTICA/NO COMPROBADA o de FICCIÓN/IMAGINARIO?",
+                          "si": {
+                            "pregunta": "¿Es FICCIÓN/IMAGINARIO (dragón, magia, mundos ficticios)?",
+                            "si": {
+                              "resultado": "FICCIÓN/IMAGINARIO (dragón, unicornio, magia, superpoderes, etc.)"
+                            },
+                            "no": {
+                              "pregunta": "¿Es HIPÓTESIS/ENTIDAD NO CONFIRMADA científicamente (vida extraterrestre, multiverso)?",
+                              "si": {
+                                "resultado": "HIPÓTESIS/ENTIDAD NO CONFIRMADA (vida extraterrestre, multiverso, etc.)"
+                              },
+                              "no": {
+                                "pregunta": "¿Extraterrestres como PERSONAJES DE FICCIÓN específicos?",
+                                "si": {
+                                  "resultado": "EXTRATERRESTRES DE FICCIÓN (marcianos, xenomorfos, etc.)"
+                                },
+                                "no": {
+                                  "resultado": "OTRO IMAGINARIO/HIPOTÉTICO (leyendas urbanas, críptidos conceptuales, etc.)"
+                                }
+                              }
+                            }
+                          },
+                          "no": {
+                            "resultado": "CONCEPTO INTANGIBLE GENERAL (cajón de sastre/ninguna de las anteriores)"
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
 }
