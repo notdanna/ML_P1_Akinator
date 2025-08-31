@@ -165,7 +165,7 @@
                     "si": { "resultado": "CONCEPTO METAFÍSICO/ONTOLÓGICO (ser, nada, alma, destino, etc.)" },
                     "no": {
                       "pregunta": "¿Es una CUESTIÓN EXISTENCIAL/DE SENTIDO (vida, muerte, propósito, consciencia)?",
-                      "si": { "resultado": "CUESTIÓN EXISTENCIAL (vida, muerte, sentido, consciencia, etc.)" },
+                      "si": { "resultado": "CUESTIÓN EXISTENCIAL (vida, tiempo, muerte, sentido, consciencia, etc.)" },
                       "no": { "resultado": "OTRA CREENCIA/DOCTRINA ESPIRITUAL (cosmologías, teologías, etc.)" }
                     }
                   }
@@ -180,7 +180,7 @@
                       "si": { "resultado": "ABSTRACCIÓN MATEMÁTICA/LÓGICA (número, infinito, algoritmo, causalidad, etc.)" },
                       "no": {
                         "pregunta": "¿Es un MODELO/TEORÍA/CONCEPTO CIENTÍFICO?",
-                        "si": { "resultado": "MODELO/TEORÍA/CONCEPTO CIENTÍFICO (evolución, entropía, campo, etc.)" },
+                        "si": { "resultado": "MODELO/TEORÍA/CONCEPTO CIENTÍFICO (evolución, entropía, campo, vacío, etc.)" },
                         "no": {
                           "pregunta": "¿Es de INFORMÁTICA/SOFTWARE/ALGORITMOS?",
                           "si": { "resultado": "CONCEPTO DE INFORMACIÓN Y CÓMPUTO (algoritmo, protocolo, software, IA, etc.)" },
@@ -196,7 +196,7 @@
                       "si": { "resultado": "DATO/HECHO/EVIDENCIA/CONOCIMIENTO (verdad, mentira, evidencia, metadatos, etc.)" },
                       "no": {
                         "pregunta": "¿Es MAGNITUD/ÍNDICE/VALOR (económico o de riesgo)?",
-                        "si": { "resultado": "VALOR/MAGNITUD/ÍNDICE (precio, deuda, riesgo, ranking, etc.)" },
+                        "si": { "resultado": "VALOR/MAGNITUD/ÍNDICE (precio, deuda, riesgo, ranking, tiempo, etc.)" },
                         "no": { "resultado": "INFORMACIÓN ABSTRACTA (señal, código, clave, rumor, desinformación, etc.)" }
                       }
                     },
