@@ -1,10 +1,10 @@
 import json
 
-# Colores ANSI para resaltar texto en la terminal
-VERDE = '\033[92m'    
-AMARILLO = '\033[93m' 
-RESET = '\033[0m'     
-TAB = "   "          
+# Colores ANSI
+VERDE = '\033[92m'
+AMARILLO = '\033[93m'
+RESET = '\033[0m'
+TAB = " "  # 4 espacios para indentación
 
 # Función para cargar un archivo JSON y devolver su contenido como diccionario
 def cargar_arbol(archivo):

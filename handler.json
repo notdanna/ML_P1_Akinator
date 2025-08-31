@@ -177,7 +177,7 @@
                           "si": {
                             "pregunta": "¿Es una persona (humano)?",
                             "si": {
-                              "resultado": "HUMANO (PERSONA)"
+                              "resultado": "HUMANO (PERSONA, mujer, hombre, infante)"
                             },
                             "no": {
                               "pregunta": "¿Sin cola y cuerpo grande (gorila, chimpancé, orangután)?",
@@ -290,7 +290,7 @@
                                 "resultado": "PALOMAS"
                               },
                               "no": {
-                                "resultado": "OTRAS AVES"
+                                "resultado": "colibri o OTRAS AVES"
                               }
                             }
                           }
@@ -1243,7 +1243,7 @@
                                     "no": {
                                       "pregunta": "¿Es principalmente una golosina de azúcar o chocolate?",
                                       "si": {
-                                        "resultado": "DULCES / GOLOSINAS (Gomitas, Chocolates, Caramelos)"
+                                        "resultado": "DULCES / GOLOSINAS (Gomitas, Chocolates, Caramelos, Bombones)"
                                       },
                                       "no": {
                                         "resultado": "POSTRE FRÍO (Helado, Gelatina)"
@@ -2184,7 +2184,7 @@
       }
     },
     "no": {
-      "pregunta": "¿Se trata de una SENSACIÓN CORPORAL INTERNA? (se percibe 'desde adentro': dolor, hambre, sed, sueño, fatiga, náusea, picazón/comezón, mareo, tensión corporal, escalofríos, etc.)",
+      "pregunta": "¿Se trata de una SENSACIÓN CORPORAL INTERNA? (se percibe 'desde adentro, principalmente por el cuerpo': dolor, hambre, sed, sueño, fatiga, náusea, picazón/comezón, mareo, tensión corporal, escalofríos, etc.)",
       "si": {
         "pregunta": "¿Es DOLOR?",
         "si": {
@@ -2506,7 +2506,7 @@
                               "no": {
                                 "pregunta": "¿Extraterrestres como PERSONAJES DE FICCIÓN específicos?",
                                 "si": {
-                                  "resultado": "EXTRATERRESTRES DE FICCIÓN (marcianos, xenomorfos, etc.)"
+                                  "resultado": "EXTRATERRESTRES DE FICCIÓN (marcianos, xenomorfos, aliens, etc.)"
                                 },
                                 "no": {
                                   "resultado": "OTRO IMAGINARIO/HIPOTÉTICO (leyendas urbanas, críptidos conceptuales, etc.)"
