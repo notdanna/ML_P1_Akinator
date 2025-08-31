@@ -4,7 +4,7 @@ import json
 VERDE = '\033[92m'
 AMARILLO = '\033[93m'
 RESET = '\033[0m'
-TAB = "   "  # 4 espacios para indentación
+TAB = " "  # 4 espacios para indentación
 
 def cargar_arbol(archivo):
     with open(archivo, "r", encoding="utf-8") as f:
