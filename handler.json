@@ -177,7 +177,13 @@
                           "si": {
                             "pregunta": "¿Es una persona (humano)?",
                             "si": {
+                              "pregunta": "¿Eres tú? :b",
+                              "si": {
+                                "resultado": "Parece que pensaste en ti mismo"
+                              },
+                              "no": {
                               "resultado": "HUMANO (PERSONA, mujer, hombre, infante)"
+                              }
                             },
                             "no": {
                               "pregunta": "¿Sin cola y cuerpo grande (gorila, chimpancé, orangután)?",
@@ -1128,13 +1134,25 @@
                         "resultado": "MUEBLE DE USO (silla, sofá, cama, mesa, estufa)"
                       },
                       "no": {
+                        "pregunta": "¿Sirve para guardar cosas?",
+                        "si": {
                         "resultado": "MUEBLE DE ALMACENAJE (clóset, cajonera, estantería, baul, refrigerador, hielera)"
+                        },
+                        "no": {
+                          "pregunta": "¿Sirve para sostener o montar cosas)?",
+                          "si": {
+                            "resultado": "MUEBLE DE SOPORTE (buró, perchero, caballete, cortina, trípode)"
+                          },
+                          "no": {
+                            "resultado": "MUEBLE (otro tipo)"
+                          }
+                        }
                       }
                     },
                     "no": {
                       "pregunta": "¿Se utiliza para escribir, dibujar o para actividades escolares/de oficina?",
                       "si": {
-                        "resultado": "ÚTIL ESCOLAR / DE OFICINA (lápiz, pluma, regla, tijeras, borrador) o incluso un juguete (muñeco, rompecabezas, pelota)"
+                        "resultado": "ÚTIL ESCOLAR / DE OFICINA (lápiz, pluma, regla, tijeras, borrador) o incluso un juguete (muñeco, rompecabezas, pelota) o un libro/cuaderno"
                       },
                       "no": {
                         "pregunta": "¿Su función principal es golpear, atornillar, cortar o sujetar cosas (reparación/construcción)?",
@@ -2432,7 +2450,7 @@
                       "no": {
                         "pregunta": "¿Es un CONCEPTO ONTOLÓGICO/METAFÍSICO?",
                         "si": {
-                          "resultado": "CONCEPTO METAFÍSICO/ONTOLÓGICO (ser, nada, alma, destino, etc.)"
+                          "resultado": "CONCEPTO METAFÍSICO/ONTOLÓGICO (ser, nada, alma, destino, todo etc.)"
                         },
                         "no": {
                           "pregunta": "¿Es una CUESTIÓN EXISTENCIAL/DE SENTIDO (vida, muerte, propósito, consciencia)?",
