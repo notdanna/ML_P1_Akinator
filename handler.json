@@ -1109,7 +1109,7 @@
                 "si": {
                   "pregunta": "¿Es un envase pequeño/mediano (portátil)?",
                   "si": {
-                    "resultado": "ENVASE / CONTENEDOR (botella, frasco, caja, lata, bolsa)"
+                    "resultado": "ENVASE / CONTENEDOR (botella, frasco, caja, lata, bolsa, mochila, bolso, maleta, etc.)"
                   },
                   "no": {
                     "resultado": "DEPÓSITO / ALMACENAMIENTO (tanque, silo, bidón, garrafon, sisterna)"
@@ -1120,7 +1120,7 @@
                   "si": {
                     "pregunta": "¿Se usa en cabeza / manos / pies?",
                     "si": {
-                      "resultado": "ACCESORIO (sombrero/gorra, guantes, calcetines/zapatos, joyeria)"
+                      "resultado": "ACCESORIO (sombrero/gorra/lentes, guantes, calcetines/zapatos, joyeria)"
                     },
                     "no": {
                       "resultado": "PRENDA (camisa, player, pantalón, abrigo, vestido)"
@@ -1428,6 +1428,7 @@
               "no": {
                 "pregunta": "¿Es GAS en su estado natural más común?",
                 "si": {
+                  
                   "pregunta": "¿Es MEZCLA de gases del aire?",
                   "si": {
                     "resultado": "AIRE (mezcla: N₂, O₂, Ar, CO₂, etc.)"
@@ -1453,7 +1454,7 @@
                             "resultado": "METANO (CH₄)"
                           },
                           "no": {
-                            "resultado": "OTRO GAS NATURAL (He, Ar, H₂S, H₂…)"
+                            "resultado": "OTRO GAS NATURAL (He, Ar, H₂S, H₂…) o compuestos como H₂O(nubes), NH₃, SO₂, NOx "
                           }
                         }
                       }
@@ -1638,7 +1639,13 @@
               "no": {
                 "pregunta": "¿Es infraestructura/edificación?",
                 "si": {
+                  "pregunta": "¿Estás en el edificio en este momento?",
+                  "si": {
+                    "resultado": "ESCOM"
+                    },
+                  "no": {
                   "resultado": "EDIFICIO/CASA/DEPTO/FÁBRICA/CARRETERA/PUENTE/AEROPUERTO/PUERTO/PRESA/CANAL/MINA/ISLA ARTIFICIAL"
+                  }
                 },
                 "no": {
                   "resultado": "OTRO CONSTRUIDO"
@@ -2357,7 +2364,7 @@
                 "no": {
                   "pregunta": "¿Es negativa/aversiva?",
                   "si": {
-                    "resultado": "EMOCIÓN NEGATIVA (ira, miedo, tristeza, culpa, vergüenza, ansiedad, etc.)"
+                    "resultado": "EMOCIÓN NEGATIVA (ira, miedo, tristeza, culpa, vergüenza, ansiedad, odio etc.)"
                   },
                   "no": {
                     "pregunta": "¿Es neutra/ambivalente?",
